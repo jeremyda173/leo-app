@@ -7,4 +7,4 @@ function Argentina() {
         </div>
     )
 }
-export default Argentina;
+export default Argentibbbna;
