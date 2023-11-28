@@ -1,56 +1,94 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 import 'tailwindcss/tailwind.css';
+import MessiLogo from '@/../../public/messi-logo.png';  // Asegúrate de importar la ruta correcta de la imagen
+import Image from 'next/image';
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [equiposOpen, setEquiposOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    setEquiposOpen(false);
+  };
+
+  const toggleEquipos = () => {
+    setEquiposOpen(!equiposOpen);
   };
 
   useEffect(() => {
-    // Código que se ejecuta solo en el cliente
     console.log("use client");
-
-    // Si hay alguna lógica específica para el cliente, agrégala aquí.
-    // Por ejemplo, manipulación del DOM o interacciones del usuario.
-  }, []); // El segundo argumento [] indica que este efecto se ejecuta solo una vez al montar el componente.
+  }, []);
 
   return (
-    <div className="bg-gray-800 text-white min-h-screen p-4">
-      <div className="container mx-auto">
+    <div className="bg-gradient-to-b from-gray-900 to-gray-800 text-black min-h-screen p-4">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
 
-        {/* Botón del Menú */}
-        <button
-          className="bg-blue-500 text-white px-4 py-2 rounded"
-          onClick={toggleMenu}
-        >
-          Menú
-        </button>
+        <div className="md:h-16 md:mb-4 flex items-center mt-8 order-2 md:order-1"> 
+          <button
+            className="ml-4 px-2 py-1 rounded text-white transition-colors"
+            onClick={toggleMenu}
+          >
+            Menú
+          </button>
 
-        {/* Contenedor del Menú Vertical */}
-        {menuOpen && (
-          <div className="flex flex-col mt-4">
-            <a href="#" className="py-2">Historial de partidos</a>
-            <a href="#" className="py-2">Equipos</a>
-            <ul className="pl-4">
-              <li><a href="#">Barcelona</a></li>
-              <li><a href="#">Argentina</a></li>
-              <li><a href="#">Paris Saint-Germain</a></li>
-              <li><a href="#">Miami</a></li>
-            </ul>
-            <a href="#" className="py-2">Vida personal</a>
-            <a href="#" className="py-2">Historia</a>
-            <a href="#" className="py-2">Estadísticas y premios</a>
+          {menuOpen && (
+            <div className="absolute top-8 right-20 w-64 h-full p-4 rounded shadow-md" style={{ background: 'linear-gradient(to bottom, #004d98, rgba(0, 77, 152, 0))' }}>
+              <div className="flex justify-between items-center mb-4">
+                <div className="text-xl font-bold text-white">Menú</div>
+                <button
+                  className="text-white hover:text-white focus:outline-none"
+                  onClick={toggleMenu}
+                >
+                  <div className='hover:bg-red-600 p-2'>  
+                    X
+                  </div> 
+                </button>
+              </div>
+              <ul className="space-y-2">
+                <li><a href="#" className="hover:text-purple-400">Historial de partidos</a></li>
+                <li className="mb-2">
+                  <div className="flex items-center">
+                    <button
+                      className="text-left focus:outline-none"
+                      onClick={toggleEquipos}
+                    >
+                      Equipos
+                    </button>
+                  </div>
+                  {equiposOpen && (
+                    <ul className="pl-4 space-y-1">
+                      <li><a href="#" className="hover:text-purple-400 pb-2 pt-2">Argentina</a></li>
+                      <li><a href="#" className="hover:text-purple-400 pb-2 pt-2">Paris Saint-Germain</a></li>
+                      <li><a href="#" className="hover:text-purple-400 pb-2 pt-2">Miami</a></li>
+                      <li><a href="#" className="hover:text-purple-400 pb-2 pt-2">Barcelona</a></li>
+                    </ul>
+                  )}
+                </li>
+                <li><a href="#" className="hover:text-purple-400">Vida personal</a></li>
+                <li><a href="#" className="hover:text-purple-400">Historia</a></li>
+                <li><a href="#" className="hover:text-purple-400">Estadísticas y premios</a></li>
+              </ul>
+            </div>
+          )}
+        </div>
+
+        <div className="md:h-16 md:mb-4 md:ml-auto order-1 md:order-2"> 
+          <Image src={MessiLogo} alt="Messi Logo" width={50} height={50} />
+        </div>
+
+        <div className="text-center mt-4 md:mt-0 order-3">
+          {/* Contenido de la Página */}
+          <div className="text-black">
+            {/* Contenido de la sección de Equipos */}
+            {equiposOpen && (
+              <div className="pl-4 space-y-1">
+                <p>Contenido de la sección de Equipos...</p>
+              </div>
+            )}
           </div>
-        )}
-
-        {/* Contenido de la Página */}
-        <h1 className="text-2xl font-bold mb-4 bg-blue-700 text-white text-center pb-4 w-full">
-          Home
-        </h1>
+        </div>
       </div>
     </div>
   );
