@@ -1,61 +1,83 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+'use client';
+import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 import 'tailwindcss/tailwind.css';
-import BImage from '@/../../public/Messi_barc.jpeg';
-import AImage from '@/../../public/Messi_arge.jpg';
-import PImage from '@/../../public/Mess_psg.jpg';
-import MImage from '@/../../public/Messi_mia.jpg';
+import BImage from '@/../../public/LogoB.png';
+import PImage from '@/../../public/LogoP.png';
+import MImage from '@/../../public/LogoM.png';
+import Portada from '@/../../public/Portada.jpg';
 
 function Page() {
+  const [pageLoaded, setPageLoaded] = useState(false);
+
+  useEffect(() => {
+    setPageLoaded(true);
+  }, []);
+
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-white min-h-screen p-4">
+      <div className="absolute top-0 left-0 w-full h-full opacity-40">
+        <div className={`h-full ${pageLoaded ? 'bg-gradient-to-b from-gray-900 to-gray-800' : ''} transition duration-1000 ease-in-out`}></div>
+      </div>
+
       <header className="text-center py-4">
-        <h1 className="text-3xl font-bold">Lionel Messi Gallery</h1>
+        {/* <h1 className="text-3xl font-bold">Lionel Messi Gallery</h1> */}
       </header>
+        
+      <div className="relative w-full h-96 overflow-hidden">
+        <Image src={Portada} alt="Portada" layout="fill" objectFit="cover" className="w-full h-full object-cover rounded-md transform hover:scale-105 transition-transform" />
+      </div>
 
       <div className="flex items-center justify-center">
-        <div className="bg-white p-8 rounded-lg shadow-lg">
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-2">
+        <div className="bg-gray-700 p-8 rounded-lg shadow-lg w-full max-w-screen-lg">
+          <div className="grid grid-cols-3 gap-8 md:gap-16">
             {/* Barcelona */}
-            <div className="relative group overflow-hidden">
-              <Image src={BImage} alt="Barcelona" className="w-full h-48 object-cover transition-transform transform scale-100 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-opacity-50 opacity-0 transition-opacity group-hover:opacity-100 flex flex-col items-center justify-center">
-                <p className="font-bold mb-2 text-sm">Barcelona</p>
-              </div>
-            </div>
-
-            {/* Argentina */}
-            <div className="relative group overflow-hidden">
-              <div className="w-full h-48 relative">
-                <Image src={AImage} alt="Argentina" className="w-full h-full object-cover transition-transform transform scale-100 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-opacity-50 opacity-0 transition-opacity group-hover:opacity-100 flex flex-col items-center justify-center">
-                  <p className="font-bold mb-2 text-sm">Argentina</p>
-                </div>
+            <div className={`relative group overflow-hidden mb-8 bg-gradient-to-b from-blue-500 to-red-500 rounded-md transition duration-300 ease-in-out transform hover:scale-105 ${pageLoaded ? 'opacity-100' : 'opacity-0'}`}>
+              <div className="flex flex-col items-center">
+                <Image
+                  src={BImage}
+                  alt="Barcelona"
+                  className="w-auto h-48 object-cover rounded-md"
+                />
+                <p className="font-bold mt-4 text-lg text-center text-white">
+                  Barcelona
+                </p>
               </div>
             </div>
 
             {/* Paris Saint-Germain */}
-            <div className="relative group overflow-hidden">
-              <Image src={PImage} alt="Paris Saint-Germain" className="w-full h-48 object-cover transition-transform transform scale-100 group-hover:scale-105" />
-              <div className="absolute inset-0 bg-opacity-50 opacity-0 transition-opacity group-hover:opacity-100 flex flex-col items-center justify-center">
-                <p className="font-bold mb-2 text-sm">Paris Saint-Germain</p>
+            <div className={`relative group overflow-hidden mb-8 bg-gradient-to-b from-blue-900 via-white to-red-500 rounded-md transition duration-300 ease-in-out transform hover:scale-105 ${pageLoaded ? 'opacity-100' : 'opacity-0'}`}>
+              <div className="flex flex-col items-center">
+                <Image
+                  src={PImage}
+                  alt="Paris Saint-Germain"
+                  className="w-auto h-48 object-cover rounded-md"
+                />
+                <p className="font-bold mt-4 text-lg text-center text-white">
+                  Paris Saint-Germain
+                </p>
               </div>
             </div>
 
-            {/* Miami */}
-            <div className="relative group overflow-hidden">
-              <div className="w-full h-48 relative">
-                <Image src={MImage} alt="Miami" className="w-full h-full object-cover transition-transform transform scale-100 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-opacity-50 opacity-0 transition-opacity group-hover:opacity-100 flex flex-col items-center justify-center">
-                  <p className="font-bold mb-2 text-sm">Miami</p>
-                </div>
+            {/* Inter */}
+            <div className={`relative group overflow-hidden mb-8 bg-gradient-to-b from-black to-pink-500 rounded-md transition duration-300 ease-in-out transform hover:scale-105 ${pageLoaded ? 'opacity-100' : 'opacity-0'}`}>
+              <div className="flex flex-col items-center">
+                <Image
+                  src={MImage}
+                  alt="Inter"
+                  className="w-auto h-48 object-cover rounded-md"
+                />
+                <p className="font-bold mt-4 text-lg text-center text-white">
+                  Inter
+                </p>
               </div>
             </div>
+
           </div>
         </div>
       </div>
-      
+
       <div className="text-center mt-4">
         <p className="text-lg font-semibold">
           "Cuando tienes sueños, nada es imposible."
