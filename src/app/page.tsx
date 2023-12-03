@@ -11,25 +11,6 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen flex flex-col relative overflow-hidden">
-      {/* Fondo ondulado blanco encima de la imagen */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        className="absolute top-0 left-0 w-full z-0"
-        style={{ zIndex: -1 }}
-      >
-        <path fill="#ffffff" fillOpacity="1" d="M0,288L1440,96L1440,320L0,320Z"></path>
-      </svg>
-
-      {/* Fondo ondulado debajo de la imagen */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        className="absolute bottom-0 left-0 w-full z-0"
-      >
-        <path fill="#0099ff" fillOpacity="1" d="M0,288L1440,96L1440,320L0,320Z"></path>
-      </svg>
-
       {/* Contenido del Dashboard */}
       <div className="flex-1 relative z-10">
         {/* Menú Horizontal */}
@@ -89,13 +70,20 @@ const Dashboard = () => {
             >
               Family
             </a>
-    
             {/* Agrega más opciones según sea necesario */}
           </div>
         </div>
 
-        {/* Imagen de portada */}
-        <Image src={Portada} alt="Portada" className="w-full h-auto" />
+        {/* Imagen de portada centrada con bordes de gradiente en las esquinas */}
+        <div className="w-full h-auto overflow-hidden mt-16 relative">
+          <div className="relative">
+            <div className="absolute top-0 left-0 w-6 h-6 bg-gradient-to-tr from-blue-500 to-white"></div>
+            <div className="absolute top-0 right-0 w-6 h-6 bg-gradient-to-tl from-red-500 to-white"></div>
+            <div className="absolute bottom-0 left-0 w-6 h-6 bg-gradient-to-br from-red-500 to-white"></div>
+            <div className="absolute bottom-0 right-0 w-6 h-6 bg-gradient-to-bl from-blue-500 to-white"></div>
+            <Image src={Portada} alt="Portada" width={400} height={600} />
+          </div>
+        </div>
 
         {/* Contenido específico del dashboard */}
         <div className="container mx-auto p-8">
