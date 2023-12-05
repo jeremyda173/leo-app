@@ -29,7 +29,7 @@ const Dashboard = () => {
             Home
           </a>
           <a
-            href="#"
+            href="/match-history"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'matchHistory' ? 'border-b-2 border-white' : ''}`}
             onMouseEnter={() => setActiveOption('matchHistory')}
             onMouseLeave={() => setActiveOption(null)}
@@ -37,7 +37,7 @@ const Dashboard = () => {
             Match History
           </a>
           <a
-            href="#"
+            href="/awards"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'awards' ? 'border-b-2 border-white' : ''}`}
             onMouseEnter={() => setActiveOption('awards')}
             onMouseLeave={() => setActiveOption(null)}
@@ -53,7 +53,7 @@ const Dashboard = () => {
             Teams
           </a>
           <a
-            href="#"
+            href="/social-media"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'socialMedia' ? 'border-b-2 border-white' : ''}`}
             onMouseEnter={() => setActiveOption('socialMedia')}
             onMouseLeave={() => setActiveOption(null)}
@@ -61,7 +61,7 @@ const Dashboard = () => {
             Social Media
           </a>
           <a
-            href="#"
+            href="/family"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'family' ? 'border-b-2 border-white' : ''}`}
             onMouseEnter={() => setActiveOption('family')}
             onMouseLeave={() => setActiveOption(null)}
