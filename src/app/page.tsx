@@ -5,6 +5,7 @@ import MessiLogo from '@/../../public/messi-logo.png';
 import Image from 'next/image';
 import 'tailwindcss/tailwind.css';
 import Portada from '@/../../public/Portada.jpg';
+import { FaInstagram, FaFacebook, FaGoogle } from 'react-icons/fa'; // Importa los íconos de Font Awesome (ajusta según la biblioteca de íconos que prefieras)
 
 const Dashboard = () => {
   const [activeOption, setActiveOption] = useState(null);
@@ -45,21 +46,14 @@ const Dashboard = () => {
             Awards
           </a>
           <a
-            href="/dashboard"
+            href="/teams"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'teams' ? 'border-b-2 border-white' : ''}`}
             onMouseEnter={() => setActiveOption('teams')}
             onMouseLeave={() => setActiveOption(null)}
           >
             Teams
           </a>
-          <a
-            href="/social-media"
-            className={`mr-4 hover:text-gray-300 ${activeOption === 'socialMedia' ? 'border-b-2 border-white' : ''}`}
-            onMouseEnter={() => setActiveOption('socialMedia')}
-            onMouseLeave={() => setActiveOption(null)}
-          >
-            Social Media
-          </a>
+  
           <a
             href="/family"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'family' ? 'border-b-2 border-white' : ''}`}
@@ -89,7 +83,7 @@ const Dashboard = () => {
             <p className='text-justify'>
               Lionel Messi es un futbolista argentino nacido el 24 de junio de 1987 en Rosario, Argentina. Desde joven, Messi mostró un talento excepcional para el fútbol.
             </p>
-                <br></br>
+            <br></br>
             <p className='text-justify'>
               A la edad de 13 años, se trasladó a Barcelona, España, para unirse a la academia juvenil del FC Barcelona, La Masia. Messi rápidamente se destacó en las categorías juveniles del Barcelona, 
               y a los 16 años hizo su debut con el primer equipo en un partido amistoso. Su actuación impresionante llevó al entrenador Frank Rijkaard a darle la oportunidad en la liga española.
@@ -101,6 +95,21 @@ const Dashboard = () => {
           <p>Contenido del dashboard...</p>
         </div>
       </div>
+
+      {/* Pie de página con enlaces a redes sociales, íconos y derechos reservados */}
+      <footer className="bg-gray-800 text-white p-4 text-center flex items-center justify-center space-x-4">
+        <a href="https://www.instagram.com/leomessi" target="_blank" rel="noopener noreferrer">
+          <FaInstagram size={30} color="#fff" />
+        </a>
+        <a href="https://www.facebook.com/LeoMessi" target="_blank" rel="noopener noreferrer">
+          <FaFacebook size={30} color="#fff" />
+        </a>
+        <a href="https://messi.com/fundacion-leo-messi/" target="_blank" rel="noopener noreferrer">
+          <FaGoogle size={30} color="#fff" />
+        </a>
+        {/* Agrega más enlaces y íconos según sea necesario */}
+        <p className="ml-2">&copy; 2023 Messi Fan Club. Todos los derechos reservados.</p>
+      </footer>
     </div>
   );
 };
