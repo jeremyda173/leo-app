@@ -6,7 +6,7 @@ import 'tailwindcss/tailwind.css';
 import BImage from '@/../../public/LogoB.png';
 import PImage from '@/../../public/LogoP.png';
 import MImage from '@/../../public/LogoM.png';
-import Portada from '@/../../public/Portada.jpg';
+// import Portada from '@/../../public/Portada.jpg';
 
 function Page() {
   const [pageLoaded, setPageLoaded] = useState(false);
@@ -17,17 +17,17 @@ function Page() {
 
   return (
     <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-white min-h-screen p-4">
-      <div className="absolute top-0 left-0 w-full h-full opacity-40">
-        <div className={`h-full ${pageLoaded ? 'bg-gradient-to-b from-gray-900 to-gray-800' : ''} transition duration-1000 ease-in-out`}></div>
-      </div>
+  <div className="absolute top-0 left-0 w-full h-full opacity-40">
+    <div className={`h-full ${pageLoaded ? 'bg-gradient-to-b from-gray-900 to-gray-800' : ''} transition duration-1000 ease-in-out`}></div>
+  </div>
 
       <header className="text-center py-4">
         {/* <h1 className="text-3xl font-bold">Lionel Messi Gallery</h1> */}
       </header>
-        
-      <div className="relative w-full h-96 overflow-hidden">
-        <Image src={Portada} alt="Portada" layout="fill" objectFit="cover" className="w-full h-full object-cover rounded-md transform hover:scale-105 transition-transform" />
-      </div>
+
+    {/* <div className="bg-white">
+      <Image src={Portada} alt="Barcelona" className="w-full h-full object-cover rounded-md"/>
+    </div> */}
 
       <div className="flex items-center justify-center">
         <div className="bg-gray-700 p-8 rounded-lg shadow-lg w-full max-w-screen-lg">
