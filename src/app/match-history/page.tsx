@@ -15,19 +15,16 @@ function MatchHistory() {
             <div className="grid grid-cols-2 gap-4 mt-4">
               <div className="text-center">
                 <h2 className="text-lg font-bold mb-2">Brasil</h2>
-                <div className="bg-gray-400 p-2 rounded-md w-max mx-auto text-black">
+                <div className="bg-gray-600 p-4 rounded-md w-max mx-auto text-black">
                   <p className="text-xl font-bold mb-2">0</p>
                 </div>
               </div>
               <div className="text-center">
                 <h2 className="text-lg font-bold mb-2">Argentina</h2>
-                <div className="bg-gray-400 p-2 rounded-md w-max mx-auto text-black">
+                <div className="bg-gray-600 p-4 rounded-md w-max mx-auto text-black">
                   <p className="text-xl font-bold mb-2">1</p>
                 </div>
               </div>
-            </div>
-            <div className="border-t border-b border-gray-600 bg-pink-500 text-white p-2 rounded-md text-center mt-4">
-              <p className="text-sm">Resultado Finalizado</p>
             </div>
           </div>
 
@@ -35,6 +32,13 @@ function MatchHistory() {
           {/* <div className="mb-8">
             ... Otra información del partido ...
           </div> */}
+        </div>
+        <div className='px-36'>
+          <div className='px-96'>
+            <div className="border-t border-b border-gray-600 bg-blue-500 text-white p-2 rounded-md text-center -mt-4">
+              <p className="text-sm">Resultado Finalizado</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
