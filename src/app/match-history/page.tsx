@@ -40,11 +40,6 @@ function MatchHistory() {
               </div>
             </div>
           </div>
-
-          {/* Puedes agregar más partidos siguiendo el mismo patrón */}
-          {/* <div className="mb-8">
-            ... Otra información del partido ...
-          </div> */}
         </div>
         <div className='px-36'>
           <div className='px-96'>
