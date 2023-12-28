@@ -7,6 +7,7 @@ import 'tailwindcss/tailwind.css';
 import Portada from '@/../../public/Portada.jpg';
 import { FaInstagram, FaFacebook, FaGoogle } from 'react-icons/fa'; // Importa los íconos de Font Awesome (ajusta según la bi
 import Masia from '@/../../public/masia.jpg';
+import MessiFr from '@/../../public/MessiFr.jpg';
 
 const Dashboard = () => {
   const [activeOption, setActiveOption] = useState(null);
@@ -72,13 +73,23 @@ const Dashboard = () => {
       {/* Imagen */}
         <div className='w-full md:w-3/4 rounded overflow-hidden mb-8 md:mb-0 md:mr-8 mt-20'>
           <div className='relative'>
-            <Image src={Portada} alt={'Messi'} />
+            <Image src={Portada} alt={'Messi'} height={200} width={400}/>
+          </div>
+        </div>
+        <div className='w-full md:w-3/4 rounded overflow-hidden mb-8 md:mb-0 md:mr-8 mt-20'>
+          <div className='relative'>
+            <Image src={MessiFr} alt={'Messi'} />
+          </div>
+        </div>
+        <div className='w-full md:w-3/4 rounded overflow-hidden mb-8 md:mb-0 md:mr-8 mt-20'>
+          <div className='relative'>
+            <Image src={Masia} alt={'Messi'} />
           </div>
         </div>
 
       {/* Texto */}
         <div className="flex flex-col max-w-md">
-          <p className="text-lg font-bold mb-4">Welcome to page Leo Messi</p>
+          <p className="text-lg text-center font-bold mb-4">Welcome to page Leo Messi</p>
 
              {/* Sección de la historia personal de Messi */}
           <div className="mb-8">
@@ -94,6 +105,7 @@ const Dashboard = () => {
             <p className='text-justify'>             
             En La Masia, Messi continuó su ascenso meteórico. Su habilidad con el balón, su visión de juego y su velocidad asombraban a sus compañeros y entrenadores por igual. El joven argentino se convirtió en una joya preciada, y su nombre empezó a resonar en todo el mundo futbolístico. A los 16 años, llegó el momento crucial: Lionel Messi debutó con el primer equipo del FC Barcelona en un partido amistoso.
             </p>
+           
             <br></br>
             <p className='text-justify'>             
             La hazaña dejó a todos boquiabiertos. El entrenador Frank Rijkaard, impresionado por la destreza y madurez futbolística de Messi, no dudó en darle la oportunidad de brillar en la liga española. Desde ese momento, el mundo fue testigo del surgimiento de un fenómeno. Messi no solo cumplió con las expectativas, las superó con creces.
@@ -133,10 +145,11 @@ const Dashboard = () => {
             <br></br>
 
             {/* Agrega más detalles de la historia personal de Messi según sea necesario */}
-          </div>
+          
 
           {/* Otro contenido del dashboard */}
           <p>Contenido del dashboard...</p>
+          </div>
         </div>
       </div>
 
