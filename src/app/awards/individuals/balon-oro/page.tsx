@@ -20,7 +20,7 @@ function BallonDOrModal() {
   const [statisticsModalOpen, setStatisticsModalOpen] = useState(false);
   const [selectedYear, setSelectedYear] = useState(null);
 
-  const openStatisticsModal = (year) => {
+  const openStatisticsModal = (year: number | React.SetStateAction<null>) => {
     setSelectedYear(year);
     setMainModalOpen(false);
     setStatisticsModalOpen(true);
