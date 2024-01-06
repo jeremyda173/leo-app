@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import 'tailwindcss/tailwind.css';
-import Nacional from '@/app/awards/teams/nacional/page';
+import PresentacionNa from '@/app/awards/teams/nacional/page';
+import PresantacionIn from '@/app/awards/teams/internacional/page';
 
 function Presentation() {
   return (
@@ -8,16 +8,13 @@ function Presentation() {
       <h1 className="text-4xl font-bold mb-4">¡Bienvenido!</h1>
       <p className="text-lg mb-8">Selecciona una opción:</p>
       <div className="space-x-4">
-        <a href="/national/page">
-          <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Nacional
-          </a>
+        {/* Utiliza el elemento "a" con "href" para la navegación */}
+        <a href="/Nacional" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Nacional
         </a>
-        {/* Agrega las rutas correspondientes para "Internacional" */}
-        <a href="/internacional">
-          <a className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-            Internacional
-          </a>
+        {/* También para la opción "Internacional" */}
+        <a href="/Internacional" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Internacional
         </a>
       </div>
     </div>

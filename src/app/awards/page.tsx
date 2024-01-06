@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
-import 'tailwindcss/tailwind.css';
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
+import 'tailwindcss/tailwind.css';
 import Individuals from '@/app/awards/individuals/page';
 import Teams from '@/app/awards/teams/page';
 
-function Awards() {
+const Awards = () => {
   const [selectedOption, setSelectedOption] = useState('individuals');
 
   const handleOptionChange = (option) => {
@@ -13,14 +14,14 @@ function Awards() {
   };
 
   return (
-    <div>
-      <div className="flex justify-center my-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <div className="space-x-8">
         <button
           className={`${
             selectedOption === 'individuals'
               ? 'bg-blue-500 text-white'
               : 'bg-gray-300 text-gray-700'
-          } py-2 px-4 rounded-l`}
+          } py-3 px-6 rounded-full focus:outline-none transition-colors duration-300`}
           onClick={() => handleOptionChange('individuals')}
         >
           Individuals
@@ -30,15 +31,21 @@ function Awards() {
             selectedOption === 'teams'
               ? 'bg-blue-500 text-white'
               : 'bg-gray-300 text-gray-700'
-          } py-2 px-4 rounded-r`}
+          } py-3 px-6 rounded-full focus:outline-none transition-colors duration-300`}
           onClick={() => handleOptionChange('teams')}
         >
           Teams
         </button>
       </div>
-      {selectedOption === 'individuals' ? <Individuals /> : <Teams />}
+
+      <div className="mt-8 w-full h-full p-6 border border-gray-300 rounded-md bg-white shadow-md">
+        {selectedOption === 'individuals' && <Individuals />}
+        {selectedOption === 'teams' && <Teams />}
+      </div>
     </div>
   );
-}
+};
 
 export default Awards;
+
+
