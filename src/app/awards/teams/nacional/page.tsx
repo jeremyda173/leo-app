@@ -1,8 +1,9 @@
 
 import React from "react";
 import 'tailwindcss/tailwind.css';
+// import Presentation from "../page";
 
-function Presentation() {
+function PresentationNa() {
  
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-400 to-blue-500 text-white">
@@ -12,4 +13,4 @@ function Presentation() {
   );
 }
 
-export default Presentation;
+export default PresentationNa;
