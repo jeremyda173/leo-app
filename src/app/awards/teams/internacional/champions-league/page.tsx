@@ -1,6 +1,6 @@
 import React from "react";
 
-function GoldenBoy (){
+function Champions (){
     return(
         <>
             Hello        
@@ -8,4 +8,4 @@ function GoldenBoy (){
     );
 }
 
-export default GoldenBoy;
+export default Champions;
