@@ -24,7 +24,7 @@ function GoldenBoyModal() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       {/* Heading */}
-      <h1 className='text-5xl font-bold text-center mb-4'>Messi's Awards Gallery</h1>
+      <h1 className='text-5xl font-bold text-center mb-4'>Golden boy</h1>
 
       {/* Image */}
       <Image src={GoldenBoy} alt="GoldenBoy" className="w-32 h-48 mb-4" />
