@@ -26,7 +26,7 @@ function TheBestModal() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       {/* Heading */}
-      <h1 className='text-5xl font-bold text-center mb-4'>Messi's Awards Gallery</h1>
+      <h1 className='text-5xl font-bold text-center mb-4'>FIFA The Best</h1>
 
       {/* Image */}
       <Image src={TheBest} alt="TheBest" className="w-32 h-32 mb-4" />
