@@ -9,7 +9,7 @@ import Teams from '@/app/awards/teams/page';
 const Awards = () => {
   const [selectedOption, setSelectedOption] = useState('individuals');
 
-  const handleOptionChange = (option) => {
+  const handleOptionChange = (option: React.SetStateAction<string>) => {
     setSelectedOption(option);
   };
 
