@@ -2,14 +2,14 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Celia from '@/../../public/Family/MadreMessi.jpg'; // Asegúrate de tener la imagen correcta
+import Celia from '@/../../public/Family/MadreMessi.jpg';
 
 function CartaCelia() {
     // Datos de la madre
     const nombreMadre = "Celia";
     const apellidoMadre = "Cuccittini";
     const edadMadre = "64";
-    const ocupacionMadre = "Limpiadora"; // Cambia la ocupación según corresponda
+    const ocupacionMadre = "Limpiadora"; 
 
     return (
         <div className="max-w-md mx-auto my-8 bg-white p-8 rounded-lg shadow-md">
