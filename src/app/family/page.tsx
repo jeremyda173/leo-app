@@ -8,6 +8,7 @@ import Celia from '@/app/family/carta6';
 function Family() {
     return (
         <div className="container mx-auto px-4 sm:px-8 mt-8">
+            {/* //routes */}
             <Celia />
             <Antonella />
             <Ciro />
