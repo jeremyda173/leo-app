@@ -12,7 +12,7 @@ function MatchHistoryN() {
         <div className="bg-gray-900 text-white p-4 rounded-md shadow-md w-80 mx-auto border border-gray-600">
           <h1 className="text-2xl font-bold mb-4 text-center bg-pink-500 p-2 rounded">Match History</h1>
 
-          {/* Información del primer partido */}
+          {/* Información del partido */}
           <div className="mb-4">
             <p className="text-lg font-bold mb-2 text-center">NOV 21</p>
             <p className="text-sm text-center">Eliminatoria Sudamericana - Jornada 6</p>
@@ -40,16 +40,6 @@ function MatchHistoryN() {
               </div>
             </div>
           </div>
-
-          {/* Información del segundo partido */}
-          <div className="mb-4">
-            {/* ... (Repite el mismo patrón para el siguiente partido) ... */}
-          </div>
-
-          {/* Puedes agregar más partidos siguiendo el mismo patrón */}
-          {/* <div className="mb-8">
-            ... Otra información del partido ...
-          </div> */}
         </div>
         <div className='px-36'>
           <div className='px-96'>
