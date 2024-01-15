@@ -12,7 +12,7 @@ function MatchHistory() {
         <div className="bg-gray-800 text-white p-4 rounded-md shadow-2xl w-80 mx-auto border border-gray-600 transform hover:scale-105 transition-transform">
           <h1 className="text-3xl font-extrabold mb-4 text-center bg-purple-600 p-2 rounded">Match History</h1>
 
-          {/* Información del primer partido */}
+          {/* Información del partido */}
           <div className="mb-4">
             <p className="text-xl font-semibold mb-2 text-center">NOV 21</p>
             <p className="text-sm text-center">Eliminatoria Sudamericana - Jornada 6</p>
@@ -40,19 +40,8 @@ function MatchHistory() {
               </div>
             </div>
           </div>
-
-          {/* Información del segundo partido */}
-          <div className="mb-4">
-            {/* ... (Repite el mismo patrón para el siguiente partido) ... */}
-          </div>
-
-          {/* Puedes agregar más partidos siguiendo el mismo patrón */}
-          {/* <div className="mb-8">
-            ... Otra información del partido ...
-          </div> */}
         </div>
 
-        {/* Resultado Finalizado debajo de la tarjeta con un color acorde */}
         <div className="mt-4 bg-blue-500 text-white p-2 rounded-md text-center">
           <p className="text-sm">Resultado Finalizado</p>
         </div>
