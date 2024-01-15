@@ -29,19 +29,8 @@ function MatchHistoryC() {
               </div>
             </div>
           </div>
-
-          {/* Información del segundo partido */}
-          <div className="mb-4">
-            {/* ... (Repite el mismo patrón para el siguiente partido) ... */}
-          </div>
-
-          {/* Puedes agregar más partidos siguiendo el mismo patrón */}
-          {/* <div className="mb-8">
-            ... Otra información del partido ...
-          </div> */}
         </div>
 
-        {/* Resultado Finalizado debajo de la tarjeta con un color acorde */}
         <div className="mt-4 bg-blue-500 text-white p-2 rounded-md text-center">
           <p className="text-sm">Encuentro pendiente</p>
         </div>
