@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Menu from '@/app/menu';
+import Menu from '@/app/components/menu';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
