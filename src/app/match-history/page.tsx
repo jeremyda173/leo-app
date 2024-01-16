@@ -1,9 +1,9 @@
 'use client';
 import React, { useState } from "react";
 import MatchHistory from "../match-history/carta";
-import MatchHistoryB from "../match-history/carta2";
-import MatchHistoryC from "../match-history/carta3";
-import NextGameform from '../match-history/next-game';
+import NextGameA from "../match-history/carta2";
+import NextGameB from "../match-history/next-game";
+import NextGameform from '../match-history/next-game2';
 
 function CartaMatch() {
   const cards = ["MatchHistory", "MatchHistoryB", "MatchHistoryC", "NextGameform"];
@@ -25,9 +25,10 @@ function CartaMatch() {
     <div>
       <div className="flex space-x-4">
         {activeCard === "MatchHistory" && <MatchHistory />}
-        {activeCard === "MatchHistoryB" && <MatchHistoryB />}
-        {activeCard === "MatchHistoryC" && <MatchHistoryC />}
         {activeCard === "NextGameform" && <NextGameform />}
+        {activeCard === "MatchHistoryB" && <NextGameA />}
+        {activeCard === "MatchHistoryC" && <NextGameB />}
+        
       </div>
       <div className="flex justify-center mt-4">
         <button
