@@ -6,7 +6,7 @@ import AlNassr from '../../../public/Al-Nassr.png';
 import InterMiami from '../../../public/LogoM.png';
 
 
-function MatchHistoryC() {
+function NextGameB() {
   return (
     <div className="bg-gradient-to-r from-blue-800 via-blue-700 to-purple-800 text-white min-h-screen flex items-center ml-12">
       <div className="container mx-auto px-4 sm:px-96 relative">
@@ -39,4 +39,4 @@ function MatchHistoryC() {
   );
 }
 
-export default MatchHistoryC;
+export default NextGameB;
