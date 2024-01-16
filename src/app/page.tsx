@@ -1,72 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import React, { useState } from 'react';
-import MessiLogo from '@/../../public/messi-logo.png';
+import React from 'react';
 import Image from 'next/image';
 import 'tailwindcss/tailwind.css';
 import Portada from '@/../../public/Portada.jpg';
-import { FaInstagram, FaFacebook, FaGoogle } from 'react-icons/fa'; // Importa los íconos de Font Awesome (ajusta según la bi
 import Masia from '@/../../public/masia.jpg';
 import MessiFr from '@/../../public/MessiFr.jpg';
+import Footer from '@/app/components/footer';
+import Menu from '@/app/components/menu';
 
 const Dashboard = () => {
-  const [activeOption, setActiveOption] = useState(null);
 
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden">
-      {/* Menú Horizontal */}
-      <div className="bg-gradient-to-r from-green-400 to-blue-500 p-4 flex items-center justify-between">
-        {/* Logo de Messi */}
-        <div className="flex items-center">
-          <Image src={MessiLogo} alt="Messi Logo" width={50} height={50} />
-        </div>
 
-        {/* Opciones del Menú */}
-        <div className="flex items-center">
-          <a
-            href="#"
-            className={`mr-4 hover:text-gray-300 ${activeOption === 'home' ? 'border-b-2 border-white' : ''}`}
-            onMouseEnter={() => setActiveOption('home')}
-            onMouseLeave={() => setActiveOption(null)}
-          >
-            Home
-          </a>
-          <a
-            href="/match-history"
-            className={`mr-4 hover:text-gray-300 ${activeOption === 'matchHistory' ? 'border-b-2 border-white' : ''}`}
-            onMouseEnter={() => setActiveOption('matchHistory')}
-            onMouseLeave={() => setActiveOption(null)}
-          >
-            Match History
-          </a>
-          <a
-            href="/awards"
-            className={`mr-4 hover:text-gray-300 ${activeOption === 'awards' ? 'border-b-2 border-white' : ''}`}
-            onMouseEnter={() => setActiveOption('awards')}
-            onMouseLeave={() => setActiveOption(null)}
-          >
-            Awards
-          </a>
-          <a
-            href="/dashboard"
-            className={`mr-4 hover:text-gray-300 ${activeOption === 'teams' ? 'border-b-2 border-white' : ''}`}
-            onMouseEnter={() => setActiveOption('teams')}
-            onMouseLeave={() => setActiveOption(null)}
-          >
-            Teams
-          </a>
-  
-          <a
-            href="/family"
-            className={`mr-4 hover:text-gray-300 ${activeOption === 'family' ? 'border-b-2 border-white' : ''}`}
-            onMouseEnter={() => setActiveOption('family')}
-            onMouseLeave={() => setActiveOption(null)}
-          >
-            Family
-          </a>
-          {/* Agrega más opciones según sea necesario */}
-        </div>
-      </div>
+   
+
+    <div className="min-h-screen flex flex-col relative overflow-hidden"> 
+    
+    <Menu />
+
 {/* Contenido del Dashboard */}
 <div className="flex flex-col relative z-10 container mx-auto p-8">
 <p className="text-lg text-center font-bold mb-4">Welcome to page Leo Messi</p>
@@ -132,27 +84,9 @@ const Dashboard = () => {
       </p>
     </div>
   </div>
+ </div>
+ < Footer />
 </div>
-
-
-
-
-
-      {/* Pie de página con enlaces a redes sociales, íconos y derechos reservados */}
-      <footer className="bg-gray-800 text-white p-4 text-center flex items-center justify-center space-x-4">
-        <a href="https://www.instagram.com/leomessi" target="_blank" rel="noopener noreferrer">
-          <FaInstagram size={30} color="#fff" />
-        </a>
-        <a href="https://www.facebook.com/LeoMessi" target="_blank" rel="noopener noreferrer">
-          <FaFacebook size={30} color="#fff" />
-        </a>
-        <a href="https://messi.com/fundacion-leo-messi/" target="_blank" rel="noopener noreferrer">
-          <FaGoogle size={30} color="#fff" />
-        </a>
-        {/* Agrega más enlaces y íconos según sea necesario */}
-        <p className="ml-2">&copy; 2023 Messi Fan Club. Todos los derechos reservados.</p>
-      </footer>
-    </div>
 
 
   );
