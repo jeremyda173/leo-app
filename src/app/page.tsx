@@ -6,8 +6,8 @@ import 'tailwindcss/tailwind.css';
 import Portada from '@/../../public/Portada.jpg';
 import Masia from '@/../../public/masia.jpg';
 import MessiFr from '@/../../public/MessiFr.jpg';
-import Footer from '@/app/footer';
-import Menu from '@/app/menu';
+import Footer from '@/app/components/footer';
+import Menu from '@/app/components/menu';
 
 const Dashboard = () => {
 
@@ -18,7 +18,7 @@ const Dashboard = () => {
     <div className="min-h-screen flex flex-col relative overflow-hidden"> 
     
     <Menu />
-    
+
 {/* Contenido del Dashboard */}
 <div className="flex flex-col relative z-10 container mx-auto p-8">
 <p className="text-lg text-center font-bold mb-4">Welcome to page Leo Messi</p>
