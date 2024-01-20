@@ -6,7 +6,7 @@ import MessiLogo from '@/../../public/messi-logo.png';
 import Image from "next/image";
 
 function Menu(){
-    const [activeOption, setActiveOption] = useState(null);
+    const [activeOption, setActiveOption] = useState(String);
     return(
         <>
       {/* Menú Horizontal */}
@@ -18,10 +18,10 @@ function Menu(){
         {/* Opciones del Menú */}
         <div className="flex items-center">
           <a
-            href="#"
+            href="/home"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'home' ? 'border-b-2 border-white' : ''}`}
             onMouseEnter={() => setActiveOption('home')}
-            onMouseLeave={() => setActiveOption(null)}
+            onMouseLeave={() => setActiveOption(String)}
           >
             Home
           </a>
@@ -29,7 +29,7 @@ function Menu(){
             href="/match-history"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'matchHistory' ? 'border-b-2 border-white' : ''}`}
             onMouseEnter={() => setActiveOption('matchHistory')}
-            onMouseLeave={() => setActiveOption(null)}
+            onMouseLeave={() => setActiveOption(String)}
           >
             Match History
           </a>
@@ -37,7 +37,7 @@ function Menu(){
             href="/awards"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'awards' ? 'border-b-2 border-white' : ''}`}
             onMouseEnter={() => setActiveOption('awards')}
-            onMouseLeave={() => setActiveOption(null)}
+            onMouseLeave={() => setActiveOption(String)}
           >
             Awards
           </a>
@@ -45,7 +45,7 @@ function Menu(){
             href="/dashboard"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'teams' ? 'border-b-2 border-white' : ''}`}
             onMouseEnter={() => setActiveOption('teams')}
-            onMouseLeave={() => setActiveOption(null)}
+            onMouseLeave={() => setActiveOption(String)}
           >
             Teams
           </a>
@@ -54,7 +54,7 @@ function Menu(){
             href="/family"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'family' ? 'border-b-2 border-white' : ''}`}
             onMouseEnter={() => setActiveOption('family')}
-            onMouseLeave={() => setActiveOption(null)}
+            onMouseLeave={() => setActiveOption(String)}
           >
             Family
           </a>
