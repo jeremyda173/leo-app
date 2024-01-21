@@ -9,7 +9,7 @@ import MessiFr from '@/../../public/MessiFr.jpg';
 import Footer from '@/app/components/footer';
 import Menu from '@/app/components/menu';
 
-const Dashboard = () => {
+const Home = () => {
 
   return (
 
@@ -90,4 +90,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Home;
