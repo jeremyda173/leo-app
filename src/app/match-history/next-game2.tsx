@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import 'tailwindcss/tailwind.css';
 
-import AlNassr from '../../../public/Al-Nassr.png';
-import InterMiami from '../../../public/LogoM.png';
+import AlNassr from '../../../public/Shield/Al-Nassr.png';
+import InterMiami from '../../../public/Shield/LogoM.png';
 
 
 function NextGameB() {
