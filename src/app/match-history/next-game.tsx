@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import 'tailwindcss/tailwind.css';
 
-import AlHilal from '../../../public/logo-al-hilal-2048.png';
-import InterMiami from '../../../public/LogoM.png';
+import AlHilal from '../../../public/Shield/logo-al-hilal-2048.png';
+import InterMiami from '../../../public/Shield/LogoM.png';
 
 
 function NextGameA() {
