@@ -7,7 +7,7 @@ import NextGameform from '../match-history/next-game2';
 
 function CartaMatch() {
   const cards = ["MatchHistory", "MatchHistoryB", "MatchHistoryC", "NextGameform"];
-  const [activeCardIndex, setActiveCardIndex] = useState(0);
+  const [activeCardIndex, setActiveCardIndex] = useState(2);
 
   const handleNextClick = () => {
     if (activeCardIndex < cards.length - 1) {
