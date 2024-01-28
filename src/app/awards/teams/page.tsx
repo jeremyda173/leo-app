@@ -6,12 +6,11 @@ import PresantacionIn from '@/app/awards/teams/internacional/page';
 import PresentationNa from '@/app/awards/teams/nacional/page';
 
 function Presentation() {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState (null);
 
-  const handleOptionChange = (option) => {
-    setSelectedOption(option);
+  const handleOptionChange = (_option: string) => {
+    setSelectedOption(null);
   };
-
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-400 to-blue-500 text-white">
       <h1 className="text-4xl font-bold mb-4">¡Bienvenido!</h1>
