@@ -27,7 +27,7 @@ function BotaDeOroModal() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <div className="flex flex-col items-center justify-center w-full h-80 bg-gradient-to-b from-gray-200 to-gray-800 text-white">
       {/* Heading */}
       <h1 className='text-3xl font-bold text-center mb-4'>Golden boot</h1>
 
