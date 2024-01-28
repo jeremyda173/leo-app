@@ -1,7 +1,7 @@
 function SuperCopa(){
     return(
         <>
-        Page Super Copa
+        Page Super Copa 2
         </>
     );
 }
