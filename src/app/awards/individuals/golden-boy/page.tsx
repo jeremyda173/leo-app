@@ -13,9 +13,9 @@ const awardsData = [
 function GoldenBoyModal() {
   const [mainModalOpen, setMainModalOpen] = useState(false);
   const [statisticsModalOpen, setStatisticsModalOpen] = useState(false);
-  const [selectedYear, setSelectedYear] = useState(null);
+  const [selectedYear, setSelectedYear] = useState<number | null>(null);
 
-  const openStatisticsModal = (year) => {
+  const openStatisticsModal = (year: number) => {
     setSelectedYear(year);
     setMainModalOpen(false);
     setStatisticsModalOpen(true);
@@ -24,7 +24,7 @@ function GoldenBoyModal() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       {/* Heading */}
-      <h1 className='text-5xl font-bold text-center mb-4'>Golden boy</h1>
+      <h1 className='text-3xl font-bold text-center mb-4'>Golden boy</h1>
 
       {/* Image */}
       <Image src={GoldenBoy} alt="GoldenBoy" className="w-32 h-48 mb-4" />
@@ -64,29 +64,37 @@ function GoldenBoyModal() {
         </div>
       )}
 
-      {/* Statistics Modal */}
-      {statisticsModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="bg-gray-800 p-8 rounded-lg text-white">
-            <h2 className="text-3xl font-bold mb-4">Statistics for {selectedYear}</h2>
-            <p className="text-xl">
-              Goals: <span className="text-white">{awardsData.find((award) => award.year === selectedYear).goals}</span>
-            </p>
-            <p className="text-xl">
-              Assists: <span className="text-white">{awardsData.find((award) => award.year === selectedYear).assists}</span>
-            </p>
-            <button
-              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
-              onClick={() => {
-                setStatisticsModalOpen(false);
-                setMainModalOpen(true);
-              }}
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
+{statisticsModalOpen && (
+  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div className="bg-gray-800 p-8 rounded-lg text-white">
+      <h2 className="text-3xl font-bold mb-4">Statistics for {selectedYear}</h2>
+      {awardsData.map((award) => {
+        if (award.year === selectedYear) {
+          return (
+            <div key={award.id}>
+              <p className="text-xl">
+                Goals: <span className="text-white">{award.goals}</span>
+              </p>
+              <p className="text-xl">
+                Assists: <span className="text-white">{award.assists}</span>
+              </p>
+            </div>
+          );
+        }
+        return null; // Return null if the year is not found
+      })}
+      <button
+        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
+        onClick={() => {
+          setStatisticsModalOpen(false);
+          setMainModalOpen(true);
+        }}
+      >
+        Close
+      </button>
+    </div>
+  </div>
+)}
     </div>
   );
 }
