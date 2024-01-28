@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 const awardsData = [
   { id: 1, title: 'Golden Boy', year: 2005, image: '/images/golden_boy_2005.jpg', goals: 9, assists: 5 },
-  // Add more Golden Boy awards as needed
 ];
 
 function GoldenBoyModal() {
