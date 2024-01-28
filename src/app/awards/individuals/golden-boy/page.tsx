@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 const awardsData = [
   { id: 1, title: 'Golden Boy', year: 2005, image: '/images/golden_boy_2005.jpg', goals: 9, assists: 5 },
-  // Add more Golden Boy awards as needed
 ];
 
 function GoldenBoyModal() {
@@ -22,12 +21,12 @@ function GoldenBoyModal() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <div className="flex flex-col items-center justify-center w-full h-80 bg-gradient-to-b from-gray-200 to-gray-800 text-white">
       {/* Heading */}
       <h1 className='text-3xl font-bold text-center mb-4'>Golden boy</h1>
 
       {/* Image */}
-      <Image src={GoldenBoy} alt="GoldenBoy" className="w-32 h-48 mb-4" />
+      <Image src={GoldenBoy} alt="GoldenBoy" className="w-32 h-22 mb-4" />
 
       {/* Button to Open Main Modal */}
       <button
