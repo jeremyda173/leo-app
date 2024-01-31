@@ -3,9 +3,9 @@
 import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 import 'tailwindcss/tailwind.css';
-import BImage from '@/../../public/LogoB.png';
-import PImage from '@/../../public/LogoP.png';
-import MImage from '@/../../public/LogoM.png';
+import BImage from '@/../../public/Shield/LogoB.png';
+import PImage from '@/../../public/Shield/LogoP.png';
+import MImage from '@/../../public/Shield/LogoM.png';
 // import Portada from '@/../../public/Portada.jpg';
 
 function Page() {

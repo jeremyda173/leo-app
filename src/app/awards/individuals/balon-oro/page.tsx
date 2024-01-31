@@ -41,8 +41,35 @@ function BallonDOrModal() {
         Open BallonDor's
       </button>
 
-      {/* Main Modal */}
-      {statisticsModalOpen && (
+       {/* Main Modal */}
+       {mainModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="bg-white p-8 rounded-lg">
+            <h2 className="text-3xl font-bold mb-4 text-black">Years Won</h2>
+            <div className="flex flex-wrap justify-center">
+              {awardsData
+                .filter((award) => award.title === 'FIFA Ballon d\'Or')
+                .map((award) => (
+                  <div
+                    key={award.id}
+                    className="m-4 p-4 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-lg shadow-xl text-center cursor-pointer"
+                    onClick={() => openStatisticsModal(award.year)}
+                  >
+                    <p className="text-lg font-bold text-black">{award.year}</p>
+                  </div>
+                ))}
+            </div>
+            <button
+              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
+              onClick={() => setMainModalOpen(false)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
+{statisticsModalOpen && (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
     <div className="bg-gray-800 p-8 rounded-lg text-white">
       <h2 className="text-3xl font-bold mb-4">Statistics for {selectedYear}</h2>
