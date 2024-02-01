@@ -6,6 +6,9 @@ import 'tailwindcss/tailwind.css';
 import BImage from '@/../../public/Shield/LogoB.png';
 import PImage from '@/../../public/Shield/LogoP.png';
 import MImage from '@/../../public/Shield/LogoM.png';
+import Barcelona from "@/app/teams/barcelona/page";
+import PSG from "@/app/teams/psg/page";
+import Miami from "@/app/teams/inter-miami/page";
 // import Portada from '@/../../public/Portada.jpg';
 
 function Page() {
@@ -33,6 +36,7 @@ function Page() {
         <div className="bg-gray-700 p-8 rounded-lg shadow-lg w-full max-w-screen-lg">
           <div className="grid grid-cols-3 gap-8 md:gap-16">
             {/* Barcelona */}
+            <a href="teams/barcelona/page">
             <div className={`relative group overflow-hidden mb-8 bg-gradient-to-b from-blue-500 to-red-500 rounded-md transition duration-300 ease-in-out transform hover:scale-105 ${pageLoaded ? 'opacity-100' : 'opacity-0'}`}>
               <div className="flex flex-col items-center">
                 <Image
@@ -41,10 +45,11 @@ function Page() {
                   className="w-auto h-48 object-cover rounded-md"
                 />
                 <p className="font-bold mt-4 text-lg text-center text-white">
-                  Barcelona
+                   Barcelona
                 </p>
               </div>
             </div>
+            </a>
 
             {/* Paris Saint-Germain */}
             <div className={`relative group overflow-hidden mb-8 bg-gradient-to-b from-blue-900 via-white to-red-500 rounded-md transition duration-300 ease-in-out transform hover:scale-105 ${pageLoaded ? 'opacity-100' : 'opacity-0'}`}>
