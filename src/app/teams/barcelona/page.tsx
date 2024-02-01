@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import react from 'react';
 
 function Barcelona() {
