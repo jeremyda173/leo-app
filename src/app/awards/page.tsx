@@ -4,13 +4,13 @@ import Individuals from '@/app/awards/individuals/page';
 import Teams from '@/app/awards/teams/page';
 
 const Awards = () => {
-  const [selectedOption, setSelectedOption] = useState('individuals');
+  const [selectedOption, setSelectedOption] = useState('');
 
   const handleOptionChange = (option: React.SetStateAction<string>) => {
     setSelectedOption(option);
   };
 
-  const renderButton = (option: React.SetStateAction<string>, label: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined) => (
+  const renderButton = (option: React.SetStateAction<string>, label: string | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.PromiseLikeOfReactNode | null | undefined) => (
     <button
       className={`${
         selectedOption === option
