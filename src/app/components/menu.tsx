@@ -42,7 +42,7 @@ function Menu(){
             Awards
           </a>
           <a
-            href="/teams"
+            href="/groups"
             className={`mr-4 hover:text-gray-300 ${activeOption === 'teams' ? 'border-b-2 border-white' : ''}`}
             onMouseEnter={() => setActiveOption('teams')}
             onMouseLeave={() => setActiveOption(String)}
