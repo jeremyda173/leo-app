@@ -4,21 +4,9 @@ import Image from 'next/image';
 import BarcelonaImage from "@/../../public/Shield/LogoB.png";
 
 function Barcelona() {
-  const [showAdditionalInfo, setShowAdditionalInfo] = useState(false);
-
-  const toggleAdditionalInfo = () => {
-    setShowAdditionalInfo(!showAdditionalInfo);
-  };
-
   return (
     <div>
       <h1>Barcelona FC</h1>
-      
-      <button onClick={toggleAdditionalInfo}>
-        {showAdditionalInfo ? "Ocultar información" : "Mostrar información"}
-      </button>
-
-      {showAdditionalInfo && (
         <div>
           {/* Información adicional sobre el FC Barcelona */}
           <p>
@@ -28,11 +16,10 @@ function Barcelona() {
           </p>
 
           {/* Muestra la imagen del escudo del Barcelona */}
-          <div style={{ width: '100px', height: '100px' }}>
+          {/* <div style={{ width: '100px', height: '100px' }}>
             <Image src={BarcelonaImage} alt="Escudo del Barcelona" />
-          </div>
+          </div> */}
         </div>
-      )}
     </div>
   );
 }
