@@ -11,7 +11,7 @@ import Miami from "../inter-miami/page";
 
 interface Club {
   name: string;
-  image: any; // O puedes definir el tipo correcto aquí (por ejemplo: StaticImageData)
+  image: any;
   component: React.ReactNode;
 }
 
