@@ -105,26 +105,11 @@ const MessiStats: React.FC = () => {
         <Image src={CopaImage} alt="Copa del Rey" className="mb-2" />
         <p className="text-md">Copa del Rey Titles: Y (Número de títulos)</p>
       </div> */}
-      {/* Puedes reemplazar X e Y con los números reales de títulos ganados en La Liga y Copa del Rey */}
     </div>
   );
 };
 
 export default MessiStats;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
