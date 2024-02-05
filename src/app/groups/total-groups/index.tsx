@@ -16,7 +16,7 @@ interface Club {
 }
 
 const ClubInfo: React.FC<Club> = ({ name, image, component }) => (
-  <div className="bg-white p-8 rounded-lg shadow-lg">
+  <div className="bg-white p-8 rounded-lg shadow-lg border-2 border-blue-500">
     <div className="flex items-center justify-center mb-4">
       <Image src={image} alt={name} width={80} height={80} />
     </div>
@@ -36,8 +36,10 @@ function Groups() {
   ];
 
   const handleClubClick = (club: string) => {
+    console.log('Club clicked:', club);
     setSelectedClub((prevClub) => (prevClub === club ? null : club));
   };
+  
 
   return (
     <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-white min-h-screen p-4">
@@ -80,7 +82,7 @@ function Groups() {
         <p className="text-lg font-semibold">
           "Cuando tienes sueños, nada es imposible."
         </p>
-        <p className="text-sm">- Lionel Messi</p>
+        <p className="text-sm">Lionel Messi</p>
       </div>
 
       <div className="mt-8">
