@@ -12,7 +12,6 @@ const awardsData = [
   { id: 4, title: 'FIFA Ballon d\'Or', year: 2012, image: '/images/ballon_dor_2012.jpg', goals: 79, assists: 29 },
   { id: 5, title: 'FIFA Ballon d\'Or', year: 2015, image: '/images/ballon_dor_2015.jpg', goals: 52, assists: 26 },
   { id: 6, title: 'FIFA Ballon d\'Or', year: 2019, image: '/images/ballon_dor_2019.jpg', goals: 51, assists: 22 },
-  // Agrega más premios Balón de Oro según sea necesario
 ];
 
 function BallonDOrModal() {
