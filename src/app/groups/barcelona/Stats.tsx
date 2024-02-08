@@ -1,10 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import 'tailwindcss/tailwind.css';
-import ChampionsImage from '@/../../public/Awards/Champions.png'; // Ruta de la imagen de Champions League
-import LigaImage from '@/../../public/Awards/supercopa.png'; // Ruta de la imagen de La Liga
-// import CopaImage from '@/../../public/Awards/Champions.png'; // Ruta de la imagen de la Copa del Rey
-import Image from 'next/image';
+import BarcelonaTitles from '@/app/groups/barcelona/titles';
 
 interface Stats {
   goals: number;
@@ -69,7 +66,7 @@ const MessiStats: React.FC = () => {
   const assistsAverage: string = currentAssistsPerMatch.toFixed(2);
 
   return (
-    <div className="container mx-auto p-4 max-w-md">
+    <><div className="container mx-auto p-4 max-w-md">
       <div className="bg-blue-700 text-white rounded-md p-2 text-center">
         <h1 className="text-lg font-bold">Messi Stats</h1>
       </div>
@@ -93,19 +90,14 @@ const MessiStats: React.FC = () => {
       >
         <p className="text-md">Matches played: {stats.matches}</p>
       </div>
-      <div className="mt-4">
-        <Image src={ChampionsImage} alt="Champions League" className="mb-2" />
-        <p className="text-md">Champions League Titles: 4</p>
-      </div>
-      <div className="mt-4">
-        <Image src={LigaImage} alt="La Liga" className="mb-2" />
-        <p className="text-md">La Liga Titles: X (Número de títulos)</p>
-      </div>
-      {/* <div className="mt-4">
-        <Image src={CopaImage} alt="Copa del Rey" className="mb-2" />
-        <p className="text-md">Copa del Rey Titles: Y (Número de títulos)</p>
-      </div> */}
+
     </div>
+    <div className="flex space-x-4">
+      <BarcelonaTitles />
+    </div>
+
+      </>
+    
   );
 };
 
