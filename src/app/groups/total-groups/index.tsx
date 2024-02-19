@@ -14,6 +14,7 @@ interface Club {
   name: string;
   image: any;
   component: React.ReactNode;
+  backgroundColor: string;
 }
 
 const ClubInfo: React.FC<Club> = ({ name, image, component }) => (
@@ -31,10 +32,11 @@ function Groups() {
   const [selectedClub, setSelectedClub] = useState<string | null>(null);
 
   const clubs: Club[] = [
-    { name: 'Barcelona', image: BImage, component: <Barcelona /> },
-    { name: 'PSG', image: PImage, component: <Paris /> },
-    { name: 'Inter', image: MImage, component: <Miami /> },
+    { name: 'Barcelona', image: BImage, component: <Barcelona />, backgroundColor: 'from-blue-500 to-red-500' },
+    { name: 'PSG', image: PImage, component: <Paris />, backgroundColor: 'from-blue-900 to-gray-400 to-red-500' },
+    { name: 'Inter', image: MImage, component: <Miami />, backgroundColor: 'from-black to-pink-500' },
   ];
+  
 
   const handleClubClick = (club: string) => {
     console.log('Club clicked:', club);
@@ -56,13 +58,14 @@ function Groups() {
         <div className="bg-gray-700 p-8 rounded-lg shadow-lg w-full max-w-screen-lg">
           <div className="grid grid-cols-3 gap-8 md:gap-16">
             {clubs.map((club) => (
-              <div
+              
+            <div
                 key={club.name}
                 onClick={() => handleClubClick(club.name)}
-                className={`relative group overflow-hidden mb-8 bg-gradient-to-b from-blue-500 to-red-500 rounded-md transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer ${
-                  pageLoaded ? 'opacity-100' : 'opacity-0'
+                className={`relative group overflow-hidden mb-8 bg-gradient-to-b ${club.backgroundColor} rounded-md transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer ${
+                pageLoaded ? 'opacity-100' : 'opacity-0'
                 } ${selectedClub === club.name ? 'ring ring-white' : ''}`}
-              >
+                >
                 <div className="flex flex-col items-center">
                   <Image
                     src={club.image}
