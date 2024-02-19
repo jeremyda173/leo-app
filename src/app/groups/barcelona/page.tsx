@@ -5,7 +5,7 @@ import BarcelonaImage from "@/../../public/Shield/LogoB.png";
 import MessiStats from "./Stats";
 
 function Barcelona() {
-  // const videoUrl = "https://www.youtube.com/embed/FqFyAydG2cc";
+  const videoUrl = "https://www.youtube.com/embed/FqFyAydG2cc";
 
   {/* Datos de Messi en el Barcelona*/}
   const partidos = 1066;
@@ -28,17 +28,20 @@ function Barcelona() {
           <Image src={BarcelonaImage} alt="Escudo del Barcelona" />
         </div> */}
 
+        <div style={{ marginBottom: '20px'}}></div>
+
         {/* Reproductor de video */}
-        {/* <div>
-          <iframe
-            width="560"
-            height="315"
-            src={videoUrl}
-            title="Video del Barcelona"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-        </div> */}
+        <div style={{ position: 'relative', marginLeft: '25%', zIndex: 1}} onClick={() => window.location.href = videoUrl}>
+  <iframe
+    width="560"
+    height="315"
+    src={videoUrl}
+    title="Video del Barcelona"
+    frameBorder="0"
+    allowFullScreen
+  ></iframe>
+</div>
+
       </div>
     </div>
   );
