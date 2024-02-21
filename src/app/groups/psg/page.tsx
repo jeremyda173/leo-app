@@ -5,7 +5,7 @@ import Image from 'next/image';
 import MessiStats from "./stats";
 
 function PSG() {
-  // const videoUrl = "https://www.youtube.com/embed/FqFyAydG2cc";
+  const videoUrl = "https://www.youtube.com/embed/2pLbqpwpwXc?si=77mYWI0a-VEZ98On";
 
   return (
     <div>
@@ -25,18 +25,19 @@ function PSG() {
         {/* <div style={{ width: '100px', height: '100px' }}>
           <Image src={BarcelonaImage} alt="Escudo del Barcelona" />
         </div> */}
+        <div style={{ marginBottom: '20px'}}></div>
 
-        {/* Reproductor de video */}
-        {/* <div>
-          <iframe
-            width="560"
-            height="315"
-            src={videoUrl}
-            title="Video del Barcelona"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-        </div> */}
+{/* Reproductor de video */}
+  <div style={{ position: 'relative', marginLeft: '25%', zIndex: 1}} onClick={() => window.location.href = videoUrl}>
+    <iframe
+      width="560"
+      height="315"
+      src={videoUrl}
+      title="Video del Barcelona"
+      frameBorder="0"
+      allowFullScreen
+    ></iframe>
+  </div>
       </div>
     </div>
   );
