@@ -1,14 +1,12 @@
 'use client';
 import React from "react";
-import Image from 'next/image';
-import BarcelonaImage from "@/../../public/Shield/LogoB.png";
 import MessiStats from "./Stats";
 
 function Barcelona() {
   const videoUrl = "https://www.youtube.com/embed/FqFyAydG2cc";
 
   {/* Datos de Messi en el Barcelona*/}
-  const partidos = 1066;
+  // const partidos = 1066;
 
   return (
     <div>
