@@ -6,7 +6,7 @@ import GoldenBoy from '@/../../public/Awards/GoldenBoy.png';  // Assuming you ha
 import Image from 'next/image';
 
 const awardsData = [
-  { id: 1, title: 'Golden Boy', year: 2005, image: '/images/golden_boy_2005.jpg', goals: 9, assists: 5 },
+  { id: 1, title: 'Golden Boy', year: 2005, image: '/images/golden_boy_2005.jpg', goals: 16, assists: 5 },
 ];
 
 function GoldenBoyModal() {
