@@ -6,10 +6,8 @@ import MessiLureus from '@/../../public/Awards/Laureus.jpeg'; // Assuming you ha
 import Image from 'next/image';
 
 const lureusData = [
-  { id: 1, title: 'Lureus', year: 2010, image: '/images/lureus_2010.jpg' },
-  { id: 2, title: 'Lureus', year: 2012, image: '/images/lureus_2012.jpg' },
-  { id: 3, title: 'Lureus', year: 2015, image: '/images/lureus_2015.jpg' },
-  { id: 4, title: 'Lureus', year: 2019, image: '/images/lureus_2019.jpg' },
+  { id: 1, title: 'Lureus', year: 2019, image: '/images/lureus_2010.jpg' },
+  { id: 2, title: 'Lureus', year: 2023, image: '/images/lureus_2012.jpg' },
   // Add more Lureus awards as needed
 ];
 
@@ -27,7 +25,7 @@ function LureusModal() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-80 bg-gradient-to-b from-gray-200 to-gray-800 text-white">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-center mb-4">Messi's Lureus</h1>
+      <h1 className="text-3xl font-bold text-center mb-4">Lureus</h1>
 
       {/* Image */}
       <Image src={MessiLureus} alt="MessiLureus" className="h-32 w-28 mb-4" />
