@@ -6,8 +6,10 @@ import TheBest from '@/../../public/Awards/TheBest.png';  // Assuming you have a
 import Image from 'next/image';
 
 const awardsData = [
-  { id: 1, title: 'FIFA The Best', year: 2019, image: '/images/the_best_2019.jpg', goals: 10, assists: 5 },
-  { id: 2, title: 'FIFA The Best', year: 2022, image: '/images/the_best_2019.jpg', goals: 15, assists: 8 },
+  { id: 1, title: 'FIFA The Best', year: 2009, image: '/images/the_best_2019.jpg' },
+  { id: 2, title: 'FIFA The Best', year: 2022, image: '/images/the_best_2019.jpg' },
+  { id: 3, title: 'FIFA The Best', year: 2022, image: '/images/the_best_2019.jpg' },
+  { id: 4, title: 'FIFA The Best', year: 2023, image: '/images/the_best_2019.jpg' },
   // Add more FIFA The Best awards as needed
 ];
 
@@ -49,7 +51,7 @@ function TheBestModal() {
                 .map((award) => (
                   <div
                     key={award.id}
-                    className="m-4 p-4 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-lg shadow-xl text-center cursor-pointer"
+                    className="m-4 p-4 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-lg shadow-xl text-center"
                     onClick={() => openStatisticsModal(award.year)}
                   >
                     <p className="text-lg font-bold text-black">{award.year}</p>
@@ -65,38 +67,6 @@ function TheBestModal() {
           </div>
         </div>
       )}
-
-{statisticsModalOpen && (
-  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-    <div className="bg-gray-800 p-8 rounded-lg text-white">
-      <h2 className="text-3xl font-bold mb-4">Statistics for {selectedYear}</h2>
-      {awardsData.map((award) => {
-        if (award.year === selectedYear) {
-          return (
-            <div key={award.id}>
-              <p className="text-xl">
-                Goals: <span className="text-white">{award.goals}</span>
-              </p>
-              <p className="text-xl">
-                Assists: <span className="text-white">{award.assists}</span>
-              </p>
-            </div>
-          );
-        }
-        return null; // Return null if the year is not found
-      })}
-      <button
-        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
-        onClick={() => {
-          setStatisticsModalOpen(false);
-          setMainModalOpen(true);
-        }}
-      >
-        Close
-      </button>
-    </div>
-  </div>
-)}
     </div>
   );
 }
