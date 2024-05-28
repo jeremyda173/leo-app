@@ -5,6 +5,7 @@ import Botaoro from '@/app/awards/individuals/bota-oro/page';
 import GoldenBoy from '@/app/awards/individuals/golden-boy/page';
 import TheBest from '@/app/awards/individuals/the-best/page';
 import TitleLaureus from '@/app/awards/individuals/premio-laureus/page';
+import TitlePichichi from '@/app/awards/individuals/trofeo-pichichi/page';
 
 function PresentationIn() {
   return (
@@ -62,6 +63,17 @@ function PresentationIn() {
           </p>
         </div>
       </div>
+      {/* Pichichi */}
+      <div className="max-w-xs mx-2 mb-4 bg-white rounded-md overflow-hidden shadow-md">
+        <TitlePichichi year={''} />
+        <div className="p-4">
+          <h2 className="text-lg font-bold mb-2">Trofeo Pichichi</h2>
+          <p className="text-gray-700 text-sm text-justify">
+            El Trofeo Pichichi es un galardón otorgado anualmente por el diario deportivo español Marca al máximo goleador de la Primera División de España. Nombrado en honor al legendario delantero del Athletic Club, Rafael "Pichichi" Moreno, este premio reconoce la destreza y el talento de los goleadores más destacados de La Liga.
+          </p>
+        </div>
+      </div>
+
 
     </div>
   );
