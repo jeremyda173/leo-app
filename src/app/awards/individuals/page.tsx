@@ -4,6 +4,7 @@ import BallonDOr from '@/app/awards/individuals/balon-oro/page';
 import Botaoro from '@/app/awards/individuals/bota-oro/page';
 import GoldenBoy from '@/app/awards/individuals/golden-boy/page';
 import TheBest from '@/app/awards/individuals/the-best/page';
+import TitleLaureus from '@/app/awards/individuals/premio-laureus/page';
 
 function PresentationIn() {
   return (
@@ -21,7 +22,7 @@ function PresentationIn() {
 
       {/* Bota de Oro */}
       <div className="max-w-xs mx-2 mb-4 bg-white rounded-md overflow-hidden shadow-md">
-        <Botaoro />
+        <Botaoro year={''} />
         <div className="p-4">
           <h2 className="text-lg font-semibold mb-2">Bota de Oro</h2>
           <p className="text-gray-700 text-sm text-justify">
@@ -51,6 +52,17 @@ function PresentationIn() {
           </p>
         </div>
       </div>
+      {/* Laureus */}
+      <div className="max-w-xs mx-2 mb-4 bg-white rounded-md overflow-hidden shadow-md">
+        <TitleLaureus />
+        <div className="p-4">
+          <h2 className="text-lg font-bold mb-2">Laureus</h2>
+          <p className="text-gray-700 text-sm text-justify">
+            Los Premios Laureus World Sports, también conocidos como los "Oscar del deporte", son una serie de galardones anuales que honran a los deportistas más destacados del mundo. Fundados en 1999 por la Laureus Sport for Good Foundation, estos premios reconocen logros deportivos excepcionales en varias categorías.
+          </p>
+        </div>
+      </div>
+
     </div>
   );
 }
