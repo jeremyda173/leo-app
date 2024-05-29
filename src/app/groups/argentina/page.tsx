@@ -1,44 +1,34 @@
 'use client';
 import React from "react";
-import MessiStats from "./Stats";
+import MessiStats from "./Stats"; // Suponiendo que tienes un componente MessiStats que muestra las estadísticas de Messi
 
 function Argentina() {
-  const videoUrl = "https://www.youtube.com/embed/FqFyAydG2cc";
-
-  {/* Datos de Messi en el Barcelona*/}
-  // const partidos = 1066;
+  const videoUrl = "https://www.youtube.com/embed/FYDRAuMQ6iQ?si=2wRlIeB0HnkiZeEz";
 
   return (
     <div>
-      <h1>Barcelona FC</h1>
+      <h1>Selección Argentina</h1>
       <div>
-        {/* Información adicional sobre el FC Barcelona */}
+        {/* Información adicional sobre la selección argentina */}
         <p>
-          El FC Barcelona es un club de fútbol profesional con sede en
-          Barcelona, Cataluña, España. Fundado en 1899, el Barcelona es uno de los
-          clubes más exitosos y populares del mundo.
+          La selección argentina de fútbol es el equipo representativo del país en las competiciones internacionales de fútbol.
         </p><br></br>
 
         <MessiStats />
 
-        {/* Muestra la imagen del escudo del Barcelona */}
-        {/* <div style={{ width: '100px', height: '100px' }}>
-          <Image src={BarcelonaImage} alt="Escudo del Barcelona" />
-        </div> */}
-
         <div style={{ marginBottom: '20px'}}></div>
 
         {/* Reproductor de video */}
-        <div style={{ position: 'relative', marginLeft: '25%', zIndex: 1}} onClick={() => window.location.href = videoUrl}>
-  <iframe
-    width="560"
-    height="315"
-    src={videoUrl}
-    title="Video del Barcelona"
-    frameBorder="0"
-    allowFullScreen
-  ></iframe>
-</div>
+        <div style={{ position: 'relative', marginLeft: '20%', zIndex: 1}} onClick={() => window.location.href = videoUrl}>
+          <iframe
+            width="560"
+            height="315"
+            src={videoUrl}
+            title="Video de la Selección Argentina"
+            frameBorder="0"
+            allowFullScreen
+          ></iframe>
+        </div>
 
       </div>
     </div>
