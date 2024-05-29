@@ -2,7 +2,7 @@
 'use client';
 import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
-import GoldenBoy from '@/../../public/Awards/GoldenBoy.png';  // Assuming you have an image for Golden Boy
+import GoldenBoy from '@/../../public/Awards/goldenBoy.png';
 import Image from 'next/image';
 
 const awardsData = [
