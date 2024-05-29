@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import 'tailwindcss/tailwind.css';
-import BarcelonaTitles from '@/app/groups/barcelona/titles';
+import ArgentinaTitles from '../argentina/titles';
 
 interface Stats {
   goals: number;
@@ -12,9 +12,9 @@ interface Stats {
 const MessiStats: React.FC = () => {
   const [currentGoals, setCurrentGoals] = useState<number>(0);
   const [currentAssists, setCurrentAssists] = useState<number>(0);
-  const totalGoals: number = 672;
-  const totalAssists: number = 269;
-  const totalMatches: number = 778;
+  const totalGoals: number = 106;
+  const totalAssists: number = 54;
+  const totalMatches: number = 180;
   const [currentAssistsPerMatch, setCurrentAssistsPerMatch] = useState<number>(0);
 
   useEffect(() => {
@@ -93,7 +93,7 @@ const MessiStats: React.FC = () => {
 
     </div>
     <div className="flex space-x-4">
-      <BarcelonaTitles />
+      <ArgentinaTitles />
     </div>
 
       </>
