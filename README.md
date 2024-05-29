@@ -4,6 +4,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Welcome to our web application dedicated to the legendary football player, Lionel Messi!
 
+<div>
+    <img src="./public/Portada.jpg">
+</div>
+
 ## Description
 
 This application is an interactive tribute to Lionel Messi, offering an immersive experience for football fans from all over the world. From his humble beginnings in Rosario, Argentina, to his rise to fame at FC Barcelona and his ongoing excellence at Paris Saint-Germain (PSG), our platform provides detailed information about his journey, achievements, and highlights.

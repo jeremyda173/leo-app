@@ -9,6 +9,10 @@ import MImage from '@/../../public/Shield/LogoM.png';
 import Barcelona from "../barcelona/page";
 import Paris from "../psg/page";
 import Miami from "../inter-miami/page";
+import Argentina from "../argentina/page";
+import ArImage from "@/../../public/Argentina_national_football_team_logo.svg.png"
+
+
 
 interface Club {
   name: string;
@@ -31,10 +35,13 @@ function Groups() {
   const [pageLoaded] = useState(true);
   const [selectedClub, setSelectedClub] = useState<string | null>(null);
 
-  const clubs: Club[] = [
+  const clubs: Club[] = [ 
     { name: 'Barcelona', image: BImage, component: <Barcelona />, backgroundColor: 'from-blue-500 to-red-500' },
     { name: 'PSG', image: PImage, component: <Paris />, backgroundColor: 'from-blue-900 to-gray-400 to-red-500' },
     { name: 'Inter', image: MImage, component: <Miami />, backgroundColor: 'from-black to-pink-500' },
+    { name: '', image: '', component: <Miami />, backgroundColor: 'from-black' },
+    { name: 'Argentina', image: ArImage, component: <Argentina />, backgroundColor: 'from-white to-blue-500 text-black' },
+    { name: '', image: '', component: <Miami />, backgroundColor: 'from-black' },
   ];
   
 
