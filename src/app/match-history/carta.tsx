@@ -4,18 +4,18 @@ import Image from 'next/image';
 import 'tailwindcss/tailwind.css';
 import Modal from 'react-modal';
 
-import Shield1 from '../../../public/Shield/El-salvador.png';
-import Shield2 from '../../../public/Shield/LogoM.png';
+import Shield1 from '../../../public/Shield/Alemania.png';
+import Shield2 from '../../../public/Shield/bandera-argentina-re.png';
 
 function GameA() {
   const [modalOpen, setModalOpen] = useState(false);
   const [messiStats, setMessiStats] = useState({
-    minutesPlayed: 45,
-    shots: 5,
-    goals: 1,
+    minutesPlayed: 78,
+    shots: 8,
+    goals: 4,
     assists: 2,
-    distanceCovered: '10 km',
-    completedPasses: 40,
+    distanceCovered: '11 km',
+    completedPasses: 68,
   });
 
   const openModal = () => {
@@ -27,7 +27,7 @@ function GameA() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-800 via-blue-700 to-purple-800 text-white min-h-screen flex items-center ml-20">
+    <div className="bg-gradient-to-r from-blue-800 via-blue-700 to-purple-800 text-white min-h-screen flex items-center">
       <div className="container mx-auto px-4 sm:px-96 relative">
         <div className="bg-gray-800 text-white p-4 rounded-md shadow-2xl w-80 mx-auto border border-gray-600 transform hover:scale-105 transition-transform">
           <h1 className="text-3xl font-extrabold mb-4 text-center bg-purple-600 p-2 rounded">Match History</h1>
@@ -40,22 +40,22 @@ function GameA() {
               <div className="text-center">
                 <div className="flex items-center justify-center space-x-2">
                   <Image src={Shield1} alt="Uruguay Flag" width={50} height={50} />
-                  <h2 className="text-lg font-bold mb-2 mt-2 text-purple-300">El Salvador</h2>
+                  <h2 className="text-lg font-bold mb-2 mt-2 text-purple-300">Alemania</h2>
                 </div>
                 <div className="flex items-center justify-center space-x-2 mt-2 ml-36">
                   <div className="bg-purple-600 p-4 rounded-md w-max text-white">
-                    <p className="text-xl font-bold mb-2">0</p>
+                    <p className="text-xl font-bold mb-2">1</p>
                   </div>
                   <span className="text-xl font-bold text-purple-300">-</span>
                   <div className="bg-purple-600 p-4 rounded-md w-max text-white">
-                    <p className="text-xl font-bold mb-2">0</p>
+                    <p className="text-xl font-bold mb-2">6</p>
                   </div>
                 </div>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center space-x-2">
                   <Image src={Shield2} alt="Argentina Flag" width={50} height={50} />
-                  <h2 className="text-lg font-bold mb-2 mt-2 text-purple-300">Inter Miami</h2>
+                  <h2 className="text-lg font-bold mb-2 mt-2 text-purple-300">Argentina</h2>
                 </div>
               </div>
             </div>
