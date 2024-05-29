@@ -2,13 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import 'tailwindcss/tailwind.css';
 
-import AlNassr from '../../../public/Shield/Al-Nassr.png';
-import InterMiami from '../../../public/Shield/LogoM.png';
+import AlNassr from '../../../public/Shield/Uruguay.jpg';
+import InterMiami from '../../../public/Shield/bandera-argentina-re.png';
 
 
 function NextGameB() {
   return (
-    <div className="bg-gradient-to-r from-blue-800 via-blue-700 to-purple-800 text-white min-h-screen flex items-center ml-12">
+    <div className="bg-gradient-to-r from-blue-800 via-blue-700 to-purple-800 text-white min-h-screen flex items-center">
       <div className="container mx-auto px-4 sm:px-96 relative">
         <div className="bg-gray-800 text-whit p-4 rounded-md shadow-2xl w-96 mx-auto border border-gray-600 transform hover:scale-105 transition-transform">
           <h1 className="text-3xl font-extrabold mb-4 text-center bg-purple-600 p-2 rounded">Match History</h1>
@@ -20,12 +20,12 @@ function NextGameB() {
             <div className="flex items-center justify-center flex-col space-y-2 mt-4">
               <div className="flex items-center space-x-2">
                 <Image src={AlNassr} alt="Brazil Flag" width={50} height={50} />
-                <h2 className="text-lg font-bold mb-2 mt-2 text-purple-300">Al-Nassr</h2>
+                <h2 className="text-lg font-bold mb-2 mt-2 text-purple-300">Uruguay</h2>
               </div>
               <span className="text-xl font-bold text-purple-300 pl-12">VS</span>
               <div className="flex items-center space-x-2">
                 <Image src={InterMiami} alt="Argentina Flag" width={50} height={50} />
-                <h2 className="text-lg font-bold mb-2 mt-2 text-purple-300">Inter-Miami</h2>
+                <h2 className="text-lg font-bold mb-2 mt-2 text-purple-300">Argentina</h2>
               </div>
             </div>
           </div>

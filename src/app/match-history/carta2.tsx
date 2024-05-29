@@ -5,17 +5,17 @@ import 'tailwindcss/tailwind.css';
 import Modal from 'react-modal';
 
 import Shield1 from '../../../public/Shield/LogoM.png';
-import Shield2 from '../../../public/Shield/fc-dallas.png';
+import Shield2 from '../../../public/Shield/Al-Nassr.png';
 
 function GameB() {
    const [modalOpen, setModalOpen] = useState(false);
    const [messiStats, setMessiStats] = useState({
-      minutesPlayed: 45,
-      shots: 5,
-      goals: 1,
-      assists: 2,
+      minutesPlayed: 15,
+      shots: 3,
+      goals: 0,
+      assists: 0,
       distanceCovered: '10 km',
-      completedPasses: 40,
+      completedPasses: 84,
    });
 
    const openModal = () => {
@@ -27,7 +27,7 @@ function GameB() {
    };
 
    return (
-      <div className="bg-gradient-to-r from-blue-800 via-blue-700 to-purple-800 text-white min-h-screen flex items-center ml-20">
+      <div className="bg-gradient-to-r from-blue-800 via-blue-700 to-purple-800 text-white min-h-screen flex items-center">
          <div className="container mx-auto px-4 sm:px-96 relative">
             <div className="bg-gray-800 text-white p-4 rounded-md shadow-2xl w-80 mx-auto border border-gray-600 transform hover:scale-105 transition-transform">
                <h1 className="text-3xl font-extrabold mb-4 text-center bg-purple-600 p-2 rounded">Match History</h1>
@@ -55,7 +55,7 @@ function GameB() {
                      <div className="text-center">
                         <div className="flex items-center justify-center space-x-2">
                            <Image src={Shield2} alt="Argentina Flag" width={50} height={50} />
-                           <h2 className="text-lg font-bold mb-2 mt-2 text-purple-300">Dallas FC</h2>
+                           <h2 className="text-lg font-bold mb-2 mt-2 text-purple-300">Al-Nassr</h2>
                         </div>
                      </div>
                   </div>

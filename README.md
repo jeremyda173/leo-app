@@ -1,5 +1,26 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Messi Web Application
+
+Welcome to our web application dedicated to the legendary football player, Lionel Messi!
+
+## Description
+
+This application is an interactive tribute to Lionel Messi, offering an immersive experience for football fans from all over the world. From his humble beginnings in Rosario, Argentina, to his rise to fame at FC Barcelona and his ongoing excellence at Paris Saint-Germain (PSG), our platform provides detailed information about his journey, achievements, and highlights.
+
+## Features
+
+- **Comprehensive Information:** Explore a wide range of data about Messi's personal life, professional career, and sporting achievements.
+- **Multimedia Content:** Enjoy exclusive photos and videos capturing the most exciting moments of his career.
+- **Recent News:** Stay up-to-date with the latest news and updates about Messi and his team.
+- **Social Interaction:** Connect with other fans by sharing your thoughts, comments, and favorite moments.
+
+## Goal
+
+Our goal is to provide a space where Messi fans can immerse themselves in his world, learn more about his impact on football, and celebrate his unparalleled achievements.
+
+Join us on this exciting journey as we celebrate the greatness of Lionel Messi!
+
 ## Getting Started
 
 First, run the development server:
@@ -12,7 +33,7 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
