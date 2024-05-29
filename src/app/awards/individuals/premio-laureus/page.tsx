@@ -2,19 +2,16 @@
 'use client';
 import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
-import TheBest from '@/../../public/Awards/theBest.png';  // Assuming you have an image for The Best
+import MessiLureus from '@/../../public/Awards/Laureus.jpeg'; // Assuming you have an image for Messi's Lureus
 import Image from 'next/image';
 
-const awardsData = [
-  { id: 1, title: 'FIFA The Best', year: 2009, image: '/images/the_best_2019.jpg' },
-  { id: 2, title: 'FIFA The Best', year: 2022, image: '/images/the_best_2019.jpg' },
-  { id: 3, title: 'FIFA The Best', year: 2022, image: '/images/the_best_2019.jpg' },
-  { id: 4, title: 'FIFA The Best', year: 2023, image: '/images/the_best_2019.jpg' },
-  // Add more FIFA The Best awards as needed
+const lureusData = [
+  { id: 1, title: 'Lureus', year: 2019, image: '/images/lureus_2010.jpg' },
+  { id: 2, title: 'Lureus', year: 2023, image: '/images/lureus_2012.jpg' },
+  // Add more Lureus awards as needed
 ];
 
-
-function TheBestModal() {
+function LureusModal() {
   const [mainModalOpen, setMainModalOpen] = useState(false);
   const [statisticsModalOpen, setStatisticsModalOpen] = useState(false);
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
@@ -28,16 +25,17 @@ function TheBestModal() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-80 bg-gradient-to-b from-gray-200 to-gray-800 text-white">
       {/* Heading */}
-      <h1 className=' text-3xl font-bold text-center mb-4'>FIFA The Best</h1>
+      <h1 className="text-3xl font-bold text-center mb-4">Lureus</h1>
 
       {/* Image */}
-      <Image src={TheBest} alt="TheBest" className="h-32 w-28 mb-4" />
+      <Image src={MessiLureus} alt="MessiLureus" className="h-32 w-28 mb-4" />
 
       {/* Button to Open Main Modal */}
       <button
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
-        onClick={() => setMainModalOpen(true)}>
-        Open The Best's
+        onClick={() => setMainModalOpen(true)}
+      >
+        Open Messi's Lureus
       </button>
 
       {/* Main Modal */}
@@ -46,8 +44,8 @@ function TheBestModal() {
           <div className="bg-white p-8 rounded-lg">
             <h2 className="text-3xl font-bold mb-4 text-black">Years Won</h2>
             <div className="flex flex-wrap justify-center">
-              {awardsData
-                .filter((award) => award.title === 'FIFA The Best')
+              {lureusData
+                .filter((award) => award.title === 'Lureus')
                 .map((award) => (
                   <div
                     key={award.id}
@@ -71,4 +69,4 @@ function TheBestModal() {
   );
 }
 
-export default TheBestModal;
+export default LureusModal;

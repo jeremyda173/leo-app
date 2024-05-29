@@ -12,9 +12,9 @@ interface Stats {
 const MessiStats: React.FC = () => {
   const [currentGoals, setCurrentGoals] = useState<number>(0);
   const [currentAssists, setCurrentAssists] = useState<number>(0);
-  const totalGoals: number = 12;
-  const totalAssists: number = 6;
-  const totalMatches: number = 20;
+  const totalGoals: number = 23;
+  const totalAssists: number = 15;
+  const totalMatches: number = 25;
   const [currentAssistsPerMatch, setCurrentAssistsPerMatch] = useState<number>(0);
 
   useEffect(() => {

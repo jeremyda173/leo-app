@@ -3,26 +3,20 @@
 import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import BotaDeOroImg from '@/../../public/Awards/botaOro.png';
+import Pichichi from '@/../../public/Awards/pichichi2.png';
 
-interface AwardData {
-  id: number;
-  title: string;
-  year: string;
-  image: string;
-  goals: number;
-}
-
-const awardsData: AwardData[] = [
-  { id: 1, title: 'Golden Boot', year: '09/10', image: '/images/golden_boot_2010.jpg', goals: 34 },
-  { id: 2, title: 'Golden Boot', year: '11/12', image: '/images/golden_boot_2012.jpg', goals: 50 },
-  { id: 3, title: 'Golden Boot', year: '12/13', image: '/images/golden_boot_2013.jpg', goals: 46 },
-  { id: 4, title: 'Golden Boot', year: '16/17', image: '/images/golden_boot_2017.jpg', goals: 37 },
-  { id: 5, title: 'Golden Boot', year: '17/18', image: '/images/golden_boot_2018.jpg', goals: 34 },
-  { id: 6, title: 'Golden Boot', year: '18/19', image: '/images/golden_boot_2021.jpg', goals: 36 },
+const awardsData = [
+  { id: 1, title: 'Trofeo Pichichi', year: '09/10', image: '/images/pichichi_2012.jpg', goals: 34 },
+  { id: 2, title: 'Trofeo Pichichi', year: '11/12', image: '/images/pichichi_2012.jpg', goals: 50 },
+  { id: 3, title: 'Trofeo Pichichi', year: '12/13', image: '/images/pichichi_2012.jpg', goals: 46 },
+  { id: 4, title: 'Trofeo Pichichi', year: '16/17', image: '/images/pichichi_2012.jpg', goals: 37 },
+  { id: 5, title: 'Trofeo Pichichi', year: '17/18', image: '/images/pichichi_2013.jpg', goals: 34 },
+  { id: 6, title: 'Trofeo Pichichi', year: '18/19', image: '/images/pichichi_2017.jpg', goals: 36 },
+  { id: 7, title: 'Trofeo Pichichi', year: '19/20', image: '/images/pichichi_2018.jpg', goals: 25 },
+  { id: 8, title: 'Trofeo Pichichi', year: '20/21', image: '/images/pichichi_2019.jpg', goals: 30 },
 ];
 
-const BotaDeOroModal: React.FC = () => {
+const PichichiModal: React.FC = () => {
   const [mainModalOpen, setMainModalOpen] = useState(false);
   const [statisticsModalOpen, setStatisticsModalOpen] = useState(false);
   const [selectedYear, setSelectedYear] = useState<string | null>(null);
@@ -36,17 +30,17 @@ const BotaDeOroModal: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-80 bg-gradient-to-b from-gray-200 to-gray-800 text-white">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-center mb-4">Golden Boot</h1>
+      <h1 className="text-3xl font-bold text-center mb-4">Trofeo Pichichi</h1>
 
       {/* Image */}
-      <Image src={BotaDeOroImg} alt="BotaDeOro" className="w-32 h-32 mb-4" />
+      <Image src={Pichichi} alt="Pichichi" className="w-32 h-32 mb-4" />
 
       {/* Button to Open Main Modal */}
       <button
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
         onClick={() => setMainModalOpen(true)}
       >
-        Open Bota de Oro's
+        Open Pichichi's
       </button>
 
       {/* Main Modal */}
@@ -56,7 +50,7 @@ const BotaDeOroModal: React.FC = () => {
             <h2 className="text-3xl font-bold mb-4 text-black">Years Won</h2>
             <div className="flex flex-wrap justify-center">
               {awardsData
-                .filter((award) => award.title === 'Golden Boot')
+                .filter((award) => award.title === 'Trofeo Pichichi')
                 .map((award) => (
                   <div
                     key={award.id}
@@ -65,7 +59,7 @@ const BotaDeOroModal: React.FC = () => {
                     role="button"
                     aria-label={`Open statistics for ${award.year}`}
                   >
-                    <p className="text-lg font-bold text-white">{award.year}</p>
+                    <p className="text-lg font-bold text-black">{award.year}</p>
                   </div>
                 ))}
             </div>
@@ -112,4 +106,4 @@ const BotaDeOroModal: React.FC = () => {
   );
 };
 
-export default BotaDeOroModal;
+export default PichichiModal;

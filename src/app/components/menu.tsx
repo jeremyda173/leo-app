@@ -15,55 +15,58 @@ function Menu(){
         <div className="flex items-center">
           <Image src={MessiLogo} alt="Messi Logo" width={50} height={50} />
         </div>
-        {/* Opciones del Menú */}
-        <div className="flex items-center">
-          <a
-            href="/home"
-            className={`mr-4 hover:text-gray-300 ${activeOption === 'home' ? 'border-b-2 border-white' : ''}`}
-            onMouseEnter={() => setActiveOption('home')}
-            onMouseLeave={() => setActiveOption(String)}
-          >
-            Home
-          </a>
-          <a
-            href="/match-history"
-            className={`mr-4 hover:text-gray-300 ${activeOption === 'matchHistory' ? 'border-b-2 border-white' : ''}`}
-            onMouseEnter={() => setActiveOption('matchHistory')}
-            onMouseLeave={() => setActiveOption(String)}
-          >
-            Match History
-          </a>
-          <a
-            href="/awards"
-            className={`mr-4 hover:text-gray-300 ${activeOption === 'awards' ? 'border-b-2 border-white' : ''}`}
-            onMouseEnter={() => setActiveOption('awards')}
-            onMouseLeave={() => setActiveOption(String)}
-          >
-            Awards
-          </a>
-          <a
-            href="/groups"
-            className={`mr-4 hover:text-gray-300 ${activeOption === 'teams' ? 'border-b-2 border-white' : ''}`}
-            onMouseEnter={() => setActiveOption('teams')}
-            onMouseLeave={() => setActiveOption(String)}
-          >
-            Teams
-          </a>
-  
-          <a
-            href="/family"
-            className={`mr-4 hover:text-gray-300 ${activeOption === 'family' ? 'border-b-2 border-white' : ''}`}
-            onMouseEnter={() => setActiveOption('family')}
-            onMouseLeave={() => setActiveOption(String)}
-          >
-            Family
-          </a>
-          {/* Agrega más opciones según sea necesario */}
-        </div>
-      </div>
-      </>
+                {/* Opciones del Menú */}
+                <div className="flex items-center space-x-6">
+                    <a
+                        href="/home"
+                        className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'home' ? 'text-gray-200' : ''}`}
+                        onMouseEnter={() => setActiveOption('home')}
+                        onMouseLeave={() => setActiveOption('')}
+                    >
+                        Home
+                        {activeOption === 'home' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
+                    </a>
+                    <a
+                        href="/match-history"
+                        className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'matchHistory' ? 'text-gray-200' : ''}`}
+                        onMouseEnter={() => setActiveOption('matchHistory')}
+                        onMouseLeave={() => setActiveOption('')}
+                    >
+                        Match History
+                        {activeOption === 'matchHistory' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
+                    </a>
+                    <a
+                        href="/awards"
+                        className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'awards' ? 'text-gray-200' : ''}`}
+                        onMouseEnter={() => setActiveOption('awards')}
+                        onMouseLeave={() => setActiveOption('')}
+                    >
+                        Awards
+                        {activeOption === 'awards' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
+                    </a>
+                    <a
+                        href="/groups"
+                        className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'teams' ? 'text-gray-200' : ''}`}
+                        onMouseEnter={() => setActiveOption('teams')}
+                        onMouseLeave={() => setActiveOption('')}
+                    >
+                        Teams
+                        {activeOption === 'teams' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
+                    </a>
+                    <a
+                        href="/family"
+                        className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'family' ? 'text-gray-200' : ''}`}
+                        onMouseEnter={() => setActiveOption('family')}
+                        onMouseLeave={() => setActiveOption('')}
+                    >
+                        Family
+                        {activeOption === 'family' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
+                    </a>
+                    {/* Agrega más opciones según sea necesario */}
+                </div>
+            </div>
+        </>
     );
 }
 
 export default Menu;
-

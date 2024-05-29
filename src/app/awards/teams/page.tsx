@@ -1,16 +1,20 @@
 'use client';
 /* eslint-disable react/no-unescaped-entities */
 import 'tailwindcss/tailwind.css';
-import React, { useState } from 'react';
-import PresantacionIn from '@/app/awards/teams/internacional/page';
-import PresentationNa from '@/app/awards/teams/nacional/page';
+import React from 'react';
+import { useRouter } from 'next/navigation';
 
 function Presentation() {
-  const [selectedOption, setSelectedOption] = useState (null);
+  const router = useRouter();
 
-  const handleOptionChange = (_option: string) => {
-    setSelectedOption(null);
+  const handleOptionChange = (option: string) => {
+    if (option === 'Nacional') {
+      router.push('/awards/teams/nacional');
+    } else if (option === 'Internacional') {
+      router.push('/awards/teams/internacional');
+    }
   };
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-400 to-blue-500 text-white">
       <h1 className="text-4xl font-bold mb-4">¡Bienvenido!</h1>
@@ -29,15 +33,8 @@ function Presentation() {
           Internacional
         </button>
       </div>
-
-      {/* Renderiza la sección correspondiente según la opción seleccionada */}
-      {selectedOption === 'Nacional' && <PresentationNa />}
-      {selectedOption === 'Internacional' && <PresantacionIn />}
     </div>
   );
 }
 
 export default Presentation;
-
-
-

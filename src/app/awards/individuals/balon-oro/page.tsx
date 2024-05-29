@@ -6,12 +6,14 @@ import BalonOro from '@/../../public/Awards/Balon de oro.png';
 import Image from 'next/image';
 
 const awardsData = [
-  { id: 1, title: 'FIFA Ballon d\'Or', year: 2009, image: '/images/ballon_dor_2009.jpg', goals: 47, assists: 11 },
+  { id: 1, title: 'FIFA Ballon d\'Or', year: 2009, image: '/images/ballon_dor_2009.jpg', goals: 47, assists: 22 },
   { id: 2, title: 'FIFA Ballon d\'Or', year: 2010, image: '/images/ballon_dor_2010.jpg', goals: 53, assists: 24 },
   { id: 3, title: 'FIFA Ballon d\'Or', year: 2011, image: '/images/ballon_dor_2011.jpg', goals: 73, assists: 29 },
   { id: 4, title: 'FIFA Ballon d\'Or', year: 2012, image: '/images/ballon_dor_2012.jpg', goals: 79, assists: 29 },
-  { id: 5, title: 'FIFA Ballon d\'Or', year: 2015, image: '/images/ballon_dor_2015.jpg', goals: 52, assists: 26 },
-  { id: 6, title: 'FIFA Ballon d\'Or', year: 2019, image: '/images/ballon_dor_2019.jpg', goals: 51, assists: 22 },
+  { id: 5, title: 'FIFA Ballon d\'Or', year: 2015, image: '/images/ballon_dor_2015.jpg', goals: 62, assists: 36 },
+  { id: 6, title: 'FIFA Ballon d\'Or', year: 2019, image: '/images/ballon_dor_2019.jpg', goals: 52, assists: 25 },
+  { id: 7, title: 'FIFA Ballon d\'Or', year: 2021, image: '/images/ballon_dor_2015.jpg', goals: 50, assists: 19 },
+  { id: 8, title: 'FIFA Ballon d\'Or', year: 2023, image: '/images/ballon_dor_2015.jpg', goals: 45, assists: 22 },
 ];
 
 function BallonDOrModal() {
