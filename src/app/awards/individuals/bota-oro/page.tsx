@@ -2,8 +2,8 @@
 'use client';
 import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
-import BotaDeOro from '@/../../public/Awards/botaOro.png';
 import Image from 'next/image';
+import BotaDeOroImg from '@/../../public/Awards/botaOro.png';
 
 interface BotaProps {
   year: string;
@@ -18,7 +18,7 @@ const awardsData = [
   { id: 6, title: 'Golden Boot', year: '18/19', image: '/images/golden_boot_2021.jpg', goals: 36 },
 ];
 
-const BotaDeOroModal: React.FC<BotaProps> = ({year}) => {
+const BotaDeOroModal: React.FC<BotaProps> = ({ year }) => {
   const [mainModalOpen, setMainModalOpen] = useState(false);
   const [statisticsModalOpen, setStatisticsModalOpen] = useState(false);
   const [selectedYear, setSelectedYear] = useState<string | null>(null);
@@ -35,7 +35,7 @@ const BotaDeOroModal: React.FC<BotaProps> = ({year}) => {
       <h1 className='text-3xl font-bold text-center mb-4'>Golden Boot</h1>
 
       {/* Image */}
-      <Image src={BotaDeOro} alt="BotaDeOro" className="w-32 h-32 mb-4" />
+      <Image src={BotaDeOroImg} alt="BotaDeOro" className="w-32 h-32 mb-4" />
 
       {/* Button to Open Main Modal */}
       <button
@@ -61,7 +61,7 @@ const BotaDeOroModal: React.FC<BotaProps> = ({year}) => {
                     role="button"
                     aria-label={`Open statistics for ${award.year}`}
                   >
-                    <p className="text-lg font-bold text-black">{award.year}</p>
+                    <p className="text-lg font-bold text-white">{award.year}</p>
                   </div>
                 ))}
             </div>
