@@ -23,7 +23,7 @@ function PresentationIn() {
 
       {/* Bota de Oro */}
       <div className="max-w-xs mx-2 mb-4 bg-white rounded-md overflow-hidden shadow-md">
-        <Botaoro year={''} />
+        <Botaoro />
         <div className="p-4">
           <h2 className="text-lg font-semibold mb-2">Bota de Oro</h2>
           <p className="text-gray-700 text-sm text-justify">
