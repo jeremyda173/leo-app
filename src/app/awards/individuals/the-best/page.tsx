@@ -2,7 +2,7 @@
 'use client';
 import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
-import TheBest from '@/../../public/Awards/TheBest.png';  // Assuming you have an image for The Best
+import TheBest from '@/../../public/Awards/theBest.png';  // Assuming you have an image for The Best
 import Image from 'next/image';
 
 const awardsData = [
