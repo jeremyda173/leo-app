@@ -2,12 +2,8 @@
 'use client';
 import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
-import Pichichi from '@/../../public/Awards/pichichi2.png';
 import Image from 'next/image';
-
-interface PichichiProps {
-  year: string;
-}
+import Pichichi from '@/../../public/Awards/pichichi2.png';
 
 const awardsData = [
   { id: 1, title: 'Trofeo Pichichi', year: '09/10', image: '/images/pichichi_2012.jpg', goals: 34 },
@@ -20,7 +16,7 @@ const awardsData = [
   { id: 8, title: 'Trofeo Pichichi', year: '20/21', image: '/images/pichichi_2019.jpg', goals: 30 },
 ];
 
-const PichichiModal: React.FC<PichichiProps> = () => {
+const PichichiModal: React.FC = () => {
   const [mainModalOpen, setMainModalOpen] = useState(false);
   const [statisticsModalOpen, setStatisticsModalOpen] = useState(false);
   const [selectedYear, setSelectedYear] = useState<string | null>(null);
@@ -42,7 +38,8 @@ const PichichiModal: React.FC<PichichiProps> = () => {
       {/* Button to Open Main Modal */}
       <button
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
-        onClick={() => setMainModalOpen(true)}>
+        onClick={() => setMainModalOpen(true)}
+      >
         Open Pichichi's
       </button>
 
@@ -76,6 +73,7 @@ const PichichiModal: React.FC<PichichiProps> = () => {
         </div>
       )}
 
+      {/* Statistics Modal */}
       {statisticsModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="bg-gray-800 p-8 rounded-lg text-white">
@@ -106,6 +104,6 @@ const PichichiModal: React.FC<PichichiProps> = () => {
       )}
     </div>
   );
-}
+};
 
 export default PichichiModal;
