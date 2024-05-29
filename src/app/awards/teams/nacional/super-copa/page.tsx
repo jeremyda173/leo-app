@@ -1,7 +1,11 @@
-function SuperCopa(){
+import React from "react";
+
+function SuperCopaSpain(){
     return(
         <>
-        Page Super Copa 2
+        Hola
         </>
     );
 }
+
+export default SuperCopaSpain;
