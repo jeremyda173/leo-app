@@ -2,7 +2,7 @@
 'use client';
 import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
-import BotaDeOro from '@/../../public/Awards/botaOro.png'; // Assuming you have an image for Bota de Oro
+import BotaDeOro from '@/../../public/Awards/botaOro.png';
 import Image from 'next/image';
 
 interface BotaProps {
@@ -16,10 +16,9 @@ const awardsData = [
   { id: 4, title: 'Golden Boot', year: '16/17', image: '/images/golden_boot_2017.jpg', goals: 37 },
   { id: 5, title: 'Golden Boot', year: '17/18', image: '/images/golden_boot_2018.jpg', goals: 34 },
   { id: 6, title: 'Golden Boot', year: '18/19', image: '/images/golden_boot_2021.jpg', goals: 36 },
-  // Add more Golden Boot awards as needed
 ];
 
-const BotaDeOroModal: React.FC<BotaProps> = () => {
+const BotaDeOroModal: React.FC<BotaProps> = ({year}) => {
   const [mainModalOpen, setMainModalOpen] = useState(false);
   const [statisticsModalOpen, setStatisticsModalOpen] = useState(false);
   const [selectedYear, setSelectedYear] = useState<string | null>(null);
