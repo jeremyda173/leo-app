@@ -5,11 +5,15 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import BotaDeOroImg from '@/../../public/Awards/botaOro.png';
 
-interface BotaProps {
+interface AwardData {
+  id: number;
+  title: string;
   year: string;
+  image: string;
+  goals: number;
 }
 
-const awardsData = [
+const awardsData: AwardData[] = [
   { id: 1, title: 'Golden Boot', year: '09/10', image: '/images/golden_boot_2010.jpg', goals: 34 },
   { id: 2, title: 'Golden Boot', year: '11/12', image: '/images/golden_boot_2012.jpg', goals: 50 },
   { id: 3, title: 'Golden Boot', year: '12/13', image: '/images/golden_boot_2013.jpg', goals: 46 },
@@ -18,7 +22,7 @@ const awardsData = [
   { id: 6, title: 'Golden Boot', year: '18/19', image: '/images/golden_boot_2021.jpg', goals: 36 },
 ];
 
-const BotaDeOroModal: React.FC<BotaProps> = ({ year }) => {
+const BotaDeOroModal: React.FC = () => {
   const [mainModalOpen, setMainModalOpen] = useState(false);
   const [statisticsModalOpen, setStatisticsModalOpen] = useState(false);
   const [selectedYear, setSelectedYear] = useState<string | null>(null);
@@ -32,7 +36,7 @@ const BotaDeOroModal: React.FC<BotaProps> = ({ year }) => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-80 bg-gradient-to-b from-gray-200 to-gray-800 text-white">
       {/* Heading */}
-      <h1 className='text-3xl font-bold text-center mb-4'>Golden Boot</h1>
+      <h1 className="text-3xl font-bold text-center mb-4">Golden Boot</h1>
 
       {/* Image */}
       <Image src={BotaDeOroImg} alt="BotaDeOro" className="w-32 h-32 mb-4" />
@@ -106,6 +110,6 @@ const BotaDeOroModal: React.FC<BotaProps> = ({ year }) => {
       )}
     </div>
   );
-}
+};
 
 export default BotaDeOroModal;
