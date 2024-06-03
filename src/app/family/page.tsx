@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { FaUser, FaBirthdayCake, FaWikipediaW } from 'react-icons/fa';
 
 interface Familiar {
   nombre: string;
@@ -30,12 +36,10 @@ const FamiliaMessi: React.FC = () => {
     {
       nombre: 'Jorge Messi',
       descripcion: 'Padre de Lionel Messi, nacido el 16 de enero de 1958.',
-    //   wikipedia: 'https://es.wikipedia.org/wiki/Jorge_Horacio_Messi',
     },
     {
       nombre: 'Celia María Cuccittini',
       descripcion: 'Madre de Lionel Messi, nacida el 23 de enero de 1960.',
-    //   wikipedia: 'https://es.wikipedia.org/wiki/Celia_Cuccittini',
     },
     {
       nombre: 'Rodrigo Messi',
@@ -54,33 +58,35 @@ const FamiliaMessi: React.FC = () => {
   return (
     <div className="p-10 min-h-screen bg-gradient-to-r from-green-400 to-blue-500 flex flex-col items-center justify-center">
       <h1 className="text-5xl font-extrabold text-white mb-12">Familia de Lionel Messi</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <VerticalTimeline>
         {familiares.map((familiar, index) => (
-          <div
-            key={index}
-            className="bg-white p-8 rounded-xl shadow-2xl transform transition duration-500 hover:scale-105 hover:rotate-1 hover:shadow-3xl relative group"
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-500 opacity-0 group-hover:opacity-50 transition duration-500 rounded-xl" />
-            <div className="relative z-10">
-              <h2 className="text-3xl font-bold mb-4 text-gray-900">{familiar.nombre}</h2>
-              <p className="text-gray-700 mb-6">{familiar.descripcion}</p>
-              {familiar.fechaNacimiento && (
-                <p className="text-gray-500 mb-4">Fecha de nacimiento: {familiar.fechaNacimiento}</p>
-              )}
-              {familiar.wikipedia && (
-                <a
-                  href={familiar.wikipedia}
-                  className="text-indigo-600 hover:text-indigo-800 font-semibold transition-colors duration-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Leer más en Wikipedia
-                </a>
-              )}
-            </div>
-          </div>
+          <VerticalTimelineElement
+  key={index}
+  className="vertical-timeline-element--work"
+  contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+  contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+  date={familiar.fechaNacimiento}
+  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+  icon={<FaUser />}
+>
+  <h3 className="vertical-timeline-element-title">{familiar.nombre}</h3>
+  <h4 className="vertical-timeline-element-subtitle">{familiar.descripcion}</h4>
+  {familiar.wikipedia && (
+    <a
+      href={familiar.wikipedia}
+      className="text-white hover:text-indigo-200 font-semibold transition-colors duration-300"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaWikipediaW className="inline-block mr-2" />
+      Leer más en Wikipedia
+    </a>
+  )}
+</VerticalTimelineElement>
+
+
         ))}
-      </div>
+      </VerticalTimeline>
     </div>
   );
 };
