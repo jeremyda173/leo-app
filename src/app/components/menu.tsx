@@ -1,20 +1,26 @@
 'use client';
-import { useState } from "react";
-import React from "react";
+import React, { useState } from "react";
 import 'tailwindcss/tailwind.css';
 import MessiLogo from '@/../../public/messi-logo.png';
 import Image from "next/image";
+import DarkMode from "./dark-mode";
 
-function Menu(){
-    const [activeOption, setActiveOption] = useState(String);
-    return(
+interface MenuProps {
+    darkMode: boolean;
+    toggleDarkMode: () => void;
+}
+
+const Menu: React.FC<MenuProps> = ({ darkMode, toggleDarkMode }) => {
+    const [activeOption, setActiveOption] = useState<string>('');
+
+    return (
         <>
-      {/* Menú Horizontal */}
-      <div className="bg-gradient-to-r from-green-400 to-blue-500 p-4 flex items-center justify-between">
-        {/* Logo de Messi */}
-        <div className="flex items-center">
-          <Image src={MessiLogo} alt="Messi Logo" width={50} height={50} />
-        </div>
+            {/* Menú Horizontal */}
+            <div className="bg-gradient-to-r from-green-400 to-blue-500 p-4 flex items-center justify-between">
+                {/* Logo de Messi */}
+                <div className="flex items-center">
+                    <Image src={MessiLogo} alt="Messi Logo" width={50} height={50} />
+                </div>
                 {/* Opciones del Menú */}
                 <div className="flex items-center space-x-6">
                     <a
@@ -62,7 +68,8 @@ function Menu(){
                         Family
                         {activeOption === 'family' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
-                    {/* Agrega más opciones según sea necesario */}
+                    {/* Toggle para el modo oscuro */}
+                    <DarkMode darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                 </div>
             </div>
         </>
