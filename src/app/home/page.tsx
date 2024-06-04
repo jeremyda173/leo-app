@@ -18,7 +18,9 @@ const Home = () => {
 
   return (
     <div className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-800'} min-h-screen flex flex-col relative overflow-hidden`}>
-      <Menu />
+      <Menu darkMode={false} toggleDarkMode={function (): void {
+        throw new Error('Function not implemented.');
+      } } />
 
       {/* Contenido del Dashboard */}
       <div className="flex flex-col relative z-10 container mx-auto p-8">
