@@ -1,3 +1,4 @@
+'use client';
 import 'tailwindcss/tailwind.css';
 import React from 'react';
 import Image from 'next/image';

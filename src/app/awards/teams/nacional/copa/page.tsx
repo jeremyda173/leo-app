@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import Image from "next/image";
 import CopaDelReyImage from "@/../../public/Awards/Copa_del_Rey.png";
