@@ -26,7 +26,7 @@ export default function Component() {
           </div>
           <div className="flex items-center space-x-1">
             <ShieldIcon className="h-5 w-5 text-blue-500" />
-            <span className="text-xs text-gray-400">World Cup</span>
+            <span className="text-xs text-gray-400">{translate('auth.')}</span>
           </div>
         </div>
       </div>
@@ -93,8 +93,6 @@ function ShieldIcon(props: SVGProps<SVGSVGElement>) {
     <svg
       {...props}
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -102,8 +100,8 @@ function ShieldIcon(props: SVGProps<SVGSVGElement>) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z" />
-      <path d="M21.42 18.89C19.92 17.61 17.58 17 15 17c-2.58 0-4.92.61-6.42 1.89C7.31 20.07 6.67 21.45 6 22.92c-.33.74-.68 1.51-1.05 2.24C5.52 25.92 7.55 26 10 26h4c2.45 0 4.48-.08 5.05-.84-.37-.73-.72-1.5-1.05-2.24-.67-1.47-1.31-2.85-2.53-4.03z" />
+      <circle cx="12" cy="7" r="4" />
+      <path d="M5.5 21h13a2 2 0 0 0 2-2v-2a7 7 0 0 0-7-7h-3a7 7 0 0 0-7 7v2a2 2 0 0 0 2 2z" />
     </svg>
   );
 }
