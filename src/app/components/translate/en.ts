@@ -25,6 +25,9 @@ const en = {
     dates: {
       january_19: 'January 19',
     },
+    family: {
+        family: 'Family',
+    },
   };
   
   export default en;
