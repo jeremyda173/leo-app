@@ -25,9 +25,9 @@ function CartaMatch() {
 
   return (
     <div>
-      <div className="flex items-center justify-center">
-        <h1 className="text-2xl text-center font-bold mb-4 bg-gradient-to-r text-black p-4 rounded-md shadow-md max-w-md border-2 border-purple-700">
-          Games of Lionel Messi
+      <div className="flex items-center">
+        <h1 className="text-2xl text-center font-bold mb-4 bg-gradient-to-r from-blue-400 via-blue-200 text-black p-4 rounded-md shadow-md max-w-md border-2">
+          Match schedule
         </h1>
       </div>
       <div className="flex justify-center rounded-sm">
