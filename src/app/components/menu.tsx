@@ -4,14 +4,41 @@ import 'tailwindcss/tailwind.css';
 import MessiLogo from '@/../../public/messi-logo.png';
 import Image from "next/image";
 import DarkMode from "./dark-mode";
+import LanguageToggle from "./menu-button";
 
 interface MenuProps {
     darkMode: boolean;
     toggleDarkMode: () => void;
 }
 
+type Language = 'en' | 'es';
+
 const Menu: React.FC<MenuProps> = ({ darkMode, toggleDarkMode }) => {
     const [activeOption, setActiveOption] = useState<string>('');
+    const [language, setLanguage] = useState<Language>('en');
+
+    const toggleLanguage = () => {
+        setLanguage(language === 'en' ? 'es' : 'en');
+    };
+
+    const menuOptions: Record<Language, { home: string; matchHistory: string; awards: string; teams: string; family: string; }> = {
+        en: {
+            home: 'Home',
+            matchHistory: 'Match History',
+            awards: 'Awards',
+            teams: 'Teams',
+            family: 'Family'
+        },
+        es: {
+            home: 'Inicio',
+            matchHistory: 'Historial de Partidos',
+            awards: 'Premios',
+            teams: 'Equipos',
+            family: 'Familia'
+        }
+    };
+
+    const options = menuOptions[language];
 
     return (
         <>
@@ -29,7 +56,7 @@ const Menu: React.FC<MenuProps> = ({ darkMode, toggleDarkMode }) => {
                         onMouseEnter={() => setActiveOption('home')}
                         onMouseLeave={() => setActiveOption('')}
                     >
-                        Home
+                        {options.home}
                         {activeOption === 'home' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
                     <a
@@ -38,7 +65,7 @@ const Menu: React.FC<MenuProps> = ({ darkMode, toggleDarkMode }) => {
                         onMouseEnter={() => setActiveOption('matchHistory')}
                         onMouseLeave={() => setActiveOption('')}
                     >
-                        Match History
+                        {options.matchHistory}
                         {activeOption === 'matchHistory' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
                     <a
@@ -47,7 +74,7 @@ const Menu: React.FC<MenuProps> = ({ darkMode, toggleDarkMode }) => {
                         onMouseEnter={() => setActiveOption('awards')}
                         onMouseLeave={() => setActiveOption('')}
                     >
-                        Awards
+                        {options.awards}
                         {activeOption === 'awards' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
                     <a
@@ -56,7 +83,7 @@ const Menu: React.FC<MenuProps> = ({ darkMode, toggleDarkMode }) => {
                         onMouseEnter={() => setActiveOption('teams')}
                         onMouseLeave={() => setActiveOption('')}
                     >
-                        Teams
+                        {options.teams}
                         {activeOption === 'teams' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
                     <a
@@ -65,11 +92,13 @@ const Menu: React.FC<MenuProps> = ({ darkMode, toggleDarkMode }) => {
                         onMouseEnter={() => setActiveOption('family')}
                         onMouseLeave={() => setActiveOption('')}
                     >
-                        Family
+                        {options.family}
                         {activeOption === 'family' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
                     {/* Toggle para el modo oscuro */}
                     <DarkMode darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+                    {/* Toggle para el idioma */}
+                    <LanguageToggle language={language} toggleLanguage={toggleLanguage} />
                 </div>
             </div>
         </>
