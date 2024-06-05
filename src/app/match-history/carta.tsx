@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@/app/components/button';
 import Image from 'next/image';
 import { SVGProps } from 'react';
-import MessiStats from '@/../../public/Messi_arge.jpg';
+import MessiStats from '@/../../public/Messi_mia.jpg';
 import Shield1 from '../../../public/Shield/LogoM.png';
 import Shield2 from '../../../public/Shield/Al-Nassr.png';
 import { translate, setLocale } from '@/app/components/translate';
