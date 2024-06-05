@@ -1,6 +1,8 @@
 const es = {
   auth: {
     team: 'Equipo',
+    friendly_match: 'Amistoso',
+    world_cup: 'Copa Mundial'
   },
   stats: {
     title: 'Estadísticas',
