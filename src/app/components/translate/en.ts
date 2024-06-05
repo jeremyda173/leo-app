@@ -1,8 +1,11 @@
+import { Agent } from "http";
+
 const en = {
     auth: {
       team: 'Team',
-      friendly_: 'Friendly Match',
+      friendly_match: 'Friendly Match',
       world_cup: 'World cup',
+      age: 'Age',
     },
     stats: {
       title: 'Stats',
