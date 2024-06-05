@@ -22,11 +22,11 @@ export default function Component() {
         <div className="flex items-center justify-between">
           <div>
             <div className="text-xs text-gray-400">{translate('auth.team')}: Inter Miami</div>
-            <div className="text-xs text-gray-400">World Ranking: #10</div>
+            <div className="text-xs text-gray-400">{translate('auth.age')}: 36</div>
           </div>
           <div className="flex items-center space-x-1">
             <ShieldIcon className="h-5 w-5 text-blue-500" />
-            <span className="text-xs text-gray-400">{translate('auth.')}</span>
+            <span className="text-xs text-gray-400">{translate('auth.friendly_match')}</span>
           </div>
         </div>
       </div>
