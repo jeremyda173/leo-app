@@ -15,6 +15,7 @@ const es = {
     passes: 'Pases(c)',
     position: 'Posición ',
     Performance: 'Rendimiento',
+    result: 'Resultado',
   },
   teams: {
     inter_miami: 'Inter Miami',
