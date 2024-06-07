@@ -251,62 +251,43 @@ interface Player {
 
 interface CardProps {
   player: Player;
+  isActive: boolean;
+  onClick: () => void;
 }
 
 export default function MatchHistory() {
-  const [activeCardIndex, setActiveCardIndex] = useState(4);  // Inicia en la carta número 5
+  const [activeCardIndex, setActiveCardIndex] = useState(Math.floor(playersData.length / 2));
+  const [carouselPosition, setCarouselPosition] = useState(-Math.floor(window.innerWidth / 8)); // Posición inicial centrada
 
-  const handleNextClick = () => {
-    if (activeCardIndex < playersData.length - 1) {
-      setActiveCardIndex(activeCardIndex + 1);
-    }
+  const handleCardClick = (index: number) => {
+    setActiveCardIndex(index);
+    setCarouselPosition(-index * (window.innerWidth / 5)); // Centra la carta clicada en la pantalla
   };
 
-  const handlePrevClick = () => {
-    if (activeCardIndex > 0) {
-      setActiveCardIndex(activeCardIndex - 1);
-    }
-  };
+  // Dividir los equipos en dos grupos
+  const halfLength = Math.ceil(playersData.length / 2);
+  const firstHalf = playersData.slice(0, halfLength);
+  const secondHalf = playersData.slice(halfLength);
 
   return (
-    <div>
-      <div className="flex items-center justify-center">
-        <h1 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-blue-200 text-black p-4 rounded-md shadow-md max-w-md border-2">
-          Match Schedule
-        </h1>
+    <div className="flex justify-center space-x-4">
+      <div className="flex flex-col justify-center space-y-4">
+        {firstHalf.map((player, index) => (
+          <Card key={player.id} player={player} isActive={index === activeCardIndex} onClick={() => handleCardClick(index)} />
+        ))}
       </div>
-      <div className="flex justify-center rounded-sm item">
-        <div className="flex space-x-4 p-4">
-          {playersData.map((player, index) => (
-            <div key={player.id} className={`${index === activeCardIndex ? 'block' : 'hidden'}`}>
-              <Card player={player} />
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="flex justify-center mt-4">
-        <button
-          className={`bg-blue-500 text-white p-2 rounded-full mr-4 ${activeCardIndex === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-700'}`}
-          onClick={handlePrevClick}
-          disabled={activeCardIndex === 0}
-        >
-          &#8592;
-        </button>
-        <button
-          className={`bg-blue-500 text-white p-2 rounded-full ${activeCardIndex === playersData.length - 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-700'}`}
-          onClick={handleNextClick}
-          disabled={activeCardIndex === playersData.length - 1}
-        >
-          &#8594;
-        </button>
+      <div className="flex flex-col justify-center space-y-4">
+        {secondHalf.map((player, index) => (
+          <Card key={player.id} player={player} isActive={index === activeCardIndex} onClick={() => handleCardClick(index + halfLength)} />
+        ))}
       </div>
     </div>
   );
 }
 
-function Card({ player }: CardProps) {
+function Card({ player, isActive}: CardProps) {
   return (
-    <div className="bg-[#1F1F1F] rounded-lg overflow-hidden w-[400px] text-white">
+    <div className={`bg-[#1F1F1F] rounded-lg overflow-hidden w-[400px] text-white ${isActive ? 'opacity-100' : 'opacity-50'} transition-opacity hover:bg-[#292929] hover:opacity-100`}>
       <div className="relative">
         <Image src={player.image} alt={player.fullName} className="w-full h-[200px] object-cover" width={400} height={150} />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
