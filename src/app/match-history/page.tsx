@@ -6,7 +6,7 @@ function CartaMatch() {
 
   return (
     <div>
-      <div className="flex justify-center rounded-sm">
+      <div className="flex justify-center rounded-sm bg-slate-900">
         <div className="flex space-x-4 p-4">
          <MatchHistory />
         </div>
