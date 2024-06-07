@@ -24,6 +24,7 @@ const en = {
     },
     dates: {
       january_19: 'January 19',
+      september_10: 'September 10',
     },
     family: {
         family: 'Family',
