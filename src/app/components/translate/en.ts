@@ -17,6 +17,7 @@ const en = {
       passes: 'Passes(c)',
       position: 'Position',
       performance: 'Performance',
+      result: 'Result',
     },
     teams: {
       inter_miami: 'Inter Miami',
