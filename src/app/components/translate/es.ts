@@ -22,6 +22,7 @@ const es = {
   },
   dates: {
     january_19: '19 de enero',
+    september_10: '10 de septiembre',
   },
 };
 
