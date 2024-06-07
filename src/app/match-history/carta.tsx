@@ -26,7 +26,9 @@ const playersData = [
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
     team: 'Inter Miami',
+    opponent: 'Al Nasser',
     age: 36,
+    result: '2-0',
     stats: {
       goals: 2,
       assists: 1,
@@ -47,198 +49,194 @@ const playersData = [
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
     team: 'Inter Miami',
+    opponent: 'Barcelona',
     age: 36,
+    result: '1-1',
     stats: {
       goals: 1,
-      assists: 4,
-      distance: '9 km',
-      minutes: 85,
+      assists: 0,
+      distance: '10 km',
+      minutes: 90,
       shots: 4,
-      passes: 101,
+      passes: 85,
       position: 'Forward',
-      performance: '8.5',
+      performance: '7.8',
     },
-    image: MessiStats2,
+    image: MessiStats,
     shield1: Shield1,
     shield2: Shield2,
-    matchDate: 'September 10',
+    matchDate: 'February 5',
   },
   {
     id: 3,
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
     team: 'Inter Miami',
+    opponent: 'Real Madrid',
     age: 36,
+    result: '3-2',
     stats: {
-      goals: 2,
-      assists: 1,
-      distance: '11 km',
+      goals: 1,
+      assists: 2,
+      distance: '9 km',
       minutes: 90,
-      shots: 5,
-      passes: 94,
+      shots: 3,
+      passes: 80,
       position: 'Forward',
-      performance: '9.1',
+      performance: '8.4',
     },
     image: MessiStats,
-    shield1: Shield6,
+    shield1: Shield1,
     shield2: Shield2,
-    matchDate: 'March 10',
+    matchDate: 'March 15',
   },
   {
     id: 4,
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
     team: 'Inter Miami',
+    opponent: 'Manchester City',
     age: 36,
+    result: '0-2',
     stats: {
-      goals: 2,
-      assists: 1,
-      distance: '11 km',
+      goals: 0,
+      assists: 0,
+      distance: '8 km',
       minutes: 90,
-      shots: 5,
-      passes: 94,
+      shots: 2,
+      passes: 70,
       position: 'Forward',
-      performance: '9.1',
+      performance: '6.5',
     },
     image: MessiStats,
     shield1: Shield1,
     shield2: Shield2,
-    matchDate: 'April 15',
+    matchDate: 'April 3',
   },
   {
     id: 5,
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
     team: 'Inter Miami',
+    opponent: 'Paris Saint-Germain',
     age: 36,
+    result: '1-1',
     stats: {
-      goals: 2,
+      goals: 1,
       assists: 1,
-      distance: '11 km',
+      distance: '10 km',
       minutes: 90,
-      shots: 5,
-      passes: 94,
+      shots: 4,
+      passes: 85,
       position: 'Forward',
-      performance: '9.1',
+      performance: '8.0',
     },
     image: MessiStats,
     shield1: Shield1,
     shield2: Shield2,
-    matchDate: 'May 22',
+    matchDate: 'May 10',
   },
   {
     id: 6,
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
     team: 'Inter Miami',
+    opponent: 'Bayern Munich',
     age: 36,
+    result: '3-3',
     stats: {
       goals: 2,
-      assists: 1,
+      assists: 0,
       distance: '11 km',
       minutes: 90,
       shots: 5,
-      passes: 94,
+      passes: 90,
       position: 'Forward',
-      performance: '9.1',
+      performance: '8.9',
     },
     image: MessiStats,
     shield1: Shield1,
     shield2: Shield2,
-    matchDate: 'June 5',
+    matchDate: 'June 20',
   },
   {
     id: 7,
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
     team: 'Inter Miami',
+    opponent: 'Liverpool',
     age: 36,
+    result: '2-1',
     stats: {
-      goals: 2,
-      assists: 1,
-      distance: '11 km',
+      goals: 1,
+      assists: 0,
+      distance: '10 km',
       minutes: 90,
-      shots: 5,
-      passes: 94,
+      shots: 3,
+      passes: 85,
       position: 'Forward',
-      performance: '9.1',
+      performance: '8.2',
     },
     image: MessiStats,
     shield1: Shield1,
     shield2: Shield2,
-    matchDate: 'July 10',
+    matchDate: 'July 5',
   },
   {
     id: 8,
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
     team: 'Inter Miami',
+    opponent: 'Juventus',
     age: 36,
+    result: '0-1',
     stats: {
-      goals: 2,
-      assists: 1,
-      distance: '11 km',
+      goals: 0,
+      assists: 0,
+      distance: '9 km',
       minutes: 90,
-      shots: 5,
-      passes: 94,
+      shots: 2,
+      passes: 75,
       position: 'Forward',
-      performance: '9.1',
+      performance: '7.0',
     },
     image: MessiStats,
     shield1: Shield1,
     shield2: Shield2,
-    matchDate: 'August 14',
+    matchDate: 'August 18',
   },
   {
     id: 9,
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
     team: 'Inter Miami',
+    opponent: 'Manchester United',
     age: 36,
+    result: '2-2',
     stats: {
-      goals: 2,
+      goals: 1,
       assists: 1,
-      distance: '11 km',
+      distance: '10 km',
       minutes: 90,
-      shots: 5,
-      passes: 94,
+      shots: 4,
+      passes: 85,
       position: 'Forward',
-      performance: '9.1',
+      performance: '8.0',
     },
     image: MessiStats,
     shield1: Shield1,
     shield2: Shield2,
-    matchDate: 'September 18',
+    matchDate: 'September 12',
   },
-  {
-    id: 10,
-    name: 'Lionel',
-    fullName: 'Andrés Messi Cuccittini',
-    team: 'Inter Miami',
-    age: 36,
-    stats: {
-      goals: 2,
-      assists: 1,
-      distance: '11 km',
-      minutes: 90,
-      shots: 5,
-      passes: 94,
-      position: 'Forward',
-      performance: '9.1',
-    },
-    image: MessiStats,
-    shield1: Shield1,
-    shield2: Shield2,
-    matchDate: 'October 22',
-  }
 ];
-
 
 interface Player {
   id: number;
   name: string;
   fullName: string;
   team: string;
+  opponent: string; // Nuevo campo para el oponente del equipo
+  result: string; // Nuevo campo para el resultado del partido
   age: number;
   stats: {
     goals: number;
@@ -256,6 +254,7 @@ interface Player {
   matchDate: string;
 }
 
+
 interface CardProps {
   player: Player;
   isActive: boolean;
@@ -263,95 +262,104 @@ interface CardProps {
 }
 
 export default function MatchHistory() {
-  const [activeCardIndex, setActiveCardIndex] = useState(Math.floor(playersData.length / 2));
-  const [, setCarouselPosition] = useState(-Math.floor(window.innerWidth / 8)); // Posición inicial centrada
+  const [activeCardIndex, setActiveCardIndex] = useState(Math.floor(playersData.length / 0));
 
   const handleCardClick = (index: number) => {
     setActiveCardIndex(index);
-    setCarouselPosition(-index * (window.innerWidth / 5)); // Centra la carta clicada en la pantalla
   };
 
-  // Dividir los equipos en dos grupos
   const halfLength = Math.ceil(playersData.length / 2);
   const firstHalf = playersData.slice(0, halfLength);
   const secondHalf = playersData.slice(halfLength);
 
   return (
-    <div className="flex justify-center space-x-4">
-      <div className="flex flex-col justify-center space-y-4">
-        {firstHalf.map((player, index) => (
-          <Card key={player.id} player={player} isActive={index === activeCardIndex} onClick={() => handleCardClick(index)} />
-        ))}
-      </div>
-      <div className="flex flex-col justify-center space-y-4">
-        {secondHalf.map((player, index) => (
-          <Card key={player.id} player={player} isActive={index === activeCardIndex} onClick={() => handleCardClick(index + halfLength)} />
-        ))}
+    <div className="flex justify-center">
+      <div className="grid grid-cols-2 gap-4">
+        <div className="flex flex-col justify-center space-y-4">
+          {firstHalf.map((player, index) => (
+            <Card key={player.id} player={player} onClick={() => handleCardClick(index)} isActive={index === activeCardIndex} />
+          ))}
+        </div>
+        <div className="flex flex-col justify-center space-y-4">
+          {secondHalf.map((player, index) => (
+            <Card key={player.id} player={player} onClick={() => handleCardClick(index + halfLength)} isActive={index + halfLength === activeCardIndex} />
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
-function Card({ player, isActive}: CardProps) {
+function Card({ player, isActive }: CardProps) {
   return (
-    <div className={`bg-[#1F1F1F] rounded-lg overflow-hidden w-[400px] text-white ${isActive ? 'opacity-100' : 'opacity-50'} transition-opacity hover:bg-[#292929] hover:opacity-100`}>
-      <div className="relative">
-        <Image src={player.image} alt={player.fullName} className="w-full h-[200px] object-cover" width={400} height={150} />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-        <div className="absolute bottom-0 left-4 pb-4">
-          <h1 className="text-xl font-bold">{player.name}</h1>
-          <div className="text-xs text-gray-400">{player.fullName}</div>
-        </div>
-      </div>
-      <div className="px-4 py-2 bg-[#292929]">
-        <div className="flex items-center justify-between">
-          <div>
-            <div className="text-xs text-gray-400">{translate('auth.team')}: {player.team}</div>
-            <div className="text-xs text-gray-400">{translate('auth.age')}: {player.age}</div>
-          </div>
-          <div className="flex items-center space-x-1">
-            <ShieldIcon className="h-5 w-5 text-blue-500" />
-            <span className="text-xs text-gray-400">{translate('auth.friendly_match')}</span>
+    <div className="flex justify-center">
+      <div className={`bg-[#1F1F1F] rounded-lg overflow-hidden w-[400px] text-white ${isActive ? 'opacity-100' : 'opacity-50'} transition-opacity hover:bg-[#292929] hover:opacity-100 shadow-md`}>
+        {/* Imagen del jugador */}
+        <div className="relative">
+          <Image src={player.image} alt={player.fullName} className="w-full h-[200px] object-cover rounded-t-lg" width={400} height={150} />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-t-lg" />
+          <div className="absolute bottom-0 left-4 pb-4">
+            <h1 className="text-xl font-bold">{player.name}</h1>
+            <div className="text-xs text-gray-400">{player.fullName}</div>
           </div>
         </div>
-      </div>
-      <div className="px-4 py-2">
-        <div className="text-xs text-gray-400 mb-2">{translate('stats.title')}</div>
-        <div className="bg-[#292929] rounded-lg p-2">
-          <div className="grid grid-cols-4 gap-2 text-center text-xs">
-            {Object.keys(player.stats).slice(0, 4).map((key) => (
-              <div key={key}>
-                <div className="font-bold">{player.stats[key as keyof typeof player.stats]}</div>
-                <div className="text-gray-400">{translate(`stats.${key}`)}</div>
-              </div>
-            ))}
-          </div>
-          <div className="grid grid-cols-4 gap-2 text-center text-xs mt-2">
-            {Object.keys(player.stats).slice(4).map((key) => (
-              <div key={key}>
-                <div className="font-bold">{player.stats[key as keyof typeof player.stats]}</div>
-                <div className="text-gray-400">{translate(`stats.${key}`)}</div>
-              </div>
-            ))}
+        {/* Detalles del jugador */}
+        <div className="px-4 py-2 bg-[#292929]">
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="text-xs text-gray-400">{translate('auth.team')}: {player.team}</div>
+              <div className="text-xs text-gray-400">{translate('auth.age')}: {player.age}</div>
+            </div>
+            <div className="flex items-center space-x-1">
+              <ShieldIcon className="h-5 w-5 text-blue-500" />
+              <span className="text-xs text-gray-400">{translate('auth.friendly_match')}</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="px-4 py-2">
-        <div className="flex items-center justify-between space-x-4">
-          <div className="flex items-center space-x-2">
-            <Image src={player.shield1} alt="Team Shield 1" width={50} height={50} />
-            <h2 className="font-bold text-purple-300">{translate('teams.inter_miami')}</h2>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Image src={player.shield2} alt="Team Shield 2" width={50} height={50} />
-            <h2 className="font-bold text-purple-300">{translate('teams.al_nassr')}</h2>
+        {/* Estadísticas del jugador */}
+        <div className="px-4 py-2">
+          <div className="text-xs text-gray-400 mb-2">{translate('stats.title')}</div>
+          <div className="bg-[#292929] rounded-lg p-2">
+            <div className="grid grid-cols-4 gap-2 text-center text-xs">
+              {Object.keys(player.stats).slice(0, 4).map((key) => (
+                <div key={key}>
+                  <div className="font-bold">{player.stats[key as keyof typeof player.stats]}</div>
+                  <div className="text-gray-400">{translate(`stats.${key}`)}</div>
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-4 gap-2 text-center text-xs mt-2">
+              {Object.keys(player.stats).slice(4).map((key) => (
+                <div key={key}>
+                  <div className="font-bold">{player.stats[key as keyof typeof player.stats]}</div>
+                  <div className="text-gray-400">{translate(`stats.${key}`)}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
+        {/* Escudos de los equipos y resultado del partido */}
+        <div className="px-4 py-2 bg-[#292929]">
+          <div className="flex items-center justify-between space-x-4">
+            <div className="flex items-center space-x-2">
+              <Image src={player.shield1} alt="Team Shield 1" width={50} height={50} />
+              <h2 className="font-bold text-purple-300">{translate('teams.inter_miami')}</h2>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Image src={player.shield2} alt="Team Shield 2" width={50} height={50} />
+              <h2 className="font-bold text-purple-300">{translate('teams.al_nassr')}</h2>
+            </div>
+          </div>
+          
+          <div className="text-xs text-gray-400 mt-2">{translate('stats.result')}: {player.result}</div>
+        </div>
+        {/* Fecha del partido */}
+        <div className="text-xs text-gray-400 text-center py-2 bg-[#292929] rounded-b-lg">{translate('dates.' + player.matchDate.replace(' ', '_').toLowerCase())}</div>
       </div>
-      <div className="text-xs text-gray-400 text-center py-2">{translate('dates.' + player.matchDate.replace(' ', '_').toLowerCase())}</div>
     </div>
   );
 }
+
 
 function ShieldIcon(props: SVGProps<SVGSVGElement>) {
   return (
