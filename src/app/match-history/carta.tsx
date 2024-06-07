@@ -5,8 +5,8 @@ import { SVGProps } from 'react';
 import MessiStats from '@/../../public/Messi_mia.jpg';
 import MessiStats2 from '@/../../public/Messi_barc.jpeg';
 import MessiStats3 from '@/../../public/Messi_arge.jpg';
-import MessiStats4 from '@/../../public/masia.jpg';
-import MessiStats5 from '@/../../public/MessiFr.jpg';
+import MessiStats4 from '@/../../public/MessiBarc.png';
+import MessiStats5 from '@/../../public/Messi2014.jpg';
 import Shield1 from '../../../public/Shield/LogoM.png';
 import Shield2 from '../../../public/Shield/Al-Nassr.png';
 import  Shield3 from '../../../public/Shield/Espanyol.png';
@@ -62,7 +62,7 @@ const playersData = [
       position: 'Forward',
       performance: '7.8',
     },
-    image: MessiStats,
+    image: MessiStats2,
     shield1: Shield1,
     shield2: Shield2,
     matchDate: 'February 5',
@@ -85,7 +85,7 @@ const playersData = [
       position: 'Forward',
       performance: '8.4',
     },
-    image: MessiStats,
+    image: MessiStats3,
     shield1: Shield1,
     shield2: Shield2,
     matchDate: 'March 15',
@@ -108,7 +108,7 @@ const playersData = [
       position: 'Forward',
       performance: '6.5',
     },
-    image: MessiStats,
+    image: MessiStats4,
     shield1: Shield1,
     shield2: Shield2,
     matchDate: 'April 3',
@@ -131,7 +131,7 @@ const playersData = [
       position: 'Forward',
       performance: '8.0',
     },
-    image: MessiStats,
+    image: MessiStats2,
     shield1: Shield1,
     shield2: Shield2,
     matchDate: 'May 10',
@@ -154,7 +154,7 @@ const playersData = [
       position: 'Forward',
       performance: '8.9',
     },
-    image: MessiStats,
+    image: MessiStats3,
     shield1: Shield1,
     shield2: Shield2,
     matchDate: 'June 20',
@@ -177,7 +177,7 @@ const playersData = [
       position: 'Forward',
       performance: '8.2',
     },
-    image: MessiStats,
+    image: MessiStats4,
     shield1: Shield1,
     shield2: Shield2,
     matchDate: 'July 5',
@@ -200,7 +200,7 @@ const playersData = [
       position: 'Forward',
       performance: '7.0',
     },
-    image: MessiStats,
+    image: MessiStats5,
     shield1: Shield1,
     shield2: Shield2,
     matchDate: 'August 18',
