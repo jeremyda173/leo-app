@@ -14,7 +14,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <div className='w-full md:w-full'>
         <Menu darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
-      <div className='flex-grow p-6 md:overflow-y-auto md:p-4 md:flex md:flex-col'>
+      <div className='flex-grow p-6 md:overflow-y-auto md:p-0 md:flex md:flex-col'>
         {children}
       </div>
     </div>
