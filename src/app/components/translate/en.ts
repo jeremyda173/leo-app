@@ -8,6 +8,7 @@ const en = {
       world_cup: 'World cup',
       champions_league: 'Champions League',
       age: 'Age',
+      la_liga: 'La Liga',
     },
     stats: {
       title: 'Stats',
@@ -34,6 +35,7 @@ const en = {
       liverpool: 'Liverpool',
       manchester_city: 'Manchester City',
       manchester_united: 'Manchester United',
+      bayern_munich: 'Bayern Munich',
     },
     dates: {
       january_19: 'January 19',
