@@ -6,6 +6,7 @@ const es = {
     friendly_match: 'Partido Amistoso',
     world_cup: 'Copa Mundial',
     champions_league: 'Liga de Campeones',
+    la_liga: 'La Liga',
     age: 'Edad',
   },
   stats: {
@@ -33,6 +34,7 @@ const es = {
     liverpool: 'Liverpool',
     manchester_city: 'Manchester City',
     manchester_united: 'Manchester United',
+    bayern_munich: 'Bayern Munich',
   },
   dates: {
     january_19: '19 de enero',
