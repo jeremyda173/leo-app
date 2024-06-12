@@ -12,8 +12,6 @@ import Miami from "../inter-miami/page";
 import Argentina from "../argentina/page";
 import ArImage from "@/../../public/Argentina_national_football_team_logo.svg.png"
 
-
-
 interface Club {
   name: string;
   image: any;
@@ -63,7 +61,8 @@ function Groups() {
 
       <div className="flex items-center justify-center">
         <div className="bg-gray-700 p-8 rounded-lg shadow-lg w-full max-w-screen-lg">
-          <div className="grid grid-cols-3 gap-8 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
+
             {clubs.map((club) => (
               
             <div
