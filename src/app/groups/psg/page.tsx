@@ -28,16 +28,18 @@ function PSG() {
         <div style={{ marginBottom: '20px'}}></div>
 
 {/* Reproductor de video */}
-  <div style={{ position: 'relative', marginLeft: '25%', zIndex: 1}} onClick={() => window.location.href = videoUrl}>
-    <iframe
-      width="560"
-      height="315"
-      src={videoUrl}
-      title="Video del Barcelona"
-      frameBorder="0"
-      allowFullScreen
-    ></iframe>
-  </div>
+        {/* Reproductor de video */}
+        <div className="flex justify-center w-full">
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src={videoUrl}
+              title="Video del Paris Saint-German"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );
