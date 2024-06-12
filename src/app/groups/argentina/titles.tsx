@@ -53,7 +53,7 @@ function BarcelonaTitles() {
   return (
     <div className="bg-gray-700 min-h-screen flex items-center justify-center w-full pt-8 pl-8 pr-8 text-center">
       <div className="container mx-auto text-white">
-        <h1 className="text-4xl font-bold mb-8">Titles de Lionel Messi in FC Barcelona</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Titles in AFA</h1>
         {/* Trofeos Europeos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 ml-64">
           {renderTrophyCard(CopaAmerica, "Copa América", 1)}
