@@ -7,6 +7,9 @@ import MessiStats2 from '@/../../public/Messi_barc.jpeg';
 import MessiStats3 from '@/../../public/Messi_arge.jpg';
 import MessiStats4 from '@/../../public/MessiBarc.png';
 import MessiStats5 from '@/../../public/Messi2014.jpg';
+import MessiStats6 from '@/../../public/vsliverpool.png';
+import MessiStats7 from "@/../../public/vsunited.jpg";
+import MessiStats8 from '@/../../public/MessiBayern.jpg';
 import Shield1 from '../../../public/Shield/LogoM.png';
 import Shield2 from '../../../public/Shield/Al-Nassr.png';
 import Shield3 from '../../../public/Shield/Espanyol.png';
@@ -16,7 +19,10 @@ import Shield6 from '../../../public/Shield/Alemania.png';
 import Shield7 from '../../../public/Shield/LogoB.png';
 import Shield8 from '../../../public/Shield/LogoP.png';
 import Shield9 from '../../../public/Shield/bandera-argentina-re.png';
-import Shield10 from '@/../../public/Shield/Manchester-cITY.png';
+import Shield10 from '@/../../public/Shield/Manchester-cITY.png'
+import Shield11 from '@/../../public/Shield/Bayern.png';
+import Shield12 from '@/../../public/Shield/Liverpool_FC.svg.png';
+import Shield13 from '@/../../public/Shield/Manchester united.png';
 import { translate } from '@/app/components/translate';
 
 // Temporalmente definimos StaticImageData como any
@@ -31,7 +37,7 @@ const playersData = [
     opponent: 'Al Nassr',
     age: 36,
     result: '2-0',
-    matchType: 'Friendly Match',
+    matchType: 'friendly_match',
     stats: {
       goals: 2,
       assists: 1,
@@ -55,7 +61,7 @@ const playersData = [
     opponent: 'Barcelona',
     age: 32,
     result: '1-1',
-    matchType: 'LaLiga',
+    matchType: 'la_liga',
     stats: {
       goals: 1,
       assists: 0,
@@ -79,7 +85,7 @@ const playersData = [
     opponent: 'Manchester City',
     age: 36,
     result: '5-5',
-    matchType: 'Champions League',
+    matchType: 'champions_league',
     stats: {
       goals: 1,
       assists: 3,
@@ -99,11 +105,11 @@ const playersData = [
     id: 4,
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
-    team: 'Inter Miami',
+    team: 'FC Barcelona',
     opponent: 'Real Madrid',
     age: 36,
     result: '3-0',
-    matchType: 'League Match',
+    matchType: 'la_liga',
     stats: {
       goals: 2,
       assists: 0,
@@ -127,7 +133,7 @@ const playersData = [
     opponent: 'PSG',
     age: 36,
     result: '1-1',
-    matchType: 'Champions League',
+    matchType: 'champions_league',
     stats: {
       goals: 1,
       assists: 1,
@@ -140,18 +146,18 @@ const playersData = [
     },
     image: MessiStats2,
     shield1: Shield1,
-    shield2: Shield2,
+    shield2: Shield8,
     matchDate: 'May 10',
   },
   {
     id: 6,
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
-    team: 'Inter Miami',
-    opponent: 'Bayern Munich',
+    team: 'Fc Barcelona',
+    opponent: 'bayern_munich',
     age: 36,
     result: '3-3',
-    matchType: 'Champions League',
+    matchType: 'champions_league',
     stats: {
       goals: 2,
       assists: 0,
@@ -162,9 +168,9 @@ const playersData = [
       position: 'Forward',
       performance: '8.9',
     },
-    image: MessiStats3,
+    image: MessiStats8,
     shield1: Shield1,
-    shield2: Shield2,
+    shield2: Shield11,
     matchDate: 'June 20',
   },
   {
@@ -172,10 +178,10 @@ const playersData = [
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
     team: 'Inter Miami',
-    opponent: 'Liverpool',
+    opponent: 'liverpool',
     age: 36,
     result: '2-1',
-    matchType: 'League Match',
+    matchType: 'la_liga',
     stats: {
       goals: 1,
       assists: 0,
@@ -186,20 +192,20 @@ const playersData = [
       position: 'Forward',
       performance: '8.2',
     },
-    image: MessiStats4,
+    image: MessiStats6,
     shield1: Shield1,
-    shield2: Shield2,
+    shield2: Shield12,
     matchDate: 'July 5',
   },
   {
     id: 8,
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
-    team: 'Argentina',
-    opponent: 'Alemania',
+    team: 'argentina',
+    opponent: 'alemania',
     age: 27,
     result: '0-1',
-    matchType: 'World Cup',
+    matchType: 'world_cup',
     stats: {
       goals: 0,
       assists: 0,
@@ -219,11 +225,11 @@ const playersData = [
     id: 9,
     name: 'Lionel',
     fullName: 'Andrés Messi Cuccittini',
-    team: 'Inter Miami',
+    team: 'FC Barcelona',
     opponent: 'Manchester United',
-    age: 36,
-    result: '2-2',
-    matchType: 'League Match',
+    age: 23,
+    result: '3-1',
+    matchType: 'champions_league',
     stats: {
       goals: 1,
       assists: 1,
@@ -232,11 +238,11 @@ const playersData = [
       shots: 4,
       passes: 85,
       position: 'Forward',
-      performance: '8.0',
+      performance: '9.0',
     },
-    image: MessiStats,
-    shield1: Shield1,
-    shield2: Shield2,
+    image: MessiStats7,
+    shield1: Shield7,
+    shield2: Shield13,
     matchDate: 'September 12',
   },
 ];
@@ -323,7 +329,7 @@ function Card({ player, isActive, onClick }: CardProps) {
             </div>
             <div className="flex items-center space-x-1">
               <ShieldIcon className="h-5 w-5 text-blue-500" />
-              <span className="text-xs text-gray-400">{translate(`matchTypes.${player.matchType.replace(/ /g, '_').toLowerCase()}`)}</span>
+              <span className="text-xs text-gray-400">{translate(`auth.${player.matchType.replace(/ /g, '_').toLowerCase()}`)}</span>
             </div>
           </div>
         </div>
