@@ -22,14 +22,14 @@ const MessiStats: React.FC = () => {
       if (currentGoals < totalGoals) {
         setCurrentGoals((prevGoals) => prevGoals + 1);
       }
-    }, 10);
+    }, 20);
 
     const assistInterval = setInterval(() => {
       if (currentAssists < totalAssists) {
         setCurrentAssists((prevAssists) => prevAssists + 1);
         setCurrentAssistsPerMatch((prevAssistsPerMatch) => (currentAssists + 1) / totalMatches);
       }
-    }, 10);
+    }, 20);
 
     return () => {
       clearInterval(goalInterval);
