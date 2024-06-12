@@ -7,7 +7,7 @@ function InterMiamiTitles() {
   return (
     <div className="bg-gray-700 min-h-screen flex items-center justify-center w-full pt-8 pl-8 pr-8">
       <div className="container mx-auto text-white">
-        <h1 className="text-4xl font-bold mb-8">Titles de Lionel Messi in Inter Miami</h1>
+        <h1 className="text-4xl font-bold mb-8 hover:bg-sky-700 text-center">Titles in Inter Miami</h1>
         {/* Trofeos Europeos */}
         <div className="grid grid-cols-1 gap-8 mb-2">
           {renderTrophyCard(SuperCopaEuropa, "League Cup", 1)}
