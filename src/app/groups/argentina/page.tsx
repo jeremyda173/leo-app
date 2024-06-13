@@ -7,10 +7,10 @@ function Argentina() {
 
   return (
     <div>
-      <h1>Selección Argentina</h1>
+      <h1 className="text-2xl font-bold mb-4">Selección Argentina</h1>
       <div>
         {/* Información adicional sobre la selección argentina */}
-        <p>
+        <p className="mb-4 text-justify">
           La selección argentina de fútbol es el equipo representativo del país en las competiciones internacionales de fútbol.
         </p><br></br>
 
@@ -19,17 +19,17 @@ function Argentina() {
         <div style={{ marginBottom: '20px'}}></div>
 
         {/* Reproductor de video */}
-        <div style={{ position: 'relative', marginLeft: '20%', zIndex: 1}} onClick={() => window.location.href = videoUrl}>
-          <iframe
-            width="560"
-            height="315"
-            src={videoUrl}
-            title="Video de la Selección Argentina"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
+        <div className="flex justify-center w-full">
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src={videoUrl}
+              title="Video de Argentina"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
-
       </div>
     </div>
   );
