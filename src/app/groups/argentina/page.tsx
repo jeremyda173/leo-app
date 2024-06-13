@@ -7,10 +7,10 @@ function Argentina() {
 
   return (
     <div>
-      <h1>Selección Argentina</h1>
+      <h1 className="text-2xl font-bold mb-4">Selección Argentina</h1>
       <div>
         {/* Información adicional sobre la selección argentina */}
-        <p>
+        <p className="mb-4 text-justify">
           La selección argentina de fútbol es el equipo representativo del país en las competiciones internacionales de fútbol.
         </p><br></br>
 
