@@ -9,20 +9,22 @@ function InterMiami() {
     <div className="flex flex-col items-center p-4">
       <h1 className="text-2xl font-bold mb-4">Inter Miami</h1>
       <div className="max-w-2xl w-full">
-        <p className="mb-4 text-justify">
-          Inter Miami CF es un club de fútbol profesional con sede en Miami, Florida, Estados Unidos. 
-          Fundado en 2018, el Inter Miami compite en la Major League Soccer (MLS), siendo parte integral 
-          de la escena futbolística en los Estados Unidos y Canadá. El equipo cuenta con la propiedad 
-          parcial del exjugador de fútbol británico David Beckham.
-        </p>
+        <div className="p-4 hover:bg-gray-700 rounded-md transition duration-300 ease-in-out">
+          <p className="mb-4 text-justify">
+            Inter Miami CF es un club de fútbol profesional con sede en Miami, Florida, Estados Unidos. 
+            Fundado en 2018, el Inter Miami compite en la Major League Soccer (MLS), siendo parte integral 
+            de la escena futbolística en los Estados Unidos y Canadá. El equipo cuenta con la propiedad 
+            parcial del exjugador de fútbol británico David Beckham.
+          </p>
 
-        <MessiStats />
+          <MessiStats />
+        </div>
 
         <div className="my-4"></div>
 
         {/* Reproductor de video */}
         <div className="flex justify-center w-full">
-          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+          <div className="relative w-full hover:scale-105 transition duration-300 ease-in-out" style={{ paddingBottom: '56.25%' }}>
             <iframe
               className="absolute top-0 left-0 w-full h-full"
               src={videoUrl}
