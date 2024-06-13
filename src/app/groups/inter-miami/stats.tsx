@@ -19,10 +19,10 @@ const MessiStats: React.FC = () => {
 
   useEffect(() => {
     const goalInterval = setInterval(() => {
-        if (currentGoals < totalGoals) {
-          setCurrentGoals((prevGoals) => prevGoals + 1);
-        }
-      }, 30);
+      if (currentGoals < totalGoals) {
+        setCurrentGoals((prevGoals) => prevGoals + 1);
+      }
+    }, 30);
 
     const assistInterval = setInterval(() => {
       if (currentAssists < totalAssists) {
@@ -66,39 +66,37 @@ const MessiStats: React.FC = () => {
   const assistsAverage: string = currentAssistsPerMatch.toFixed(2);
 
   return (
-    <><div className="container mx-auto p-4 max-w-md">
-      <div className="bg-blue-700 text-white rounded-md p-2 text-center">
-        <h1 className="text-lg font-bold">Messi Stats</h1>
+    <>
+      <div className="container mx-auto p-4 max-w-md">
+        <div className="bg-blue-700 text-white rounded-md p-2 text-center hover:bg-blue-600 transition duration-300 ease-in-out">
+          <h1 className="text-lg font-bold">Messi Stats</h1>
+        </div>
+        <div
+          className="rounded-md p-4 mt-2 shadow-md hover:bg-blue-600 transition duration-300 ease-in-out"
+          style={{ background: calculateGoalColor(), transition: 'background 0.5s ease-in-out' }}
+        >
+          <p className="text-xl">Goals: {currentGoals}</p>
+          <p className="text-md">Goals per match: {goalsPerMatch}</p>
+        </div>
+        <div
+          className="mt-2 rounded-md p-4 shadow-md hover:bg-green-600 transition duration-300 ease-in-out"
+          style={{ background: calculateAssistColor(), transition: 'background 0.5s ease-in-out' }}
+        >
+          <p className="text-xl">Assists: {currentAssists}</p>
+          <p className="text-md">Assists per match: {assistsAverage}</p>
+        </div>
+        <div
+          className="mt-2 rounded-md p-4 shadow-md hover:bg-yellow-600 transition duration-300 ease-in-out"
+          style={{ background: calculateMatchColor(), transition: 'background 0.5s ease-in-out' }}
+        >
+          <p className="text-md">Matches played: {stats.matches}</p>
+        </div>
       </div>
-      <div
-  className="rounded-md p-4 mt-2 shadow-md"
-  style={{ background: calculateGoalColor(), transition: 'background 0.5s ease-in-out' }}
->
-  <p className="text-xl">Goals: {currentGoals}</p>
-  <p className="text-md">Goals per match: {goalsPerMatch}</p>
-</div>
-<div
-  className="mt-2 rounded-md p-4 shadow-md"
-  style={{ background: calculateAssistColor(), transition: 'background 0.5s ease-in-out' }}
->
-  <p className="text-xl">Assists: {currentAssists}</p>
-  <p className="text-md">Assists per match: {assistsAverage}</p>
-</div>
-<div
-  className="mt-2 rounded-md p-4 shadow-md"
-  style={{ background: calculateMatchColor(), transition: 'background 0.5s ease-in-out' }}
->
-  <p className="text-md">Matches played: {stats.matches}</p>
-</div>
 
-
-    </div>
-    <div className="flex space-x-4">
-      <InterMiamiTitles />
-    </div>
-
-      </>
-    
+      <div className="flex space-x-4 mt-8">
+        <InterMiamiTitles />
+      </div>
+    </>
   );
 };
 
