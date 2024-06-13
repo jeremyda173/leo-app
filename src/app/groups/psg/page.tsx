@@ -9,10 +9,10 @@ function PSG() {
 
   return (
     <div>
-      <h1>Paris Saint Germain</h1>
+      <h1 className="text-2xl font-bold mb-4">Paris Saint Germain</h1>
       <div>
         {/* Información adicional sobre el FC Barcelona */}
-        <p>
+        <p className="mb-4 text-justify">
             Paris Saint-Germain Football Club, comúnmente conocido como PSG, es un club de fútbol profesional 
             con sede en París, Francia. Fundado en 1970, el PSG compite en la Ligue 1, la máxima categoría 
             del fútbol francés. El club se ha convertido en uno de los equipos más exitosos y reconocidos 
