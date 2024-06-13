@@ -10,10 +10,10 @@ function Barcelona() {
 
   return (
     <div>
-      <h1>Barcelona FC</h1>
+           <h1 className="text-2xl font-bold mb-4">FC Barcelona</h1>
       <div>
         {/* Información adicional sobre el FC Barcelona */}
-        <p>
+        <p className="mb-4 text-justify">
           El FC Barcelona es un club de fútbol profesional con sede en
           Barcelona, Cataluña, España. Fundado en 1899, el Barcelona es uno de los
           clubes más exitosos y populares del mundo.
