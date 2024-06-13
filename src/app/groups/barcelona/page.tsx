@@ -10,10 +10,10 @@ function Barcelona() {
 
   return (
     <div>
-      <h1>Barcelona FC</h1>
+           <h1 className="text-2xl font-bold mb-4">FC Barcelona</h1>
       <div>
         {/* Información adicional sobre el FC Barcelona */}
-        <p>
+        <p className="mb-4 text-justify">
           El FC Barcelona es un club de fútbol profesional con sede en
           Barcelona, Cataluña, España. Fundado en 1899, el Barcelona es uno de los
           clubes más exitosos y populares del mundo.
@@ -29,17 +29,17 @@ function Barcelona() {
         <div style={{ marginBottom: '20px'}}></div>
 
         {/* Reproductor de video */}
-        <div style={{ position: 'relative', marginLeft: '25%', zIndex: 1}} onClick={() => window.location.href = videoUrl}>
-  <iframe
-    width="560"
-    height="315"
-    src={videoUrl}
-    title="Video del Barcelona"
-    frameBorder="0"
-    allowFullScreen
-  ></iframe>
-</div>
-
+        <div className="flex justify-center w-full">
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src={videoUrl}
+              title="Video del Barcelona"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );

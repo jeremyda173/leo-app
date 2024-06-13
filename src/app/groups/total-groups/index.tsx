@@ -10,9 +10,7 @@ import Barcelona from "../barcelona/page";
 import Paris from "../psg/page";
 import Miami from "../inter-miami/page";
 import Argentina from "../argentina/page";
-import ArImage from "@/../../public/Argentina_national_football_team_logo.svg.png"
-
-
+import ArImage from "@/../../public/Argentina_national_football_team_logo.svg.png";
 
 interface Club {
   name: string;
@@ -22,7 +20,7 @@ interface Club {
 }
 
 const ClubInfo: React.FC<Club> = ({ name, image, component }) => (
-  <div className="bg-white p-8 rounded-lg shadow-lg border-2 border-blue-500">
+  <div className="bg-white p-8 rounded-lg shadow-lg border-2 border-blue-500 hover:bg-gray-100 transition duration-300 ease-in-out">
     <div className="flex items-center justify-center mb-4">
       <Image src={image} alt={name} width={80} height={80} />
     </div>
@@ -43,13 +41,11 @@ function Groups() {
     { name: 'Argentina', image: ArImage, component: <Argentina />, backgroundColor: 'from-white to-blue-500 text-black' },
     { name: '', image: '', component: <Miami />, backgroundColor: 'from-black' },
   ];
-  
 
   const handleClubClick = (club: string) => {
     console.log('Club clicked:', club);
     setSelectedClub((prevClub) => (prevClub === club ? null : club));
   };
-  
 
   return (
     <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-white min-h-screen p-4">
@@ -63,16 +59,15 @@ function Groups() {
 
       <div className="flex items-center justify-center">
         <div className="bg-gray-700 p-8 rounded-lg shadow-lg w-full max-w-screen-lg">
-          <div className="grid grid-cols-3 gap-8 md:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
             {clubs.map((club) => (
-              
-            <div
+              <div
                 key={club.name}
                 onClick={() => handleClubClick(club.name)}
                 className={`relative group overflow-hidden mb-8 bg-gradient-to-b ${club.backgroundColor} rounded-md transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer ${
-                pageLoaded ? 'opacity-100' : 'opacity-0'
+                  pageLoaded ? 'opacity-100' : 'opacity-0'
                 } ${selectedClub === club.name ? 'ring ring-white' : ''}`}
-                >
+              >
                 <div className="flex flex-col items-center">
                   <Image
                     src={club.image}
@@ -108,4 +103,3 @@ function Groups() {
 }
 
 export default Groups;
-
