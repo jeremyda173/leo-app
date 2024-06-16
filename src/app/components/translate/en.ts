@@ -49,9 +49,14 @@ const en = {
       july_5: 'July 5',
       august_18: 'August 18',
     },
-    family: {
-        family: 'Family',
+    home: {
+      home: 'Home',
+      matchHistory: 'Match History',
+      awards: 'Awards',
+      teams: 'Teams',
+      family: 'Family'
     },
+    
   };
   
   export default en;
