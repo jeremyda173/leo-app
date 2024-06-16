@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';  // Icono de Font Awesome para el globo terráqueo
 import FlagUSA from '@/../../public/us.png';  // Imagen de la bandera de Estados Unidos
 import FlagDominicanRepublic from '@/../../public/DO.png';  // Imagen de la bandera de República Dominicana
+import Portada from '@/../../public/Portada2.jpg';  // Ajusta esta ruta según la ubicación de tu imagen
 
 const WelcomeSection = () => {
   const [showFlags, setShowFlags] = useState(false);  // Estado para alternar la visualización de las banderas
