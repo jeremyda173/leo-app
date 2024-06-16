@@ -3,16 +3,16 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';  // Icono de Font Awesome para el globo terráqueo
-import FlagUSA from '@/../../public/us.png';  // Imagen de la bandera de Estados Unidos
-import FlagDominicanRepublic from '@/../../public/DO.png';  // Imagen de la bandera de República Dominicana
-import Portada from '@/../../public/Portada2.jpg';  // Ajusta esta ruta según la ubicación de tu imagen
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import FlagUSA from '@/../../public/us.png';
+import FlagDominicanRepublic from '@/../../public/DO.png';
+import Portada from '@/../../public/Portada2.jpg';
 
 const WelcomeSection = () => {
-  const [showFlags, setShowFlags] = useState(false);  // Estado para alternar la visualización de las banderas
+  const [showFlags, setShowFlags] = useState(false);
 
   const handleToggleFlags = () => {
-    setShowFlags(!showFlags);  // Alternar el estado para mostrar/ocultar las banderas
+    setShowFlags(!showFlags);
   };
 
   return (
@@ -36,7 +36,7 @@ const WelcomeSection = () => {
             onClick={handleToggleFlags}
             className="flex items-center p-2 bg-gray-800 text-white rounded-full shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition duration-300"
           >
-            <FontAwesomeIcon icon={faGlobe} className="text-lg" /> {/* Icono de Font Awesome para el globo terráqueo */}
+            <FontAwesomeIcon icon={faGlobe} className="text-lg" />
           </button>
 
           {/* Contenedor de las banderas con animación y tamaño */}
