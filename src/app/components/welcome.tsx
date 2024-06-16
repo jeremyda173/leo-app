@@ -7,6 +7,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import FlagUSA from '@/../../public/us.png';
 import FlagDominicanRepublic from '@/../../public/DO.png';
 import Portada from '@/../../public/Portada2.jpg';
+import Translate, { translate } from '@/app/components/translate';
 
 const WelcomeSection = () => {
   const [showFlags, setShowFlags] = useState(false);
@@ -20,11 +21,11 @@ const WelcomeSection = () => {
       {/* Menú superpuesto */}
       <nav className="absolute top-4 left-4 z-10 bg-white bg-opacity-20 p-4 rounded">
         <ul className="flex space-x-4">
-          <li><a href="#" className="text-gray-800 font-bold hover:text-white hover:p-2 hover:rounded hover:bg-blue-600 hover:opacity-25">Home</a></li>
-          <li><a href="#" className="text-gray-800 font-bold hover:text-white hover:p-2 hover:rounded hover:bg-blue-600 hover:opacity-25">Match History</a></li>
-          <li><a href="#" className="text-gray-800 font-bold hover:text-white hover:p-2 hover:rounded hover:bg-blue-600 hover:opacity-25">Awards</a></li>
-          <li><a href="#" className="text-gray-800 font-bold hover:text-white hover:p-2 hover:rounded hover:bg-blue-600 hover:opacity-25">Teams</a></li>
-          <li><a href="#" className="text-gray-800 font-bold hover:text-white hover:p-2 hover:rounded hover:bg-blue-600 hover:opacity-25">Family</a></li>
+          <li><a href="#" className="text-gray-800 font-bold hover:text-white hover:p-2 hover:rounded hover:bg-blue-600 hover:opacity-25">{translate('home.home')}</a></li>
+          <li><a href="#" className="text-gray-800 font-bold hover:text-white hover:p-2 hover:rounded hover:bg-blue-600 hover:opacity-25">{translate('home.matchHistory')}</a></li>
+          <li><a href="#" className="text-gray-800 font-bold hover:text-white hover:p-2 hover:rounded hover:bg-blue-600 hover:opacity-25">{translate('home.awards')}</a></li>
+          <li><a href="#" className="text-gray-800 font-bold hover:text-white hover:p-2 hover:rounded hover:bg-blue-600 hover:opacity-25">{translate('home.teams')}</a></li>
+          <li><a href="#" className="text-gray-800 font-bold hover:text-white hover:p-2 hover:rounded hover:bg-blue-600 hover:opacity-25">{translate('home.family')}</a></li>
         </ul>
       </nav>
 
