@@ -48,6 +48,13 @@ const es = {
     july_5: '5 de julio',
     august_18: '18 de agosto',
   },
+  home: {
+    home: 'Inicio',
+    matchHistory: 'Historial de Partidos',
+    awards: 'Premios',
+    teams: 'Equipos',
+    family: 'Familia'
+  },
 };
 
 export default es;
