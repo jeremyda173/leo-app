@@ -51,12 +51,17 @@ const en = {
     },
     home: {
       home: 'Home',
-      matchHistory: 'Match History',
+      match_history: 'Match History',
       awards: 'Awards',
       teams: 'Teams',
       family: 'Family'
     },
-    
+    text: {
+      description: "On a warm summer afternoon in Rosario, Argentina, a boy destined to change the history of football was born on June 24, 1987. Lionel Messi came into the world on June 24, 1987, and from his earliest days, his destiny was linked to soccer. With the ball as an inseparable companion, Messi showed exceptional talent from an early age, dazzling everyone who had the luck to see him play in the dusty streets of his hometown.",
+      journey: "At the age of 13, destiny had a twist that would change his life forever. Messi left his native Argentina and moved to Barcelona, Spain, to join La Masia, FC Barcelona's prestigious youth academy. The transition was not easy; he missed his homeland and family, but the dream of conquering European football drove him to overcome any obstacle.",
+      masia: "At La Masia, Messi continued his meteoric rise. His skill with the ball, his game vision, and his speed amazed teammates and coaches alike. The young Argentine became a prized jewel, and his name began to resonate throughout the football world. At 16, the crucial moment arrived: Lionel Messi made his debut with FC Barcelona's first team in a friendly match.",
+      international: "But Messi also brought his brilliance to the international stage. With the Argentine national team, he experienced epic moments and challenges. The FIFA World Cup became an unrelenting quest for Messi, a burning desire to lead his country to the ultimate glory. Every tournament was a new opportunity for 'La Pulga' to prove his worth on the world stage."
+    },
   };
   
   export default en;
