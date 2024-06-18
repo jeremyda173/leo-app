@@ -60,7 +60,7 @@ const Menu: React.FC<MenuProps> = ({ darkMode, toggleDarkMode }) => {
                         {activeOption === 'home' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
                     <a
-                        href="/match-history"
+                        href="/match_history"
                         className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'matchHistory' ? 'text-gray-200' : ''}`}
                         onMouseEnter={() => setActiveOption('matchHistory')}
                         onMouseLeave={() => setActiveOption('')}
