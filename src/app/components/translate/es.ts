@@ -69,6 +69,14 @@ const es = {
     laureus: " Los Premios Laureus World Sports, también conocidos como los Oscar del deporte, son una serie de galardones anuales que honran a los deportistas más destacados del mundo. Fundados en 1999 por la Laureus Sport for Good Foundation, estos premios reconocen logros deportivos excepcionales en varias categorías.",
     pichichi: " El Trofeo Pichichi es un galardón otorgado anualmente por el diario deportivo español Marca al máximo goleador de la Primera División de España. Nombrado en honor al legendario delantero del Athletic Club, Rafael Pichichi Moreno, este premio reconoce la destreza y el talento de los goleadores más destacados de La Liga."
   },
+  words: {
+    golden_boot: " Bota de oro",
+    golden_ball: " Balón de oro",
+    golden_boy: " Chico de Oro",
+    the_best: " The Best",
+    laureus: " Laureus",
+    pichichi: " Trofeo Pichichi",
+  },
 };
 
 export default es;
