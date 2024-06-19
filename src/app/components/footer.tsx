@@ -1,7 +1,6 @@
 import { FaInstagram, FaFacebook, FaGoogle } from 'react-icons/fa';
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-  
 
 function Footer () {
     return (
@@ -17,7 +16,6 @@ function Footer () {
         <a href="https://messi.com/fundacion-leo-messi/" target="_blank" rel="noopener noreferrer">
           <FaGoogle size={30} color="#fff" />
         </a>
-        {/* Agrega más enlaces y íconos según sea necesario */}
         <p className="ml-2">&copy; 2023 Messi Fan Club. Todos los derechos reservados.</p>
       </footer>
         </>
