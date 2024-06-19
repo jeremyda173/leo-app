@@ -70,6 +70,14 @@ const en = {
       laureus: " The Laureus World Sports Awards, also known as the Oscars of Sport, are a series of annual awards that honor the world's most outstanding athletes. Founded in 1999 by the Laureus Sport for Good Foundation, these awards recognize exceptional sporting achievements in various categories.",
       pichichi: " The Pichichi Trophy is an award given annually by the Spanish sports newspaper Marca to the top scorer of Spain's La Liga. Named in honor of the legendary Athletic Club forward, Rafael Pichichi Moreno, this award recognizes the skill and talent of La Liga's top goal-scorers."
     },
+    words: {
+      golden_boot: " Golden Boot",
+      golden_ball: " Golden Ball",
+      golden_boy: " Golden Boy",
+      the_best: " The Best",
+      laureus: " Laureus",
+      pichichi: " Trofeo Pichichi",
+    },
   };
   
   export default en;
