@@ -1,6 +1,6 @@
 'use client';
 import React from "react";
-import MatchHistory from "../match-history/carta";
+import MatchHistory from "./carta";
 
 function CartaMatch() {
 
