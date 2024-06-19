@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+'use client';
 import React, {useState, useCallback } from 'react';
 import BallonDOr from '@/app/awards/individuals/balon-oro/page';
 import Botaoro from '@/app/awards/individuals/bota-oro/page';
