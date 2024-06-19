@@ -92,7 +92,7 @@ const WelcomeSection = () => {
       </div>        
 
       {/* Título con animación */}
-      <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4 absolute top-1/2 right-4 transform -translate-y-1/2 animate-fadeInRight">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4 absolute top-1/2 transform -translate-y-1/2 animate-fadeInRight">
         LIONEL MESSI
       </h1>
 
@@ -111,9 +111,9 @@ const WelcomeSection = () => {
         <p id="teams" className="text-justify leading-relaxed max-w-4xl mx-auto">
           {translate('text.international')}
         </p>
-        <p id="family" className="text-justify leading-relaxed max-w-4xl mx-auto">
-          {translate('text.family')}
-        </p>
+      </div>
+      <div className='bg-white'>
+        <h4 className="text-justify">.</h4>
       </div>
     </div>
   );
