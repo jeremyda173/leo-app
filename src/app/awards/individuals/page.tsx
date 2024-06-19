@@ -72,7 +72,7 @@ function PresentationIn() {
         <div className="p-4">
           <h2 className="text-lg font-bold mb-2">The Best</h2>
           <p className="text-gray-700 text-sm text-justify">
-            Los Premios The Best fueron creados por la FIFA en 2016 tras su 'divorcio' con France Football. Se premia al mejor jugador, a la mejor jugadora, al mejor entrenador masculino y al mejor entrenador o entrenadora femenina.
+            {translate("awards.the_best")}
           </p>
         </div>
       </div>
@@ -82,7 +82,7 @@ function PresentationIn() {
         <div className="p-4">
           <h2 className="text-lg font-bold mb-2">Laureus</h2>
           <p className="text-gray-700 text-sm text-justify">
-            Los Premios Laureus World Sports, también conocidos como los "Oscar del deporte", son una serie de galardones anuales que honran a los deportistas más destacados del mundo. Fundados en 1999 por la Laureus Sport for Good Foundation, estos premios reconocen logros deportivos excepcionales en varias categorías.
+            {translate("awards.laureus")}
           </p>
         </div>
       </div>
@@ -92,7 +92,7 @@ function PresentationIn() {
         <div className="p-4">
           <h2 className="text-lg font-bold mb-2">Trofeo Pichichi</h2>
           <p className="text-gray-700 text-sm text-justify">
-            El Trofeo Pichichi es un galardón otorgado anualmente por el diario deportivo español Marca al máximo goleador de la Primera División de España. Nombrado en honor al legendario delantero del Athletic Club, Rafael "Pichichi" Moreno, este premio reconoce la destreza y el talento de los goleadores más destacados de La Liga.
+           {translate("awards.pichichi")}
           </p>
         </div>
       </div>
