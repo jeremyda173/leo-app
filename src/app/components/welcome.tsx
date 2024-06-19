@@ -35,7 +35,7 @@ const WelcomeSection = () => {
       {/* Menú superpuesto */}
       <nav className="absolute top-4 left-4 z-10 bg-white bg-opacity-5 p-4 rounded">
         <ul className="flex space-x-4">
-          {["home", "match_history", "awards", "teams", "family"].map((key) => (
+          {["home", "match_history", "awards", "groups", "family"].map((key) => (
             <li key={key}>
               <a
                 href={`/${key}`}
