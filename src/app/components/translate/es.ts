@@ -50,7 +50,7 @@ const es = {
   },
   home: {
     home: 'Inicio',
-    matchHistory: 'Historial de Partidos',
+    match_history: 'Historial de Partidos',
     awards: 'Premios',
     teams: 'Equipos',
     family: 'Familia'
