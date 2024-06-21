@@ -4,6 +4,7 @@ import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
 import MessiLureus from '@/../../public/Awards/Laureus.jpeg'; // Assuming you have an image for Messi's Lureus
 import Image from 'next/image';
+import { translate } from '@/app/components/translate';
 
 const lureusData = [
   { id: 1, title: 'Lureus', year: 2019, image: '/images/lureus_2010.jpg' },
@@ -60,7 +61,7 @@ function LureusModal() {
               className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
               onClick={() => setMainModalOpen(false)}
             >
-              Close
+              {translate("modal.close")}
             </button>
           </div>
         </div>
