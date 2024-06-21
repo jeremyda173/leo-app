@@ -76,8 +76,16 @@ const en = {
       golden_boy: " Golden Boy",
       the_best: " The Best",
       laureus: " Laureus",
-      pichichi: " Trofeo Pichichi",
+      pichichi: " Trophy Pichichi",
     },
+    modal: {
+      close: "Close",
+      open_golden_ball: "Open Golden Ball",
+      open_golden_boot: "Open Golden Boot",
+      open_golden_boy: "Open Golden Boy",
+      open_laureus: "Open Laureus",
+      open_the_best: "Open The Best",
+    },    
   };
   
   export default en;
