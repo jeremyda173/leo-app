@@ -4,6 +4,7 @@ import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
 import BalonOro from '@/../../public/Awards/Balon de oro.png';
 import Image from 'next/image';
+import { translate } from '@/app/components/translate';
 
 const awardsData = [
   { id: 1, title: 'FIFA Ballon d\'Or', year: 2009, image: '/images/ballon_dor_2009.jpg', goals: 47, assists: 22 },
@@ -96,7 +97,7 @@ function BallonDOrModal() {
           setMainModalOpen(true);
         }}
       >
-        Close
+        {translate("modal.close")}
       </button>
     </div>
   </div>
