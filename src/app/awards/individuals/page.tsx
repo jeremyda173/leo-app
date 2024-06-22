@@ -97,8 +97,6 @@ function PresentationIn() {
           </p>
         </div>
       </div>
-
-
     </div>
   );
 }
