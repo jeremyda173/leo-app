@@ -8,7 +8,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
-
   return (
     <div className={`flex flex-col md:overflow-hidden ${darkMode ? 'dark' : ''}`}>
       <div className='w-full md:w-full'>
