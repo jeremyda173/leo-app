@@ -4,6 +4,7 @@ import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
 import GoldenBoy from '@/../../public/Awards/goldenBoy.png';
 import Image from 'next/image';
+import { translate } from '@/app/components/translate';
 
 const awardsData = [
   { id: 1, title: 'Golden Boy', year: 2005, image: '/images/golden_boy_2005.jpg', goals: 16, assists: 5 },
@@ -89,7 +90,7 @@ function GoldenBoyModal() {
           setMainModalOpen(true);
         }}
       >
-        Close
+        {translate("modal.close")}
       </button>
     </div>
   </div>

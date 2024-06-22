@@ -4,6 +4,7 @@ import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import BotaDeOroImg from '@/../../public/Awards/botaOro.png';
+import { translate } from '@/app/components/translate';
 
 interface AwardData {
   id: number;
@@ -103,7 +104,7 @@ const BotaDeOroModal: React.FC = () => {
                 setMainModalOpen(true);
               }}
             >
-              Close
+              {translate("modal.close")}
             </button>
           </div>
         </div>
