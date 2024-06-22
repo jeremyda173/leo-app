@@ -7,9 +7,8 @@ import Image from 'next/image';
 import { translate } from '@/app/components/translate';
 
 const lureusData = [
-  { id: 1, title: 'Lureus', year: 2019, image: '/images/lureus_2010.jpg' },
-  { id: 2, title: 'Lureus', year: 2023, image: '/images/lureus_2012.jpg' },
-  // Add more Lureus awards as needed
+  { id: 1, title: 'Lureus', year: 2019, image: '/images/lureus_2010.jpg', goals: 52, assists: 25 },
+  { id: 2, title: 'Lureus', year: 2023, image: '/images/lureus_2012.jpg', goals: 45, assists: 22 },
 ];
 
 function LureusModal() {
