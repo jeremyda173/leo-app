@@ -37,7 +37,6 @@ function LureusModal() {
       >
         Open Messi's Lureus
       </button>
-
       {/* Main Modal */}
       {mainModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
