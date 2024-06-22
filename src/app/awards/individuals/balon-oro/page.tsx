@@ -70,7 +70,6 @@ function BallonDOrModal() {
           </div>
         </div>
       )}
-
 {statisticsModalOpen && (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
     <div className="bg-gray-800 p-8 rounded-lg text-white">
@@ -88,7 +87,7 @@ function BallonDOrModal() {
             </div>
           );
         }
-        return null; // Return null if the year is not found
+        return null;
       })}
       <button
         className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
