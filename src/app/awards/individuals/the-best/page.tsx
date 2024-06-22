@@ -4,6 +4,7 @@ import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
 import TheBest from '@/../../public/Awards/theBest.png';  // Assuming you have an image for The Best
 import Image from 'next/image';
+import { translate } from '@/app/components/translate';
 
 const awardsData = [
   { id: 1, title: 'FIFA The Best', year: 2009, image: '/images/the_best_2019.jpg' },
@@ -62,7 +63,7 @@ function TheBestModal() {
               className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
               onClick={() => setMainModalOpen(false)}
             >
-              Close
+              {translate("modal.close")}
             </button>
           </div>
         </div>

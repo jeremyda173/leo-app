@@ -4,6 +4,7 @@ import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
 import BalonOro from '@/../../public/Awards/Balon de oro.png';
 import Image from 'next/image';
+import { translate } from '@/app/components/translate';
 
 const awardsData = [
   { id: 1, title: 'FIFA Ballon d\'Or', year: 2009, image: '/images/ballon_dor_2009.jpg', goals: 47, assists: 22 },
@@ -69,7 +70,6 @@ function BallonDOrModal() {
           </div>
         </div>
       )}
-
 {statisticsModalOpen && (
   <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
     <div className="bg-gray-800 p-8 rounded-lg text-white">
@@ -87,7 +87,7 @@ function BallonDOrModal() {
             </div>
           );
         }
-        return null; // Return null if the year is not found
+        return null;
       })}
       <button
         className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
@@ -96,7 +96,7 @@ function BallonDOrModal() {
           setMainModalOpen(true);
         }}
       >
-        Close
+        {translate("modal.close")}
       </button>
     </div>
   </div>

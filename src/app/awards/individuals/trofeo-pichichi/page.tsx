@@ -4,6 +4,7 @@ import 'tailwindcss/tailwind.css';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Pichichi from '@/../../public/Awards/pichichi2.png';
+import { translate } from '@/app/components/translate';
 
 const awardsData = [
   { id: 1, title: 'Trofeo Pichichi', year: '09/10', image: '/images/pichichi_2012.jpg', goals: 34 },
@@ -97,7 +98,7 @@ const PichichiModal: React.FC = () => {
                 setMainModalOpen(true);
               }}
             >
-              Close
+              {translate("modal.close")}
             </button>
           </div>
         </div>

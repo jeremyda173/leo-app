@@ -39,7 +39,7 @@ function PresentationIn() {
       <div className="max-w-xs mx-2 mb-4 bg-white rounded-md overflow-hidden shadow-md">
         <BallonDOr />
         <div className="p-4">
-          <h2 className="text-lg font-semibold mb-2">Ballon d'Or</h2>
+          <h2 className="text-lg font-semibold mb-2">{translate("words.golden_ball")}</h2>
           <p className="text-gray-700 text-sm text-justify">{translate("awards.golden_ball")}
           </p>
         </div>
@@ -49,7 +49,7 @@ function PresentationIn() {
       <div className="max-w-xs mx-2 mb-4 bg-white rounded-md overflow-hidden shadow-md">
         <Botaoro />
         <div className="p-4">
-          <h2 className="text-lg font-semibold mb-2">Bota de Oro</h2>
+          <h2 className="text-lg font-semibold mb-2">{translate("words.golden_boot")}</h2>
           <p className="text-gray-700 text-sm text-justify">
             {translate("awards.golden_boot")}
           </p>
@@ -60,7 +60,7 @@ function PresentationIn() {
       <div className="max-w-xs mx-2 mb-4 bg-white rounded-md overflow-hidden shadow-md">
         <GoldenBoy />
         <div className="p-4">
-          <h2 className="text-lg font-semibold mb-2">Golden Boy</h2>
+          <h2 className="text-lg font-semibold mb-2">{translate("words.golden_boy")}</h2>
           <p className="text-gray-700 text-sm text-justify">
             {translate("awards.golden_boy")}
           </p>
@@ -71,7 +71,7 @@ function PresentationIn() {
       <div className="max-w-xs mx-2 mb-4 bg-white rounded-md overflow-hidden shadow-md">
         <TheBest />
         <div className="p-4">
-          <h2 className="text-lg font-bold mb-2">The Best</h2>
+          <h2 className="text-lg font-bold mb-2">{translate("words.the_best")}</h2>
           <p className="text-gray-700 text-sm text-justify">
             {translate("awards.the_best")}
           </p>
@@ -81,7 +81,7 @@ function PresentationIn() {
       <div className="max-w-xs mx-2 mb-4 bg-white rounded-md overflow-hidden shadow-md">
         <TitleLaureus />
         <div className="p-4">
-          <h2 className="text-lg font-bold mb-2">Laureus</h2>
+          <h2 className="text-lg font-bold mb-2">{translate("words.laureus")}</h2>
           <p className="text-gray-700 text-sm text-justify">
             {translate("awards.laureus")}
           </p>
@@ -91,14 +91,12 @@ function PresentationIn() {
       <div className="max-w-xs mx-2 mb-4 bg-white rounded-md overflow-hidden shadow-md">
         <TitlePichichi />
         <div className="p-4">
-          <h2 className="text-lg font-bold mb-2">Trofeo Pichichi</h2>
+          <h2 className="text-lg font-bold mb-2">{translate("words.pichichi")}</h2>
           <p className="text-gray-700 text-sm text-justify">
            {translate("awards.pichichi")}
           </p>
         </div>
       </div>
-
-
     </div>
   );
 }

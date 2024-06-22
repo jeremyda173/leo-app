@@ -77,6 +77,14 @@ const es = {
     laureus: " Laureus",
     pichichi: " Trofeo Pichichi",
   },
+  modal: {
+    close: "Cerrar",
+    open_golden_ball: "Abrir Balones de oro",
+    open_golden_boot: "Abrir Botas de oro",
+    open_golden_boy: "Abrir Chico de oro",
+    open_laureus: "Abrir laureus",
+    open_the_best: "Abrir The Best",
+  },
 };
 
 export default es;
