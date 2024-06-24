@@ -14,7 +14,14 @@ interface AwardData {
   goals: number;
 }
 
-
+const awardsData: AwardData[] = [
+  { id: 1, title: 'Golden Boot', year: '09/10', image: '/images/golden_boot_2010.jpg', goals: 34 },
+  { id: 2, title: 'Golden Boot', year: '11/12', image: '/images/golden_boot_2012.jpg', goals: 50 },
+  { id: 3, title: 'Golden Boot', year: '12/13', image: '/images/golden_boot_2013.jpg', goals: 46 },
+  { id: 4, title: 'Golden Boot', year: '16/17', image: '/images/golden_boot_2017.jpg', goals: 37 },
+  { id: 5, title: 'Golden Boot', year: '17/18', image: '/images/golden_boot_2018.jpg', goals: 34 },
+  { id: 6, title: 'Golden Boot', year: '18/19', image: '/images/golden_boot_2021.jpg', goals: 36 },
+];
 
 const BotaDeOroModal: React.FC = () => {
   const [mainModalOpen, setMainModalOpen] = useState(false);
