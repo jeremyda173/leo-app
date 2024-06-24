@@ -85,6 +85,7 @@ const en = {
       open_golden_boy: "Open Golden Boy",
       open_laureus: "Open Laureus",
       open_the_best: "Open The Best",
+      ver_mas: "See more",
     },    
   };
   

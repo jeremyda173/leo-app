@@ -84,6 +84,7 @@ const es = {
     open_golden_boy: "Abrir Chico de oro",
     open_laureus: "Abrir laureus",
     open_the_best: "Abrir The Best",
+    ver_mas: "Ver más",
   },
 };
 
