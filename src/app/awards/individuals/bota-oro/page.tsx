@@ -47,7 +47,7 @@ const BotaDeOroModal: React.FC = () => {
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
         onClick={() => setMainModalOpen(true)}
       >
-        Open Bota de Oro's
+        {translate("modal.ver_mas")}
       </button>
 
       {/* Main Modal */}
@@ -74,7 +74,7 @@ const BotaDeOroModal: React.FC = () => {
               className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4"
               onClick={() => setMainModalOpen(false)}
             >
-              Close
+              {translate("modal.close")}
             </button>
           </div>
         </div>
