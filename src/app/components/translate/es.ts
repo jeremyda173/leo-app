@@ -73,7 +73,7 @@ const es = {
     golden_boot: " Bota de oro",
     golden_ball: " Balón de oro",
     golden_boy: " Chico de Oro",
-    the_best: " The Best",
+    the_best: " El mejor",
     laureus: " Laureus",
     pichichi: " Trofeo Pichichi",
   },
@@ -85,6 +85,7 @@ const es = {
     open_laureus: "Abrir laureus",
     open_the_best: "Abrir The Best",
     ver_mas: "Ver más",
+    years: " ",
   },
 };
 
