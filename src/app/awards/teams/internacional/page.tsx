@@ -17,8 +17,8 @@ function PresentationIn() {
   // Estilos CSS para el contenedor de opciones
   const optionsContainerStyles = {
     display: "flex",
-    justifyContent: "center", // Centrar horizontalmente
-    marginBottom: "20px", // Espacio debajo de los botones
+    justifyContent: "center",
+    marginBottom: "20px",
   };
 
   // Estilos CSS para las opciones
@@ -29,7 +29,7 @@ function PresentationIn() {
     color: "white",
     border: "none",
     cursor: "pointer",
-    margin: "0 10px", // Espacio entre los botones
+    margin: "0 10px",
   };
 
   // Renderizar la lista de opciones y el componente seleccionado
