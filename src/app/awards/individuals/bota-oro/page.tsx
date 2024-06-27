@@ -37,7 +37,7 @@ const BotaDeOroModal: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-80 bg-gradient-to-b from-gray-200 to-gray-800 text-white">
       {/* Heading */}
-      <h1 className="text-3xl font-bold text-center mb-4">Golden Boot</h1>
+      <h1 className="text-3xl font-bold text-center mb-4">{translate("words.golden_boot")}</h1>
 
       {/* Image */}
       <Image src={BotaDeOroImg} alt="BotaDeOro" className="w-32 h-32 mb-4" />
@@ -82,8 +82,8 @@ const BotaDeOroModal: React.FC = () => {
 
       {/* Statistics Modal */}
       {statisticsModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="bg-gray-800 p-8 rounded-lg text-white">
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center">
+          <div className="p-8 rounded-lg text-white">
             <h2 className="text-3xl font-bold mb-4">Statistics for {selectedYear}</h2>
             {awardsData.map((award) => {
               if (award.year === selectedYear) {

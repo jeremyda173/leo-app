@@ -7,6 +7,7 @@ import FlagUSA from "@/../../public/us.png";
 import FlagDominicanRepublic from "@/../../public/DO.png";
 import Portada from "@/../../public/Portada2.jpg";
 import { translate, setLocale } from "@/app/components/translate";
+import Gallery from "./gallery";
 
 const WelcomeSection = () => {
   const [showFlags, setShowFlags] = useState(false);
@@ -203,6 +204,8 @@ const WelcomeSection = () => {
           animation: fadeInVideo 1.5s ease-in-out 0.5s;
         }
       `}</style>
+
+      <Gallery />
     </div>
   );
 };
