@@ -32,7 +32,7 @@ function Gallery() {
   };
 
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 bg-gray-100 relative'>
+    <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 bg-white relative'>
       <div className='col-span-3 row-span-2 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi1} alt="Imagen 1" className={`${commonClasses} ${largeSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>Gala de oro</span>
