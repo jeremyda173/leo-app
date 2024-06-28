@@ -85,7 +85,21 @@ const es = {
     open_laureus: "Abrir laureus",
     open_the_best: "Abrir The Best",
     ver_mas: "Ver más",
-    years: " ",
+  },
+  imagenes: {
+    gala: "Gala de oro",
+    golazo: "Golazo",
+    entrevista: "Entrevista",
+    bayern: "Messi vs Bayern Munich",
+    fans: "Dibujos de fans",
+    palmares: "Palmares",
+    psg: "Un día en el PSG",
+    seductor: "Messi seductor",
+    miami: "Inter Miami",
+    tirosLibres: "Los tiros libres",
+    city: "vs Manchester City",
+    champions: "Las 3 Champions",
+    entrevistas: "Entrevistas"
   },
 };
 
