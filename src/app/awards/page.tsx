@@ -24,13 +24,13 @@ const Awards = () => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center bg-gray-100">
       <div className="flex space-x-4 mt-8">
         {renderButton('individuals', 'Individuals')}
         {renderButton('teams', 'Teams')}
       </div>
 
-      <div className="mt-8 p-6 bg-white rounded-md shadow-md w-full max-w-screen-md">
+      <div className="mt-8 p-6 bg-white rounded-md shadow-md w-full ">
         {selectedOption === 'individuals' && <Individuals />}
         {selectedOption === 'teams' && <Teams />}
       </div>
