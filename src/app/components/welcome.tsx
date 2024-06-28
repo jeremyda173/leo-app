@@ -140,7 +140,7 @@ const WelcomeSection = () => {
         <div className="max-w-5xl w-full px-6">
           <div className="mb-6">
             <h4 className="text-3xl font-bold text-gray-800 text-center animate-slideInRight">
-              Presentación
+              {translate("words.presentacion")}
             </h4>
           </div>
           <div className="flex justify-center">

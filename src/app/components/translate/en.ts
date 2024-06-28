@@ -1,4 +1,4 @@
-import Champions from "@/app/awards/teams/internacional/champions-league/page";
+
 import { Agent } from "http";
 
 const en = {
@@ -77,6 +77,7 @@ const en = {
       the_best: " The Best",
       laureus: " Laureus",
       pichichi: " Trophy Pichichi",
+      presentacion: " Presentation",
     },
     modal: {
       close: "Close",
@@ -86,7 +87,25 @@ const en = {
       open_laureus: "Open Laureus",
       open_the_best: "Open The Best",
       ver_mas: "See more",
-    },    
+    },
+    imagenes: {
+      gala: "Golden Gala",
+      golazo: "Great Goal",
+      entrevista: "Interview",
+      bayern: "Messi vs Bayern Munich",
+      fans: "Fan Drawings",
+      palmares: "Achievements",
+      psg: "A day at PSG",
+      seductor: "Seductive Messi",
+      miami: "Inter Miami",
+      tirosLibres: "Free Kicks",
+      city: "vs Manchester City",
+      champions: "The 3 Champions",
+    },
+    footer: {
+      derechos: "All rights reserved",
+      web: "Website",
+    },  
   };
   
   export default en;
