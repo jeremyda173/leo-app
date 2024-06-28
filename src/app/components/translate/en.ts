@@ -77,6 +77,7 @@ const en = {
       the_best: " The Best",
       laureus: " Laureus",
       pichichi: " Trophy Pichichi",
+      presentacion: " Presentation",
     },
     modal: {
       close: "Close",
@@ -100,9 +101,11 @@ const en = {
       tirosLibres: "Free Kicks",
       city: "vs Manchester City",
       champions: "The 3 Champions",
-      entrevistas: "Interviews"
     },
-        
+    footer: {
+      derechos: "All rights reserved",
+      web: "Website",
+    },  
   };
   
   export default en;
