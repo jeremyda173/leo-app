@@ -1,6 +1,7 @@
 import { FaInstagram, FaFacebook, FaGoogle } from 'react-icons/fa';
 import React from 'react';
 import 'tailwindcss/tailwind.css';
+import { translate } from '@/app/components/translate';
 
 function Footer() {
     return (
@@ -31,10 +32,10 @@ function Footer() {
                     className="text-gray-300 hover:text-gray-400 transition-colors flex items-center"
                 >
                     <FaGoogle className="mr-2" size={24} />
-                    Sitio Oficial
+                    {translate("footer.web")}
                 </a>
             </div>
-            <p className="text-center sm:text-right text-sm">&copy; 2023 Messi Fan Club. Todos los derechos reservados.</p>
+            <p className="text-center sm:text-right text-sm">&copy; 2023 Messi Fan Club. {translate("footer.derechos")}</p>
         </footer>
     );
 }
