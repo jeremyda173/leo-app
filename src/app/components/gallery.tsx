@@ -12,6 +12,7 @@ import Messi10 from '@/../../public/Gallery/freek.png';
 import Messi11 from '@/../../public/Gallery/MssiCity.png';
 import Messi12 from '@/../../public/Gallery/messichamps.png';
 import Messi13 from '@/../../public/Gallery/entrevista.png';
+import { translate } from '@/app/components/translate';
 
 function Gallery() {
   const commonClasses = 'transition duration-300 ease-in-out transform hover:scale-105 opacity-70 hover:opacity-100 shadow-lg border rounded-lg overflow-hidden';
@@ -35,7 +36,7 @@ function Gallery() {
     <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 bg-white relative'>
       <div className='col-span-3 row-span-2 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi1} alt="Imagen 1" className={`${commonClasses} ${largeSize}`} />
-        <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>Gala de oro</span>
+        <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.gala")}</span>
       </div>
       <div className='col-span-3 row-span-2 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi2} alt="Imagen 2" className={`${commonClasses} ${largeSize}`} />
