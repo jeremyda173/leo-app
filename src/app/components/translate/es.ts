@@ -1,4 +1,5 @@
 import { Anek_Telugu } from "next/font/google";
+import Footer from "../footer";
 
 const es = {
   auth: {
@@ -76,6 +77,7 @@ const es = {
     the_best: " El mejor",
     laureus: " Laureus",
     pichichi: " Trofeo Pichichi",
+    presentacion: " Presentación",
   },
   modal: {
     close: "Cerrar",
@@ -99,7 +101,10 @@ const es = {
     tirosLibres: "Los tiros libres",
     city: "vs Manchester City",
     champions: "Las 3 Champions",
-    entrevistas: "Entrevistas"
+  },
+  footer: {
+    derechos: "Todos los derechos reservados",
+    web: "Sitio web",
   },
 };
 
