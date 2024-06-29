@@ -4,7 +4,6 @@ import 'tailwindcss/tailwind.css';
 import MessiLogo from '@/../../public/messi-logo.png';
 import Portada from '@/../../public/Portada2.jpg';
 import Image from "next/image";
-import DarkMode from "./dark-mode";
 
 interface MenuProps {
     darkMode: boolean;
@@ -45,8 +44,6 @@ const Menu: React.FC<MenuProps> = ({ darkMode, toggleDarkMode }) => {
                                 )}
                             </a>
                         ))}
-                        {/* Toggle para el modo oscuro */}
-                        <DarkMode darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                     </div>
                 </div>
             </div>

@@ -11,30 +11,29 @@ function PSG() {
     <div>
       <h1 className="text-2xl font-bold mb-4">Paris Saint Germain</h1>
       <div>
-        {/* Información adicional sobre el FC Barcelona */}
+        {/* Additional information about Paris Saint-Germain */}
         <p className="mb-4 text-justify">
-            Paris Saint-Germain Football Club, comúnmente conocido como PSG, es un club de fútbol profesional 
-            con sede en París, Francia. Fundado en 1970, el PSG compite en la Ligue 1, la máxima categoría 
-            del fútbol francés. El club se ha convertido en uno de los equipos más exitosos y reconocidos 
-            en Europa, destacando por su presencia en competiciones nacionales e internacionales.
+            Paris Saint-Germain Football Club, commonly known as PSG, is a professional football club 
+            based in Paris, France. Founded in 1970, PSG competes in Ligue 1, the highest tier of French 
+            football. The club has become one of the most successful and recognized teams in Europe, 
+            known for its presence in national and international competitions.
         </p><br></br>
 
         <MessiStats />
 
-        {/* Muestra la imagen del escudo del Barcelona */}
+        {/* Display PSG's crest image */}
         {/* <div style={{ width: '100px', height: '100px' }}>
-          <Image src={BarcelonaImage} alt="Escudo del Barcelona" />
+          <Image src={BarcelonaImage} alt="Paris Saint-Germain Crest" />
         </div> */}
         <div style={{ marginBottom: '20px'}}></div>
 
-{/* Reproductor de video */}
-        {/* Reproductor de video */}
+        {/* Video player */}
         <div className="flex justify-center w-full">
           <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
             <iframe
               className="absolute top-0 left-0 w-full h-full"
               src={videoUrl}
-              title="Video del Paris Saint-German"
+              title="Paris Saint-Germain Video"
               frameBorder="0"
               allowFullScreen
             ></iframe>
