@@ -4,19 +4,19 @@ import 'tailwindcss/tailwind.css';
 import MessiLogo from '@/../../public/messi-logo.png';
 import Image from "next/image";
 
-
 const Menu: React.FC = () => {
     const [activeOption, setActiveOption] = useState<string>('');
+
     return (
         <>
             {/* Menú Horizontal */}
-            <div className="bg-gradient-to-r from-green-400 to-blue-500 p-4 flex items-center justify-between">
+            <div className="bg-gradient-to-r from-green-400 to-blue-500 p-4 flex flex-wrap items-center justify-between">
                 {/* Logo de Messi */}
                 <div className="flex items-center">
                     <Image src={MessiLogo} alt="Messi Logo" width={50} height={50} />
                 </div>
                 {/* Opciones del Menú */}
-                <div className="flex items-center space-x-6">
+                <div className="flex items-center space-x-6 flex-wrap sm:flex-nowrap">
                     <a
                         href="/home"
                         className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'home' ? 'text-gray-200' : ''}`}
