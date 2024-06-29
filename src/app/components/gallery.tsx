@@ -1,4 +1,4 @@
-import React from "react";
+import Image from 'next/image';
 import Messi1 from '@/../../public/Gallery/GalaORO.png';
 import Messi2 from '@/../../public/Gallery/Messi2.png';
 import Messi3 from '@/../../public/Gallery/MessiBayern.jpg';
@@ -13,7 +13,6 @@ import Messi11 from '@/../../public/Gallery/MssiCity.png';
 import Messi12 from '@/../../public/Gallery/messichamps.png';
 import Messi13 from '@/../../public/Gallery/entrevista.png';
 import { translate } from '@/app/components/translate';
-import Image from 'next/image';
 
 function Gallery() {
   const commonClasses = 'transition duration-300 ease-in-out transform hover:scale-105 opacity-70 hover:opacity-100 shadow-lg border rounded-lg overflow-hidden';
@@ -34,7 +33,7 @@ function Gallery() {
   };
 
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 p-4 bg-white relative'>
+    <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 p-4 bg-white relative'>
       <div className='col-span-3 row-span-2 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi1} alt="Imagen 1" className={`${commonClasses} ${largeSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.gala")}</span>
@@ -43,15 +42,15 @@ function Gallery() {
         <Image src={Messi2} alt="Imagen 2" className={`${commonClasses} ${largeSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.golazo")}</span>
       </div>
-      <div className='col-span-2 row-span-1 p-2 relative hidden md:block'>
+      <div className='col-span-2 row-span-1 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi3} alt="Imagen 3" className={`${commonClasses} ${smallSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.bayern")}</span>
       </div>
-      <div className='col-span-2 row-span-1 p-2 relative hidden md:block'>
+      <div className='col-span-2 row-span-1 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi4} alt="Imagen 4" className={`${commonClasses} ${smallSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.fans")}</span>
       </div>
-      <div className='col-span-2 row-span-1 p-2 relative hidden lg:block'>
+      <div className='col-span-2 row-span-1 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi5} alt="Imagen 5" className={`${commonClasses} ${smallSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.palmares")}</span>
       </div>
@@ -63,15 +62,15 @@ function Gallery() {
         <Image src={Messi7} alt="Imagen 7" className={`${commonClasses} ${largeSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.psg")}</span>
       </div>
-      <div className='col-span-2 row-span-1 p-2 relative hidden md:block'>
+      <div className='col-span-2 row-span-1 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi8} alt="Imagen 8" className={`${commonClasses} ${smallSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.seductor")}</span>
       </div>
-      <div className='col-span-2 row-span-1 p-2 relative hidden md:block'>
+      <div className='col-span-2 row-span-1 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi9} alt="Imagen 9" className={`${commonClasses} ${smallSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.miami")}</span>
       </div>
-      <div className='col-span-2 row-span-1 p-2 relative hidden md:block'>
+      <div className='col-span-2 row-span-1 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi10} alt="Imagen 10" className={`${commonClasses} ${smallSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.tirosLibres")}</span>
       </div>
@@ -79,11 +78,11 @@ function Gallery() {
         <Image src={Messi11} alt="Imagen 11" className={`${commonClasses} ${largeSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.city")}</span>
       </div>
-      <div className='col-span-2 row-span-1 p-2 relative hidden md:block'>
+      <div className='col-span-2 row-span-1 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi12} alt="Imagen 12" className={`${commonClasses} ${smallSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.champions")}</span>
       </div>
-      <div className='col-span-2 row-span-1 p-2 relative hidden md:block'>
+      <div className='col-span-2 row-span-1 p-2 relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Image src={Messi13} alt="Imagen 13" className={`${commonClasses} ${smallSize}`} />
         <span className={`${tooltipClasses} top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 tooltip`}>{translate("imagenes.entrevista")}</span>
       </div>
