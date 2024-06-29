@@ -1,16 +1,18 @@
-import SuperCopaEuropa from '@/../../public/Awards/League Cup.png';
+import SuperCopaFrancia from '@/../../public/Awards/Supercopa_da_França.png';
+import Liga from '@/../../public/Awards/Ligue_1.png';
 import Image from 'next/image';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import { ReactElement, JSXElementConstructor, ReactNode, PromiseLikeOfReactNode } from 'react';
 
-function InterMiamiTitles() {
+function PsgTitles() {
   return (
     <div className="bg-gray-700 min-h-screen flex items-center justify-center w-full pt-8 pl-8 pr-8">
       <div className="container mx-auto text-white">
         <h1 className="text-4xl font-bold mb-8 hover:bg-sky-700 text-center">Titles in Inter Miami</h1>
         {/* Trofeos Europeos */}
         <div className="grid grid-cols-1 gap-8 mb-2">
-          {renderTrophyCard(SuperCopaEuropa, "League Cup", 1)}
+          {renderTrophyCard(SuperCopaFrancia, "Supercopa de Francia", 1)}
+          {renderTrophyCard(Liga, "Ligue 1", 2)}
         </div>
       </div>
     </div>
@@ -36,4 +38,4 @@ function renderTrophyCard(
   );
 }
 
-export default InterMiamiTitles;
+export default PsgTitles;
