@@ -1,4 +1,4 @@
-import SuperCopaFrancia from '@/../../public/Awards/Supercopa_da_França.png';
+import SuperCopaFrancia from '@/../../public/Awards/SupercopaFrancia.png';
 import Liga from '@/../../public/Awards/Ligue_1.png';
 import Image from 'next/image';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
