@@ -30,7 +30,7 @@ function renderTrophyCard(
       <div className="bg-white p-4 md:p-6 text-center">
         <Image src={imageSrc} alt={trophyTitle} className="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto mb-4" />
         <p className="text-xl font-bold text-gray-800">{trophyTitle}</p>
-        <p className="text-base text-gray-600 mb-4">Cantidad: {trophyCount}</p>
+        <p className="text-base text-gray-600 mb-4">Amount: {trophyCount}</p>
       </div>
     </div>
   );
