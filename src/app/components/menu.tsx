@@ -1,10 +1,12 @@
+'use client';
 import React, { useState } from "react";
+import 'tailwindcss/tailwind.css';
 import MessiLogo from '@/../../public/messi-logo.png';
 import Image from "next/image";
 
+
 const Menu: React.FC = () => {
     const [activeOption, setActiveOption] = useState<string>('');
-
     return (
         <>
             {/* Menú Horizontal */}
@@ -48,7 +50,7 @@ const Menu: React.FC = () => {
                         onMouseEnter={() => setActiveOption('teams')}
                         onMouseLeave={() => setActiveOption('')}
                     >
-                        Teams
+                        Groups
                         {activeOption === 'teams' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
                     <a
