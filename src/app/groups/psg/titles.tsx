@@ -11,7 +11,7 @@ function PsgTitles() {
         <h1 className="text-4xl font-bold mb-8 hover:bg-sky-700 text-center">Titles in Inter Miami</h1>
         {/* Trofeos Europeos */}
         <div className="grid grid-cols-1 gap-8 mb-2">
-          {renderTrophyCard(SuperCopaFrancia, "Supercopa de Francia", 1)}
+          {renderTrophyCard(Liga, "Supercopa de Francia", 1)}
           {renderTrophyCard(Liga, "Ligue 1", 2)}
         </div>
       </div>
