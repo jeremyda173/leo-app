@@ -3,7 +3,7 @@ import SuperCopaEuropa from '@/../../public/Awards/supercopa.png';
 import Liga from '@/../../public/Awards/LaLiga.png';
 import CopaRey from '@/../../public/Awards/Copa_del_Rey.png';
 import MundialC from '@/../../public/Awards/Copa_Mundial_de_Clubes.png';
-import SuperCopaSpain from '@/../../public/Awards/SupercopaEspaña.png';
+import SuperCopaSpain from '@/../../public/Awards/SuperSpain.png';
 import Image from 'next/image';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import { ReactElement, JSXElementConstructor, ReactNode, PromiseLikeOfReactNode } from 'react';
