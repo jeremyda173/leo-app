@@ -145,7 +145,7 @@ const WelcomeSection = () => {
           </div>
           <div className="flex justify-center">
             <div
-              className="relative pb-9/16 h-0 w-9/12 animate-fadeInVideo"
+              className="relative pb-9/16 h-0 w-full md:w-9/12 animate-fadeInVideo"
               style={{ paddingBottom: "38.35%" }}
             >
               <iframe
