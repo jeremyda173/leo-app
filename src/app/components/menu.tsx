@@ -64,6 +64,15 @@ const Menu: React.FC = () => {
                     </a>
                 </div>
             </div>
+
+            {/* Estilos */}
+            <style jsx>{`
+                @media (max-width: 768px) {
+                    .sm:flex-nowrap {
+                        flex-wrap: wrap;
+                    }
+                }
+            `}</style>
         </>
     );
 }
