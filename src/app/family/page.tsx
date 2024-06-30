@@ -70,7 +70,7 @@ function FamiliaMessi() {
   return (
     <div className="max-w-2xl mx-auto p-4">
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Family timeline</h2>
-      <div className="relative">
+      <div className="relative hidden sm:block">
         <div className="border-r-4 border-gray-300 absolute h-full top-0 left-1/2 transform -translate-x-1/2"></div>
         <div className="space-y-12">
           {events.map((event, index) => (
@@ -108,11 +108,28 @@ function FamiliaMessi() {
           ))}
         </div>
       </div>
+
+      {/* Responsive layout for small screens */}
+      <div className="sm:hidden">
+        {events.map((event, index) => (
+          <div key={index} className={`mb-8 ${index % 2 === 0 ? 'flex' : 'flex-row-reverse'}`}>
+            <div className={`relative w-10 h-10 bg-${event.color} rounded-full border-4 border-white flex items-center justify-center ml-2`}>
+              <div className={`w-6 h-6 bg-${event.color} rounded-full`}></div>
+            </div>
+            <div className={`bg-${event.color} text-white p-4 rounded-lg inline-block shadow-lg transform transition-transform duration-300 hover:scale-105 w-11/12 mt-4`}>
+              <h3 className="text-lg font-bold">{event.year}</h3>
+              <h4 className="text-md mt-1">{event.title}</h4>
+              <p className="text-sm mt-2 text-justify">{event.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
 export default FamiliaMessi;
+
 
 
 // 'use client';
