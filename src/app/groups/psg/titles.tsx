@@ -25,7 +25,7 @@ function renderTrophyCard(
   count: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | PromiseLikeOfReactNode | Iterable<ReactNode> | undefined
 ) {
   const trophyTitle = title !== undefined ? title.toString() : "";
-  const trophyCount = count !== undefined ? count.toString() : "0"; // Provide a default value if count is null or undefined
+  const trophyCount = count !== undefined ? count.toString() : "0";
 
   return (
     <div className="bg-gray-800 rounded-md overflow-hidden shadow-lg p-4 md:p-6 mb-8 md:mb-0 border hover:bg-gray-600 transition duration-300">
