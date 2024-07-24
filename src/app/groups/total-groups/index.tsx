@@ -49,7 +49,7 @@ function Groups() {
 
   return (
     <div className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-white min-h-screen p-4">
-      <div className="absolute top-0 left-0 w-full h-full opacity-40">
+      <div className="absolute top-0 left-0 w-full h-full opacity-30 hover:opacity-5">
         <div className={`h-full ${pageLoaded ? 'bg-gradient-to-b from-gray-900 to-gray-800' : ''} transition duration-1000 ease-in-out`}></div>
       </div>
 
