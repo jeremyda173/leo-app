@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGlobe } from "react-icons/fa";  // Necesitas instalar react-icons: npm install react-icons
+import { FaGlobe } from "react-icons/fa";
 
 interface LanguageToggleProps {
     language: 'en' | 'es';
