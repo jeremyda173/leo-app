@@ -1,11 +1,16 @@
 'use client';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import 'tailwindcss/tailwind.css';
 import MessiLogo from '@/../../public/messi-logo.png';
 import Image from "next/image";
 
 const Menu: React.FC = () => {
     const [activeOption, setActiveOption] = useState<string>('');
+
+    useEffect(() => {
+        const path = window.location.pathname.split('/')[1];
+        setActiveOption(path);
+    }, []);
 
     return (
         <>
@@ -20,44 +25,39 @@ const Menu: React.FC = () => {
                     <a
                         href="/home"
                         className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'home' ? 'text-gray-200' : ''}`}
-                        onMouseEnter={() => setActiveOption('home')}
-                        onMouseLeave={() => setActiveOption('')}
+                        onClick={() => setActiveOption('home')}
                     >
                         Home
                         {activeOption === 'home' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
                     <a
                         href="/match_history"
-                        className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'matchHistory' ? 'text-gray-200' : ''}`}
-                        onMouseEnter={() => setActiveOption('matchHistory')}
-                        onMouseLeave={() => setActiveOption('')}
+                        className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'match_history' ? 'text-gray-200' : ''}`}
+                        onClick={() => setActiveOption('match_history')}
                     >
                         Match History
-                        {activeOption === 'matchHistory' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
+                        {activeOption === 'match_history' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
                     <a
                         href="/awards"
                         className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'awards' ? 'text-gray-200' : ''}`}
-                        onMouseEnter={() => setActiveOption('awards')}
-                        onMouseLeave={() => setActiveOption('')}
+                        onClick={() => setActiveOption('awards')}
                     >
                         Awards
                         {activeOption === 'awards' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
                     <a
                         href="/groups"
-                        className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'teams' ? 'text-gray-200' : ''}`}
-                        onMouseEnter={() => setActiveOption('teams')}
-                        onMouseLeave={() => setActiveOption('')}
+                        className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'groups' ? 'text-gray-200' : ''}`}
+                        onClick={() => setActiveOption('groups')}
                     >
                         Groups
-                        {activeOption === 'teams' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
+                        {activeOption === 'groups' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
                     </a>
                     <a
                         href="/family"
                         className={`relative text-white font-semibold transition-all duration-300 ${activeOption === 'family' ? 'text-gray-200' : ''}`}
-                        onMouseEnter={() => setActiveOption('family')}
-                        onMouseLeave={() => setActiveOption('')}
+                        onClick={() => setActiveOption('family')}
                     >
                         Family
                         {activeOption === 'family' && <span className="absolute left-0 bottom-0 w-full h-1 bg-white rounded"></span>}
@@ -77,4 +77,4 @@ const Menu: React.FC = () => {
     );
 }
 
-export default Menu;
+export default Menu
