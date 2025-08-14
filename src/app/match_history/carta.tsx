@@ -26,7 +26,6 @@ import Shield12 from '@/../../public/Shield/Liverpool_FC.svg.png';
 import Shield13 from '@/../../public/Shield/Manchester united.png';
 import { translate } from '@/app/components/translate';
 
-// Temporalmente definimos StaticImageData como any
 type StaticImageData = any;
 
 const playersData = [
