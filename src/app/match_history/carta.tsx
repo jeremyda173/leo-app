@@ -280,11 +280,6 @@ interface CardProps {
 
 export default function MatchHistory() {
   const [activeCardIndex, setActiveCardIndex] = useState();
-
-  // const handleCardClick = (index: number) => {
-  //   setActiveCardIndex(index);
-  // };
-
   return (
     <div className="container mx-auto py-4 px-4">
       <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
