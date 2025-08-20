@@ -22,14 +22,14 @@ const MessiStats: React.FC = () => {
       if (currentGoals < totalGoals) {
         setCurrentGoals((prevGoals) => prevGoals + 1);
       }
-    }, 30);
+    }, 20);
 
     const assistInterval = setInterval(() => {
       if (currentAssists < totalAssists) {
         setCurrentAssists((prevAssists) => prevAssists + 1);
         setCurrentAssistsPerMatch((prevAssistsPerMatch) => (currentAssists + 1) / totalMatches);
       }
-    }, 30);
+    }, 20);
 
     return () => {
       clearInterval(goalInterval);
@@ -39,20 +39,20 @@ const MessiStats: React.FC = () => {
 
   const calculateGoalColor = () => {
     const percentage: number = (currentGoals / totalGoals) * 100;
-    const hue: number = 240 - (percentage * 2.4);
+    const hue: number = 240 - (percentage * 4.4);
     return `linear-gradient(90deg, hsl(${hue}, 70%, 50%) ${percentage}%, transparent ${percentage}%)`;
   };
 
   const calculateAssistColor = () => {
     const goalPercentage: number = (currentGoals / totalGoals) * 100;
     const assistPercentage: number = (currentAssists / totalAssists) * 100;
-    const hue: number = 240 - (goalPercentage * 2.4);
+    const hue: number = 240 - (goalPercentage * 4.4);
     return `linear-gradient(90deg, hsl(${hue}, 70%, 50%) ${assistPercentage}%, transparent ${assistPercentage}%)`;
   };
 
   const calculateMatchColor = () => {
     const percentage: number = (totalMatches / totalMatches) * 100;
-    const hue: number = percentage * 2.4;
+    const hue: number = percentage * 4.4;
     return `linear-gradient(90deg, transparent ${percentage}%, hsl(${hue}, 70%, 50%) ${percentage}%)`;
   };
 
