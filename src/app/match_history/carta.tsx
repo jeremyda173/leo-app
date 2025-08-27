@@ -98,7 +98,7 @@ const playersData = [
     },
     image: MessiStats8,
     shield1: Shield7,
-    shield2: Shield5,
+    shield2: Shield10,
     matchDate: 'March 15',
   },
   {
@@ -193,7 +193,7 @@ const playersData = [
       performance: '9.5',
     },
     image: MessiStats6,
-    shield1: Shield1,
+    shield1: Shield7,
     shield2: Shield12,
     matchDate: 'July 5',
   },
