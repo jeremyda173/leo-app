@@ -197,7 +197,7 @@ export default function FamilyTimelinePro({
           {title}
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-sm text-gray-600 sm:text-base">
-          Hitos familiares de Lionel Messi y Antonela Roccuzzo en una línea de tiempo elegante y responsiva.
+          Hitos familiares de Lionel Messi y Antonela Roccuzzo en una línea de tiempo elegante.
         </p>
       </div>
       <div className="relative">
