@@ -5,7 +5,6 @@ import MessiStats from "./Stats";
 function Barcelona() {
   const videoUrl = "https://www.youtube.com/embed/FqFyAydG2cc";
 
-  {/* Messi's data at Barcelona */}
   // const matches = 1066;
 
   return (
@@ -19,12 +18,7 @@ function Barcelona() {
         </p><br></br>
 
         <MessiStats />
-
-        {/* Display Barcelona's crest image */}
-        {/* <div style={{ width: '100px', height: '100px' }}>
-          <Image src={BarcelonaImage} alt="FC Barcelona Crest" />
-        </div> */}
-
+        
         <div style={{ marginBottom: '20px'}}></div>
 
         {/* Video player */}
