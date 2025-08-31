@@ -5,13 +5,10 @@ import MessiStats from "./Stats";
 function Barcelona() {
   const videoUrl = "https://www.youtube.com/embed/FqFyAydG2cc";
 
-  // const matches = 1066;
-
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">FC Barcelona</h1>
       <div>
-        {/* Additional information about FC Barcelona */}
         <p className="mb-4 text-justify">
           FC Barcelona is a professional football club based in Barcelona, Catalonia, Spain.
           Founded in 1899, Barcelona is one of the most successful and popular clubs in the world.
@@ -21,7 +18,6 @@ function Barcelona() {
         
         <div style={{ marginBottom: '20px'}}></div>
 
-        {/* Video player */}
         <div className="flex justify-center w-full">
           <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
             <iframe
