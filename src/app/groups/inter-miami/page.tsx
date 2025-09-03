@@ -22,7 +22,6 @@ function InterMiami() {
 
         <div className="my-4"></div>
 
-        {/* Video player */}
         <div className="flex justify-center w-full">
           <div className="relative w-full hover:scale-105 transition duration-300 ease-in-out" style={{ paddingBottom: '56.25%' }}>
             <iframe
