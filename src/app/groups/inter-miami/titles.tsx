@@ -10,7 +10,6 @@ function InterMiamiTitles() {
         <h1 className="text-4xl font-bold mb-8 text-center hover:bg-gray-800 p-4 rounded-md transition duration-300 ease-in-out">
           Titles in Inter Miami
         </h1>
-        {/* Trofeos Europeos */}
         <div className="grid grid-cols-1 gap-8 mb-2">
           {renderTrophyCard(SuperCopaEuropa, "League Cup", 1)}
         </div>
