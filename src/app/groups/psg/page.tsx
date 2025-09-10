@@ -9,7 +9,6 @@ function PSG() {
     <div>
       <h1 className="text-2xl font-bold mb-4">Paris Saint Germain</h1>
       <div>
-        {/* Additional information about Paris Saint-Germain */}
         <p className="mb-4 text-justify">
             Paris Saint-Germain Football Club, commonly known as PSG, is a professional football club 
             based in Paris, France. Founded in 1970, PSG competes in Ligue 1, the highest tier of French 
@@ -19,13 +18,11 @@ function PSG() {
 
         <MessiStats />
 
-        {/* Display PSG's crest image */}
         {/* <div style={{ width: '100px', height: '100px' }}>
           <Image src={BarcelonaImage} alt="Paris Saint-Germain Crest" />
         </div> */}
         <div style={{ marginBottom: '20px'}}></div>
 
-        {/* Video player */}
         <div className="flex justify-center w-full">
           <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
             <iframe
