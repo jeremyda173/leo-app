@@ -18,9 +18,6 @@ function PSG() {
 
         <MessiStats />
 
-        {/* <div style={{ width: '100px', height: '100px' }}>
-          <Image src={BarcelonaImage} alt="Paris Saint-Germain Crest" />
-        </div> */}
         <div style={{ marginBottom: '20px'}}></div>
 
         <div className="flex justify-center w-full">
