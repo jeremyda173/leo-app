@@ -54,7 +54,6 @@ function Groups() {
       </div>
 
       <header className="text-center py-4">
-        {/* <h1 className="text-3xl font-bold">Lionel Messi Gallery</h1> */}
       </header>
 
       <div className="flex items-center justify-center">
