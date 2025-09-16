@@ -307,7 +307,6 @@ function Card({ player, isActive}: CardProps) {
             <div className="text-sm sm:text-base text-gray-400">{player.fullName}</div>
           </div>
         </div>
-        {/* Detalles del jugador */}
         <div className="px-4 py-2 flex-grow">
           <div className="flex items-center justify-between">
             <div>
@@ -320,7 +319,6 @@ function Card({ player, isActive}: CardProps) {
             </div>
           </div>
         </div>
-        {/* Estadísticas del jugador */}
         <div className="px-4 py-2">
           <div className="text-xs sm:text-sm text-gray-400 mb-2">{translate('stats.title')}</div>
           <div className="bg-[#292929] rounded-lg p-2">
